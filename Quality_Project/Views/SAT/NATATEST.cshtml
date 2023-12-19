@@ -1,0 +1,202 @@
+﻿
+@{
+    ViewBag.Title = "NATATEST";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<style>
+    /* Your existing styles */
+</style>
+
+<script>
+    function addNewRow() {
+        // Find the table body
+        var tableBody = document.getElementById("testFormTableBody");
+        console.log(tableBody);
+
+        // Create a new row
+        var newRow = document.createElement("tr");
+
+        // Define the columns
+        var columns = [
+            { colspan: 3, type: "text", class: "form-control" },
+            { colspan: 3, type: "text", class: "form-control" },
+            { colspan: 3, type: "text", class: "form-control" },
+            { colspan: 3, type: "text", class: "form-control" },
+            { colspan: 3, type: "text", class: "form-control" },
+            { colspan: 3, type: "text", class: "form-control" },
+
+        ];
+
+        // Loop through columns and create cells
+        for (var i = 0; i < columns.length; i++) {
+            var cell = document.createElement("td");
+
+            var input = document.createElement("input");
+            input.type = columns[i].type;
+            input.className = columns[i].class;
+            cell.colSpan = columns[i].colspan;
+            cell.appendChild(input);
+            newRow.appendChild(cell);
+        }
+
+        // Append the new row to the table body
+        tableBody.appendChild(newRow);
+    }
+</script>
+
+<div class="main_heading" style="background-color:#018bd3;height: 70px;">
+    <h3 style="text-align: center; padding-top:18px;color:white;"><b><u>DIELECTRIC WITHSTAND TEST</u></b> </h3>
+</div>
+
+<div class="table-responsive-sm">
+    <table class="table table-bordered" style="width: 100%; margin-top:10px; height: 70%; background-color: #f1f3ec66;">
+        <thead>
+            <tr style="background-color: #5f98ab;">
+                <th colspan="30">
+                    <center style="font-size:larger;color:white">Risk Assessment</center>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="3">Hazard No.</th>
+                <th colspan="3">Testing & Commissioning Hazards</th>
+                <th colspan="3">Severity</th>
+                <th colspan="3">Likelyhood</th>
+                <th colspan="3">MAt risk</th>
+                <th colspan="3" Risk Assessment</th>
+            </tr>
+        </thead>
+        <tbody id="testFormTableBody">
+            <!-- Your existing row with input fields -->
+            <tr>
+                <!-- Your existing input fields -->
+            </tr>
+        </tbody>
+    </table>
+    <div class="d-flex justify-content-end">
+        <button type="button" class="btn btn-primary" style="background-color:#191c3696;margin-bottom:10px;" onclick="addNewRow()">Add New</button>
+    </div>
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66; ">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">Risk Assessment</center></th>
+
+        </tr>
+
+        <tr>
+            <th colspan="3">Hazard</th>
+            <th colspan="3">Control Measures</th>
+            <th colspan="3">Remarks</th>
+        </tr>
+        <tr>
+            <td colspan="3">1 <br /> Electrocution, electric shock</td>
+            <td colspan="3">
+                1. All test equipment safety tested, certified and calibrated.<br />
+                2. Equipment under test barricaded to provide physical and <br />
+                3. Test personnel trained and certified to conduct testing safely
+            </td>
+            <td colspan="2"><input type="text" width="30px;" class="form-control"></td>
+        </tr>
+
+        <tr>
+            <td colspan="3">2 <br /> Electrocution, electric shock</td>
+            <td colspan="3">
+                1. All test equipment safety tested, certified and calibrated.<br />
+                2. Equipment under test barricaded to provide physical and <br />
+                3. Test personnel trained and certified to conduct testing safely
+            </td>
+            <td colspan="2"><input type="text" width="30px;" class="form-control"></td>
+        </tr>
+
+        <tr>
+            <td colspan="3">3 <br /> Electrocution, electric shock</td>
+            <td colspan="3">
+                1. All test equipment safety tested, certified and calibrated.<br />
+                2. Equipment under test barricaded to provide physical and <br />
+                3. Test personnel trained and certified to conduct testing safely
+            </td>
+            <td colspan="2"><input type="text" width="30px;" class="form-control"></td>
+        </tr>
+
+        <tr>
+            <td colspan="3">4 <br /> Electrocution, electric shock</td>
+            <td colspan="3">
+                1. All test equipment safety tested, certified and calibrated.<br />
+                2. Equipment under test barricaded to provide physical and <br />
+                3. Test personnel trained and certified to conduct testing safely
+            </td>
+            <td colspan="2"><input type="text" width="30px;" class="form-control"></td>
+        </tr>
+
+        <tr>
+            <td colspan="3">5 <br /> Electrocution, electric shock</td>
+            <td colspan="3">
+                1. All test equipment safety tested, certified and calibrated.<br />
+                2. Equipment under test barricaded to provide physical and <br />
+                3. Test personnel trained and certified to conduct testing safely
+            </td>
+            <td colspan="2"><input type="text" width="30px;" class="form-control"></td>
+        </tr>
+
+        <tr>
+            <td colspan="3">6 <br /> Electrocution, electric shock</td>
+            <td colspan="3">
+                1. All test equipment safety tested, certified and calibrated.<br />
+                2. Equipment under test barricaded to provide physical and <br />
+                3. Test personnel trained and certified to conduct testing safely
+            </td>
+            <td colspan="2"><input type="text" width="30px;" class="form-control"></td>
+        </tr>
+
+        <tr>
+            <td colspan="3">7<br /> Electrocution, electric shock</td>
+            <td colspan="3">
+                1. All test equipment safety tested, certified and calibrated.<br />
+                2. Equipment under test barricaded to provide physical and <br />
+                3. Test personnel trained and certified to conduct testing safely
+            </td>
+            <td colspan="2"><input type="text" width="30px;" class="form-control"></td>
+        </tr>
+
+        <tr>
+            <td colspan="3">8 <br /> Electrocution, electric shock</td>
+            <td colspan="3">
+                1. All test equipment safety tested, certified and calibrated.<br />
+                2. Equipment under test barricaded to provide physical and <br />
+                3. Test personnel trained and certified to conduct testing safely
+            </td>
+            <td colspan="2"><input type="text" width="30px;" class="form-control"></td>
+        </tr>
+
+        <tr>
+            <td colspan="3">9 <br /> Electrocution, electric shock</td>
+            <td colspan="3">
+                1. All test equipment safety tested, certified and calibrated.<br />
+                2. Equipment under test barricaded to provide physical and <br />
+                3. Test personnel trained and certified to conduct testing safely
+            </td>
+            <td colspan="2"><input type="text" width="30px;" class="form-control"></td>
+        </tr>
+
+        <tr>
+            <td colspan="3">10 <br /> Electrocution, electric shock</td>
+            <td colspan="3">
+                1. All test equipment safety tested, certified and calibrated.<br />
+                2. Equipment under test barricaded to provide physical and <br />
+                3. Test personnel trained and certified to conduct testing safely
+            </td>
+            <td colspan="2"><input type="text" width="30px;" class="form-control"></td>
+        </tr>
+
+    </table>
+    <div class="d-flex justify-content-end">
+        <button type="button" class="btn btn-primary" style="background-color:#191c3696;margin-bottom:10px;">Submit</button>
+    </div>
+</div>
+
+
+
+
+
+
+

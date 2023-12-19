@@ -1,0 +1,405 @@
+﻿
+@{
+    ViewBag.Title = "QF9PObservation";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    .main_input {
+        height: 100%;
+    }
+
+    .table-bordered {
+        border-bottom: 1px solid black;
+    }
+
+    body {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+</style>
+
+
+
+
+<div class="main_heading" style="background-color: #018bd3;height: 70px;">
+    <h3 style="text-align: center; padding-top:18px;color: white;"><b>CHECK LIST FOR MODULE</b> </h3>
+</div>
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white">CHECK LIST FOR MODULE</center></th>
+
+    </tr>
+
+    <tr>
+        <th>
+            Customer
+        </th>
+
+        <td><input type="text" leght="100px" ;width="30px;" class="form-control"></th>
+
+    </tr>
+    <tr>
+        <th>Job NO</th>
+        <td><input type="text" leght="100px" ;width="30px;" class="form-control"></th>
+
+    </tr>
+
+    <tr>
+        <th>
+            Switchgear Board Ref:
+        </th>
+        <td><input type="text" leght="100px" ;width="30px;" class="form-control"></th>
+
+    </tr>
+    <tr>
+        <th>Porject Title</th>
+        <td><input type="text" leght="100px" ;width="30px;" class="form-control"></th>
+
+    <tr>
+        <th>
+            Tester
+        </th>
+        <td><input type="text" leght="100px" ;width="30px;" class="form-control"></th>
+    </tr>
+
+
+
+    <tr>
+        <th>
+            Date
+        </th>
+        <td><input type="date" leght="100px" ;width="30px;" class="form-control"></th>
+    </tr>
+</table>
+
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+
+    <tr>
+        <th></th>
+        <th></th>
+        <th colspan="2">With VT</th>
+        <th colspan="3">Dimension (in mm)</th>
+    </tr>
+
+
+
+
+
+    <tr>
+        <th></th>
+        <th></th>
+        <th>Yes</th>
+        <th>NO</th>
+        <th>W</th>
+        <th>D</th>
+        <th>H</th>
+    </tr>
+
+
+
+
+
+
+
+    <tr>
+        <th>Incomer </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+
+
+
+
+    <tr>
+        <th>Outgoing Feeder</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+
+
+
+    <tr>
+        <th>Bus Section</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+
+
+
+    <tr>
+        <th>Transition</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>Bus Riser</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>Bus Duct</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+</table>
+
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white">OBSERVATION REPORT</center></th>
+
+    </tr>
+    <tr>
+        <th>S.No   </th>
+        <th>ITEM TO CHECK  </th>
+        <th>OBSERVATION  </th>
+        <th>REMARKS  </th>
+    </tr>
+
+
+    <tr>
+        <th>A</th>
+        <th> VCB</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+
+
+
+    <tr>
+        <th>A.1</th>
+        <th> Vcb front cover proper</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+
+
+
+
+
+    <tr>
+        <th>A.2</th>
+        <th> Name plate detail</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+
+
+
+
+    <tr>
+        <th>A.3</th>
+        <th> Scratches if any </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>A.4</th>
+        <th>Spring charge cover present</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th>A.5</th>
+        <th>Vcb Test/Service roller present</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>A.6</th>
+        <th> Vcb RHS bottom roller present</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>A.7</th>
+        <th> Vcb LHS bottom roller present</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th>A.8</th>
+        <th> Vcb roller wheels proper</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>A.9</th>
+        <th> Vaccum bottle shroud inspected</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>A.10</th>
+        <th> VcbBusbar finger</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>A.11</th>
+        <th> Vcb finger nuts present</th>
+        <th> </th>
+        <th></th>
+    </tr>
+
+
+    <tr>
+        <th>A.12</th>
+        <th> Vcb finger Busbar</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>A.13</th>
+        <th> Vcb flexible Busbar</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+
+
+
+
+
+
+    <tr>
+        <th>A.14</th>
+        <th>Vcb rack In/Out rod</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>A.15</th>
+        <th> Vcb body earth bar</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>A.16</th>
+        <th> Verify all bolt torque marks</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>A.17</th>
+        <th> Vcb rack In/Out lever proper</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th>A.18</th>
+        <th> Interlock lever-A operational</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+</table>
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+
+
+    <tr>
+        <th></th>
+        <th>Tested By</th>
+        <th>Quality Control Engineer</th>
+        <th>Project Manager</th>
+
+    </tr>
+    <tr>
+        <th>Name</th>
+        <th><input type="text" class="form-control"></th>
+        <th><input type="text" class="form-control"></th>
+        <th><input type="text" class="form-control"></th>
+
+    </tr>
+    <tr>
+        <th>Sign</th>
+        <th></th>
+        <th></th>
+
+    <tr>
+        <th>Date</th>
+        <th><input type="date" class="form-control"></th>
+        <th><input type="date" class="form-control"></th>
+        <th><input type="date" class="form-control"></th>
+    </tr>
+
+</table>
+
+
+<div class="d-flex justify-content-end">
+    <button type="button" class="btn btn-primary" style="background-color:#191c3696;margin-bottom:10px;">Submit</button>
+</div>

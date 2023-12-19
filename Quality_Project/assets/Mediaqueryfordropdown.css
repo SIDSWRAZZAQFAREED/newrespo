@@ -1,0 +1,9 @@
+﻿/* styles.css */
+
+@media (min-width: 993px) {
+    nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li > a {
+        padding: 5px 8px;
+        border-bottom: solid 1px #eee;
+        color: #6f6f6f;
+    }
+}

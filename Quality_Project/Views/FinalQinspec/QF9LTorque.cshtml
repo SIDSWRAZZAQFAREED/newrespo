@@ -1,0 +1,185 @@
+﻿
+@{
+    ViewBag.Title = "QF9LTorque";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    .main_input {
+        height: 100%;
+    }
+
+    .table-bordered {
+        border-bottom: 1px solid black;
+    }
+
+    body {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+</style>
+<div class="main_heading" style="background-color: #018bd3;height: 70px;">
+    <h3 style="text-align: center; padding-top:18px;color: white;"><b>TORQUECHECK FORM</b> </h3>
+</div>
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white">TORQUECHECK FORM</center></th>
+
+    </tr>
+
+    <tr>
+        <th>Customer/Client</th>
+        <td colspan="3"><input type="text" width="30px;" class="form-control"></th>
+        <th>ENQ/Job Number</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th colspan="1">Project Title </th>
+        <td colspan="5"><input type="text" leght="100px" ;width="30px;" class="form-control"></th>
+
+    </tr>
+    <tr>
+        <th>Switchgear Board Ref:</th>
+        <td colspan="3"><input type="text" width="30px;" class="form-control"></th>
+        <th>Panel Ref:</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+</table>
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white">TORQUE CHECK FORM</center></th>
+
+    </tr>
+    <tr>
+        <th>ITEMS TO CHECK</th>
+        <th>BOLT-TORQUE CRITERIA</th>
+        <th>BOLT SIZE</th>
+        <th>TORQUE APPLIED(Nm)</th>
+    </tr>
+
+    <tr>
+        <th>BUS BAR</th>
+        <th rowspan="8" style="text-align: center;">
+            M8-15Nm<br>
+            M10-25Nm<br>
+            M12-40Nm<br>
+        </th>
+        <th>M12</th>
+        <td><input type="text" width="30px;" class="form-control"></td>
+    </tr>
+    <tr>
+        <th>EARTHING SWITCH</th>
+
+        <th>M8,M10,M12</th>
+        <td><input type="text" width="30px;" class="form-control"></td>
+    </tr>
+
+    <tr>
+        <th>EARTHING BUSBAR</th>
+
+        <th>M10,M12</th>
+        <td><input type="text" width="30px;" class="form-control"></td>
+    </tr>
+
+
+    <tr>
+        <th>VOLTAGE TRANSFORMER + VT RAIL+VT LINK BUSBAR</th>
+
+        <th>M8,M10</th>
+        <td><input type="text" width="30px;" class="form-control"></td>
+    </tr>
+
+    <tr>
+        <th>VACUUM CIRCUIT BREAKER</th>
+
+        <th>M8,M10,M12</th>
+        <td><input type="text" width="30px;" class="form-control"></td>
+    </tr>
+    <tr>
+        <th>LONG PDS</th>
+
+        <th>M10</th>
+        <td><input type="text" width="30px;" class="form-control"></td>
+    </tr>
+
+    <tr>
+        <th>SHORT PDS</th>
+
+        <th>M10</th>
+        <td><input type="text" width="30px;" class="form-control"></td>
+    </tr>
+    <tr>
+        <th>PDS PLATE</th>
+
+        <th>M10,M12</th>
+        <td><input type="text" width="30px;" class="form-control"></td>
+    </tr>
+
+
+
+
+</table>
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white">Test  Equipment Used</center></th>
+
+    </tr>
+
+    <tr>
+        <th>Equipment Name</th>
+        <th>Make/Model</th>
+        <th>Serial No</th>
+        <th>Calibration Due Date</th>
+    </tr>
+
+
+    <tr>
+        <th>Torque Wrench   </th>
+        <td><input type="text" width="30px;" class="form-control"></td>
+        <td><input type="text" width="30px;" class="form-control"></td>
+        <td><input type="text" width="30px;" class="form-control"></td>
+
+    </tr>
+</table>
+
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr>
+        <th></th>
+        <th>Tested By</th>
+        <th>Quality Control Engineer</th>
+        <th>Project Manager</th>
+
+    </tr>
+    <tr>
+        <th>Name</th>
+        <th><input type="text" class="form-control"></th>
+        <th><input type="text" class="form-control"></th>
+        <th><input type="text" class="form-control"></th>
+
+    </tr>
+    <tr>
+        <th>Sign</th>
+        <th></th>
+        <th></th>
+
+    <tr>
+        <th>Date</th>
+        <th><input type="date" class="form-control"></th>
+        <th><input type="date" class="form-control"></th>
+        <th><input type="date" class="form-control"></th>
+    </tr>
+
+</table>
+<div class="d-flex justify-content-end">
+    <button type="button" class="btn btn-primary" style="background-color:#191c3696;margin-bottom:10px;">Submit</button>
+</div>
+

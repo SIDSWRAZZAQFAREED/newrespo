@@ -1,0 +1,319 @@
+﻿
+@{
+    ViewBag.Title = "QF9J";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    .main_input {
+        height: 100%;
+    }
+
+    .table-bordered {
+        border-bottom: 1px solid black;
+    }
+
+    body {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+</style>
+
+
+<div class="main_heading" style="background-color: #018bd3;height: 70px;">
+    <h3 style="text-align: center; padding-top:18px;color: white;"><b>VOLTAGE  TRANSFORMER  TEST FORM</b> </h3>
+</div>
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white">VOLTAGE  TRANSFORMER  TEST FORM</center></th>
+
+    </tr>
+    <tr>
+        <th>Customer/Client</th>
+        <td colspan="3"><input type="text" width="30px;" class="form-control"></th>
+        <th>ENQ/Job Number</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th colspan="1">Project Title </th>
+        <td colspan="5"><input type="text" leght="100px" ;width="30px;" class="form-control"></th>
+
+    </tr>
+    <tr>
+        <th>Switchgear Board Ref:</th>
+        <td colspan="3"><input type="text" width="30px;" class="form-control"></th>
+        <th>Panel Ref:</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+</table>
+
+
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white">VOLTAGE TRANSFORMER NAMEPLATE DETAILS:</center></th>
+
+    </tr>
+    <tr>
+        <th>Make</th>
+        <th>TYPE</th>
+        <th>Serial Number</th>
+        <th>Connection</th>
+        <th>Ratio</th>
+        <th>Class/Burden</th>
+    </tr>
+    <tr>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th>R-<input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th>Y-<input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th>B-<input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+</table>
+
+
+
+
+
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white">1. MECHANICAL CHECK AND VISUAL INSPECTION</center></th>
+
+    </tr>
+
+    <tr>
+        <th>ITEM</th>
+        <th colspan="3">DESCRIPTION</th>
+        <th>Remarks</th>
+
+    </tr>
+    <tr>
+        <th>1</th>
+        <td colspan="3">Inspect for physical damage/ defects.</td>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+    </tr>
+    <tr>
+        <th>2</th>
+        <td colspan="3">Check nameplate information for correction.</td>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+    </tr>
+    <tr>
+        <th>3</th>
+        <td colspan="3">Check quality of paintwork and rust spots.</td>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+    </tr>
+    <tr>
+        <th>4</th>
+        <td colspan="3">Check that all grounding is securely connected.</td>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+    </tr>
+</table>
+
+
+
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white">2.	ELECTRICAL TESTS°C </center></th>
+
+    </tr>
+    <tr>
+        <th>Phase</th>
+        <th colspan="3">Insulation Resistance (in GΩ)</th>
+
+    </tr>
+    <tr>
+        <th></th>
+
+        <th>Primary-Secondary</th>
+        <th>Primary-Ground</th>
+        <th>Secondary-Ground</th>
+
+
+    </tr>
+
+    <tr>
+        <th>L1</th>
+        <td><input type="text" width="30px;" class="form-control"></td>
+        <td><input type="text" width="30px;" class="form-control"></td>
+        <td><input type="text" width="30px;" class="form-control"></td>
+
+    </tr>
+    <tr>
+        <th>L2</th>
+        <td><input type="text" width="30px;" class="form-control"></td>
+        <td><input type="text" width="30px;" class="form-control"></td>
+        <td><input type="text" width="30px;" class="form-control"></td>
+    </tr>
+
+    <tr>
+        <th>L3</th>
+        <td><input type="text" width="30px;" class="form-control"></td>
+        <td><input type="text" width="30px;" class="form-control"></td>
+        <td><input type="text" width="30px;" class="form-control"></td>
+    </tr>
+    </tr>
+
+
+
+
+</table>
+
+
+<h6><b>Applied Voltage   5000VDC   for 1 minute’s    duration at Primary to Secondary, Primary to Ground </b></h6>
+<h6><b>Applied Voltage  1000VDC for 1 minute’s   duration at Secondary to Ground.</b></h6>
+
+
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white">2b) RATIO AND POLARITY TEST</center></th>
+
+    </tr>
+    <tr>
+        <th>Function</th>
+        <th>Description</th>
+        <th>Polarity</th>
+        <th>Injected Voltage(V)</th>
+        <th>Expected Sec.  Voltage(V)</th>
+        <th>Measured Sec. Voltage(V)</th>
+    </tr>
+
+    <tr>
+        <td rowspan="3">VT</td>
+
+        <td>L1</td>
+        <td><input type="text" width="30px;" class="form-control"></td>
+        <td><input type="text" width="30px;" class="form-control"></td>
+        <td><input type="text" width="30px;" class="form-control"></td>
+    </tr>
+    <tr>
+
+        <td>L2</td>
+        <td><input type="text" width="30px;" class="form-control"></td>
+        <td><input type="text" width="30px;" class="form-control"></td>
+        <td><input type="text" width="30px;" class="form-control"></td>
+        <td><input type="text" width="30px;" class="form-control"></td>
+    </tr>
+    <tr>
+
+        <td>L3</td>
+        <td><input type="text" width="30px;" class="form-control"></td>
+        <td><input type="text" width="30px;" class="form-control"></td>
+        <td><input type="text" width="30px;" class="form-control"></td>
+        <td><input type="text" width="30px;" class="form-control"></td>
+    </tr>
+    </tr>
+
+
+
+    <h6 style="margin-left:11%;">
+        <b>
+            % ERROR=100 x ((Measured reading-Expected reading)/ Expected reading)
+
+        </b>
+    </h6>
+</table>
+
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white">Test  Equipment Used</center></th>
+
+    </tr>
+    <tr>
+        <th colspan="4"></th>
+    </tr>
+
+    <tr>
+        <th>Equipment Name</th>
+        <th>Make/Model</th>
+        <th>Serial No</th>
+        <th>Calibration Due Date</th>
+    </tr>
+
+
+    <tr>
+        <th>Secondary Injection Kit</th>
+        <td><input type="text" width="30px;" class="form-control"></td>
+        <td><input type="text" width="30px;" class="form-control"></td>
+        <td><input type="text" width="30px;" class="form-control"></td>
+
+    </tr>
+</table>
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+
+
+    <tr>
+        <th></th>
+        <th>Tested By</th>
+        <th>Quality Control Engineer</th>
+        <th>Project Manager</th>
+
+    </tr>
+    <tr>
+        <th>Name</th>
+        <th><input type="text" class="form-control"></th>
+        <th><input type="text" class="form-control"></th>
+        <th><input type="text" class="form-control"></th>
+
+    </tr>
+    <tr>
+        <th>Sign</th>
+        <th></th>
+        <th></th>
+
+    <tr>
+        <th>Date</th>
+        <th><input type="date" class="form-control"></th>
+        <th><input type="date" class="form-control"></th>
+        <th><input type="date" class="form-control"></th>
+    </tr>
+
+</table>
+
+
+<div class="d-flex justify-content-end">
+    <button type="button" class="btn btn-primary" style="background-color:#191c3696;margin-bottom:10px;">Submit</button>
+</div>
+
+
+
+

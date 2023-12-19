@@ -1,0 +1,472 @@
+﻿
+
+@{
+    ViewBag.Title = "QF11G";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+
+}
+
+
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        
+    }
+
+    .main_input {
+        height: 100%;
+    }
+
+    .table-bordered {
+        border-bottom: 1px solid black;
+    }
+    body {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+   
+    
+</style>
+
+<div class="main_container">
+    <div class="main_heading" style="background-color: #018bd3;height: 70px;">
+        <h3 style="text-align: center; padding-top:18px;color: white;"><b>COOPER</b> </h3>
+    </div>
+
+    <table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="6"><center style="font-size:larger;color:white">COPPER PUNCHING AND CUTTING</center></th>
+
+        </tr>
+
+        <tr>
+            <th>SL No.</th>
+            <th>Manufacturing Check Points</th>
+            <th colspan="2">Checked</th>
+            <th>Operator</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th> </th>
+            <th>Yes </th>
+            <th>No </th>
+
+
+        </tr>
+
+
+
+        <tr>
+            <th>1</th>
+            <th>
+                Select the correct raw material for the bus bar as per approved drawing.
+                <br>
+                <input type="checkbox" id="copperFullyRoundEdge" name="copperFullyRoundEdge" value="Yes">
+                <label for="copperFullyRoundEdge">Fully round edge</label>
+
+                <input type="checkbox" id="copperSlightlyRoundEdge" name="copperSlightlyRoundEdge" value="Yes">
+                <label for="copperSlightlyRoundEdge">Slightly round edge</label>
+
+                <input type="checkbox" id="copperHDHC" name="copperHDHC" value="Yes">
+                <label for="copperHDHC">HDHC</label>
+
+                <input type="checkbox" id="copperFullHard" name="copperFullHard" value="Yes">
+                <label for="copperFullHard">Full Hard</label>
+
+                <input type="checkbox" id="copperHalfHard" name="copperHalfHard" value="Yes">
+                <label for="copperHalfHard">Half Hard</label>
+                <br />
+                <br />
+            </th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="Yes"></th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="No"></th>
+            <th style="text-align: center;">
+                <select class="form-control" style="width: 100px;">
+                    <option value="Option1">Option 1</option>
+                    <option value="Option2">Option 2</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </th>
+        </tr>
+
+        <tr>
+            <th>2</th>
+            <th>
+                Ensure that the dimensions of the processed parts are within the acceptable tolerance limit provided in the drawing.
+                Tolerance Limit ±0.5mm & ±0.5°
+            </th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="Yes"></th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="No"></th>
+            <th style="text-align: center;">
+                <select class="form-control" style="width: 100px;">
+                    <option value="Option1">Option 1</option>
+                    <option value="Option2">Option 2</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </th>
+        </tr>
+
+
+        <tr>
+            <th>3</th>
+            <th>
+                Ensure to store the processed parts in such a way as to avoid all risks of deformation
+            </th>
+            <th style="color: plum; text-align: center;">
+                <input type="radio" name="radio" value="Yes">
+            </th>
+            <th style="color: plum; text-align: center;">
+                <input type="radio" name="radio" value="No">
+            </th>
+            <th style="text-align: center;">
+                <select class="form-control" style="width: 100px;">
+                    <option value="Option1">Option 1</option>
+                    <option value="Option2">Option 2</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </th>
+        </tr>
+
+
+
+
+        <tr>
+            <th>4</th>
+            <th>
+                Ensure to mark each processed parts for identification or traceability.
+            </th>
+            <th style="color: plum; text-align: center;">
+                <input type="radio" name="radio" value="Yes">
+            </th>
+            <th style="color: plum; text-align: center;">
+                <input type="radio" name="radio" value="No">
+            </th>
+            <th style="text-align: center;">
+                <select class="form-control" style="width: 100px;">
+                    <option value="Option1">Option 1</option>
+                    <option value="Option2">Option 2</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </th>
+        </tr>
+
+
+
+        <tr>
+            <th>5</th>
+            <th>
+                No warping, scratches, sharp edges, and burrs on the processed parts or on the cut edges.
+            </th>
+            <th style="color: plum; text-align: center;">
+                <input type="radio" name="radio" value="Yes">
+            </th>
+            <th style="color: plum; text-align: center;">
+                <input type="radio" name="radio" value="No">
+            </th>
+            <th style="text-align: center;">
+                <select class="form-control" style="width: 100px;">
+                    <option value="Option1">Option 1</option>
+                    <option value="Option2">Option 2</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </th>
+        </tr>
+
+
+        <tr>
+            <th>6</th>
+            <th>
+                Ensure that all the holes are deburred and buffed properly.
+            </th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="Yes"></th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="No"></th>
+            <th style="text-align: center;">
+                <select class="form-control" style="width: 100px;">
+                    <option value="Option1">Option 1</option>
+                    <option value="Option2">Option 2</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </th>
+        </tr>
+        <tr>
+            <th>7</th>
+            <th>
+                Processed parts are as per the approved drawings Semi-finished product part number:
+            </th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="Yes"></th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="No"></th>
+            <th style="text-align: center;">
+                <select class="form-control" style="width: 100px;">
+                    <option value="Option1">Option 1</option>
+                    <option value="Option2">Option 2</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </th>
+        </tr>
+    </table>
+
+
+
+
+
+    <table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">Quality Control</center></th>
+
+        </tr>
+        <tr>
+            <th>SL No.</th>
+            <th>Manufacturing Check Points</th>
+            <th colspan="2">Checked</th>
+            <th>Operator</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th> </th>
+            <th>Yes </th>
+            <th>No </th>
+
+
+        </tr>
+
+        <tr>
+            <th>1</th>
+            <th>Verify and validate the semi-finished product conformity as per approved project specifications and drawings.</th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="Yes"></th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="No"></th>
+            <th style="text-align: center;">
+                <select class="form-control" style="width: 100px;">
+                    <option value="Option1">Option 1</option>
+                    <option value="Option2">Option 2</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </th>
+        </tr>
+
+        <tr>
+            <th>2</th>
+            <th>
+                If not complied, issue nonconformity report (NCR) and corrective and preventive action (CAPA) requests.
+            </th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="Yes"></th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="No"></th>
+            <th style="text-align: center;">
+                <select class="form-control" style="width: 100px;">
+                    <option value="Option1">Option 1</option>
+                    <option value="Option2">Option 2</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </th>
+        </tr>
+
+
+
+
+
+    </table>
+
+
+    <div class="d-flex justify-content-end">
+        <button type="button" class="btn btn-primary ml-auto" style="background-color:#191c3696; margin-bottom:15px; ">Submit</button>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <!--<style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .main_input {
+            height: 100%;
+        }
+
+        .table-bordered {
+            border-bottom: 1px solid black;
+        }
+
+    </style>
+
+
+
+        <div class="main_heading" style="background-color: #018bd3;height: 70px;">
+            <h3 style="text-align: center; padding-top:18px;color: white;"><b><u>COOPER</u></b> </h3>
+        </div>-->
+    @*--table1--*@
+
+    <!--<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="6"><center style="font-size:larger;color:white">COPPER PUNCHING AND CUTTING</center></th>
+
+        </tr>
+        <tr>
+            <th>SL No.</th>
+            <th>Manufacturing Check Points</th>
+            <th colspan="2">Checked</th>
+            <th>Operator Signature</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th> </th>
+            <th>Yes </th>
+            <th>No </th>
+
+
+        </tr>
+
+
+
+        <tr>
+            <th>1</th>
+            <th>
+                Select the correct raw material for the bus bar as per approved drawing.
+                <br>
+                <input type="checkbox" id="copperFullyRoundEdge" name="copperFullyRoundEdge" value="Yes">
+                <label for="copperFullyRoundEdge">Fully round edge</label>
+
+                <input type="checkbox" id="copperSlightlyRoundEdge" name="copperSlightlyRoundEdge" value="Yes">
+                <label for="copperSlightlyRoundEdge">Slightly round edge</label>
+
+                <input type="checkbox" id="copperHDHC" name="copperHDHC" value="Yes">
+                <label for="copperHDHC">HDHC</label>
+
+                <input type="checkbox" id="copperFullHard" name="copperFullHard" value="Yes">
+                <label for="copperFullHard">Full Hard</label>
+
+                <input type="checkbox" id="copperHalfHard" name="copperHalfHard" value="Yes">
+                <label for="copperHalfHard">Half Hard</label>
+                <br />
+                <br />
+            </th>
+            <th style="color: plum; text-align: center;"><input type="checkbox" value='' /> </th>
+            <th style="color: plum; text-align: center;"><input type="checkbox" value='' /></th>
+            <th><input type="text" style="width:100px;" class="form-control" /></th>
+
+        </tr>
+
+        <tr>
+            <th>2</th>
+            <th>
+                Ensure that the dimensions of the processed parts are within the acceptable tolerance limit provided in the drawing.
+                Tolerance Limit ±0.5mm & ±0.5°
+            </th>
+            <th style="color:plum;"><input type="checkbox" value='' /></th>
+            <th style="color:plum;"><input type="checkbox" value='' /></th>
+            <th><input type="text" style="width:100px;" class="form-control"></th>
+        </tr>
+
+
+        <tr>
+            <th>3</th>
+            <th>
+                Ensure to store the processed parts in such a way as to avoid all risks of deformation
+            </th>
+            <th style="color:plum;"><input type="checkbox" value='' /></th>
+            <th style="color:plum;"><input type="checkbox" value='' /></th>
+            <th><input type="text" style="width:100px;" class="form-control"></th>
+        </tr>
+
+
+
+
+        <tr>
+            <th>4</th>
+            <th>
+                Ensure to mark each processed parts for identification or traceability.
+            </th>
+            <th style="color:plum;"><input type="checkbox" value='' /> </th>
+            <th style="color:plum;"><input type="checkbox" value='' /></th>
+            <th><input type="text" style="width:100px;" class="form-control"></th>
+        </tr>
+
+
+
+        <tr>
+            <th>5</th>
+            <th>
+                No warping, scratches, sharp edges, and burrs on the processed parts or on the cut edges.
+            </th>
+            <th style="color:plum;"><input type="checkbox" value='' /> </th>
+            <th style="color:plum;"><input type="checkbox" value='' /></th>
+            <th><input type="text" style="width:100px;" class="form-control"></th>
+        </tr>
+
+
+        <tr>
+            <th>6</th>
+            <th>
+                Ensure that all the holes are deburred and buffed properly.
+            </th>
+            <th style="color:plum;"><input type="checkbox" value='' /></th>
+            <th style="color:plum;"><input type="checkbox" value='' /></th>
+            <th><input type="text" style="width:100px;" class="form-control"></th>
+        </tr>
+        <tr>
+            <th>7</th>
+            <th>
+                Processed parts are as per the approved drawings Semi-finished product part number:
+            </th>
+            <th style="color:plum;"><input type="checkbox" value='' /> </th>
+            <th style="color:plum;"><input type="checkbox" value='' /> </th>
+            <th><input type="text" style="width:100px;" class="form-control"></th>
+        </tr>
+
+    </table>
+
+
+    <table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="6"><center style="font-size:larger;color:white">Quality Control</center></th>
+
+        </tr>
+        <tr>
+            <th>SL No.</th>
+            <th>Manufacturing Check Points</th>
+            <th colspan="2">Checked</th>
+            <th>Operator Signature</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th> </th>
+            <th>Yes </th>
+            <th>No </th>
+
+
+        </tr>
+
+        <tr>
+            <th>1</th>
+            <th>Verify and validate the semi-finished product conformity as per approved project specifications and drawings.</th>
+            <th style="color: plum; text-align: center;"><input type="checkbox" value='' /></th>
+            <th style="color: plum; text-align: center;"><input type="checkbox" value='' /></th>
+            <th><input type="text" style="width:100px;" class="form-control"></th>
+        </tr>
+
+        <tr>
+            <th>2</th>
+            <th>
+                If not complied, issue nonconformity report (NCR) and corrective and preventive action (CAPA) requests.
+            </th>
+            <th style="color:plum;"><label for="row2CheckedYes">NCR Ref: -</label> </th>
+            <th style="color:plum; "><label for="row2CheckedNo">CAPA Ref: -</label></th>
+            <th><input type="text" style="width:100px;" class="form-control"></th>
+        </tr>
+    </table>
+    <div class="d-flex justify-content-end">
+        <button type="button" class="btn btn-primary" style="background-color:#191c3696;margin-bottom:10px;">Submit</button>
+    </div>-->

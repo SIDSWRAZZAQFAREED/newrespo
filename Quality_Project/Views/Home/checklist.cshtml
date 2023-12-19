@@ -1,0 +1,624 @@
+﻿@{
+    ViewBag.Title = "checklist1";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+       
+    }
+    table, th {
+        text-align: center;
+    }
+
+    .table-bordered {
+        border-bottom: 1px solid black;
+    }
+     h6{
+        font-size:medium;
+    }
+    
+</style>
+<style>
+    input[type=checkbox] {
+        accent-color: pink;
+        outline: 2px solid plum;
+    }
+    table-bordered {
+        border-bottom: 1px solid black;
+    }
+</style>
+
+
+    <div class="main_heading" style="background-color: #018bd3;height: 70px;">
+        <h3 style="text-align: center; padding-top: 22px; color: white; font-size: x-large;"><b>DIELECTRIC WITHSTAND TEST</b> </h3>
+    </div>
+    <div class="table-responsive-sm">
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66; border-bottom: 1px solid black;">
+
+            <tr style="background-color: #5f98ab;">
+                <th colspan="6"><center style="font-size:larger;color:white">Insulation Resistance Test</center></th>
+
+            </tr>
+            <tr style="text-align:center;">
+                <th style="padding:15px;">Applied Voltage:</th>
+                <th> <input type="text" id="A_voltage" width="30px;" class="form-control"></th>
+                <th style="padding:15px;">Ambient Temperature</th>
+                <th> <input type="text"id="A_tem"width="30px;"class="form-control"></th>
+            </tr>
+            <tr style="text-align: center;">
+                <th style="padding:15px;">Phase</th>
+                <th> <input type="text" id="Phase" width="30px;" class="form-control"></th>
+                <th style="padding:15px;">Before HV  (Values in Ohms)</th>
+                <th> <input type="text" id="Bhv" width="30px;" class="form-control"></th>
+            </tr>
+        
+        <tr style="text-align: center;">
+            <th style="padding:15px;">Equipment</th>
+            <th> <input type="text" id="Equipment" width="30px;" class="form-control"> </th>
+            <th style="padding:15px;">Date: </th>
+            <th><input type="date" id="Date" width="30px;" class="form-control"> </th>
+        </tr>
+
+        <tr style="text-align: center;">
+            <th style="padding:15px;">Description</th>
+            <th> <input type="text" id="Description" width="30px;" class="form-control"> </th>
+            <th style="padding:15px;">Project: </th>
+            <th><input type="text" id="Project" width="30px;" class="form-control"> </th>
+        </tr>
+        <tr style="text-align: center;">
+            <th style="padding:15px;">Service</th>
+
+            <th> <input type="text" id="Service" width="30px;" class="form-control"> </th>
+            <th style="padding:15px;">Switch board Ref: </th>
+            <th><input type="text" id="SwitchbRef" width="30px;" class="form-control"> </th>
+        </tr>
+
+    </table>
+    <br>
+    @*<h5 style="margin-left:150px;"><b><u>Yearly Maintenance Check List</u></b> </h5>*@
+<table class="table table-bordered" style="width: 100%; height: 70%; background-color: #f1f3ec66; border-bottom: 1px solid black; ">
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white">High Voltage Withstand Test</center></th>
+
+    </tr>
+    <tr>
+        <th>S.N</th>
+        <th>Maintenance Check Points </th>
+        <th colspan="2">Checked  </th>
+        <th>Remarks  </th>
+
+    </tr>
+    <tr>
+        <th></th>
+        <th> </th>
+        <th>Yes </th>
+        <th>No </th>
+
+
+    </tr>
+    <tr>
+        <td colspan="5" style="background-color: #788f87; padding-top: 10px; padding-bottom: 10px; color: white;">
+            <h6 class="m-0"><b>(A) Visual Inspection & General Cleaning</b></h6>
+        </td>
+    </tr>
+
+    <tr style="padding:10px;">
+        <th>1</th>
+        <th>Cleaning of Bus bar Compartment</th>
+        <th style="color: plum;"><input type="radio" id="css" name="fav_language" value="CSS"></th>
+        <th style="color: plum;"><input type="radio" id="html" name="fav_language" value="HTML"></th>
+        <th><input type="text" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th style="padding:15px;">2</th>
+        <th style="padding:15px;">Cleaning of Cable Compartment</th>
+        <th style="color:plum;"><input type="radio" id="css1" name="flexRadioDefault" value="CSS1"></th>
+        <th style="color:plum;"><input type="radio" id="html2" name="flexRadioDefault" value="HTML2"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th style="padding:15px;">3</th>
+        <th style="padding:15px;">Cleaning of Metering Compartment </th>
+        <th style="color:plum;"><input type="radio" id="css" name="flex" value="CSS"></th>
+        <th style="color:plum;"><input type="radio" id="html" name="flex" value="HTML"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th style="padding:15px;">4</th>
+        <th style="padding:15px;">Cleaning of Breaker Compartment </th>
+        <th style="color:plum;"><input type="radio" id="css" name="fav" value="CSS"> </th>
+        <th style="color:plum;"><input type="radio" id="html" name="fav" value="HTML"> </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+    </tr>
+    <tr>
+        <th style="padding:15px;">5</th>
+        <th style="padding:15px;">Cleaning External of Top Covers & VT Compartment </th>
+        <th style="color:plum;"><input type="radio" id="css" name="favlanguage" value="CSS"></th>
+        <th style="color:plum;"><input type="radio" id="html" name="favlanguage" value="HTML"> </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <td colspan="5" style="background-color: #788f87; padding-top: 10px; padding-bottom: 10px; color: white;">
+            <h6 class="m-0"><b>(B) Metering Compartment</b></h6>
+        </td>
+    </tr>
+    <tr>
+        <th style="padding:15px;">1</th>
+        <th style="padding:15px;">Tripping of breaker manually by operating the relay  </th>
+        <th style="color:plum;"><input type="radio" id="css" name="fav_l" value="CSS"> </th>
+        <th style="color:plum;"><input type="radio" id="html" name="fav_l" value="HTML"> </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th style="padding:15px;">2</th>
+        <th style="padding:15px;">
+            Tightening Connections on control wiring & confirming
+            MCB/fuse links not open circuited
+        </th>
+        <th style="color:plum;"><input type="radio" id="css" name="fav_la" value="CSS"> </th>
+        <th style="color:plum;"><input type="radio" id="html" name="fav_la" value="HTML"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th style="padding:15px;">3</th>
+        <th style="padding:15px;">
+            Calibration of Ammeter & Voltmeters, Meter reading
+            Zero
+        </th>
+        <th style="color:plum;"><input type="radio" id="css" name="fav_lan" value="CSS"></th>
+        <th style="color:plum;"><input type="radio" id="html" name="fav_lan" value="HTML"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th style="padding:15px;">4</th>
+        <th style="padding:15px;">Functional Check of PQ meter </th>
+        <th style="color:plum;"><input type="radio" id="css" name="fav_lang" value="CSS"></th>
+        <th style="color:plum;"><input type="radio" id="html" name="fav_lang" value="HTML"> </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th style="padding:15px;">5</th>
+        <th style="padding:15px;">
+            Performing Secondary Injection test on all Protection
+            Relays
+        </th>
+        <th style="color:plum;"><input type="radio" id="css" name="fav_langu" value="CSS"> </th>
+        <th style="color:plum;"><input type="radio" id="html" name="fav_langu" value="HTML"> </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th style="padding:15px;">6</th>
+        <th style="padding:15px;">
+            Checks on Operation/Timing test for Trip/Aux Relays
+            Relays
+        </th>
+        <th style="color:plum;"><input type="radio" id="css" name="fav_langua" value="CSS"></th>
+        <th style="color:plum;"><input type="radio" id="html" name="fav_langua" value="HTML"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th style="padding:15px;">7</th>
+        <th style="padding:15px;">Function checks & Interlock checks of Control Circuitry.  </th>
+        <th style="color:plum;"><input type="radio" id="css" name="fav_languag" value="CSS"></th>
+        <th style="color:plum;"><input type="radio" id="html" name="fav_languag" value="HTML"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th style="padding:15px;">8</th>
+        <th style="padding:15px;">Function of L/R & Trip/Close S/S  </th>
+        <th style="color:plum;"><input type="radio" id="css" name="function" value="CSS"></th>
+        <th style="color:plum;"><input type="radio" id="html" name="function" value="HTML"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+
+
+    <tr>
+        <td colspan="5" style="background-color: #788f87; padding-top: 10px; padding-bottom: 10px; color: white;">
+            <h6 class="m-0"><b>(C) Breaker Compartment & Breaker</b></h6>
+        </td>
+    </tr>
+    <tr>
+        <th style="padding:15px;">1</th>
+        <th style="padding:15px;">Check for any cracks/tracking on PDS  </th>
+        <th style="color:plum;"><input type="radio" id="css" name="functio" value="CSS"></th>
+        <th style="color:plum;"><input type="radio" id="html" name="functio" value="HTML"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th style="padding:15px;">2</th>
+        <th style="padding:15px;">Check for any discoloration of PDS.  </th>
+        <th style="color:plum;"><input type="radio" id="css" name="functi" value="CSS"></th>
+        <th style="color:plum;"><input type="radio" id="html" name="functi" value="HTML"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th style="padding:15px;">3</th>
+        <th style="padding:15px;">
+            Check for Distortion of Shutter.
+            Zero
+        </th>
+        <th style="color:plum;"><input type="radio" id="css" name="funct" value="CSS"></th>
+        <th style="color:plum;"><input type="radio" id="html" name="funct" value="HTML"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th style="padding:15px;">4</th>
+        <th style="padding:15px;">Check Shutter Mechanism Ok </th>
+        <th style="color:plum;"><input type="radio" id="css" name="func" value="CSS"></th>
+        <th style="color:plum;"><input type="radio" id="html" name="func" value="HTML"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th style="padding:15px;">5</th>
+        <th style="padding:15px;">
+            Check for Control Plug Sleeving not cut & operation of
+            control plug is smooth
+        </th>
+        <th style="color:plum;"><input type="radio" id="css" name="fun" value="CSS"></th>
+        <th style="color:plum;"><input type="radio" id="html" name="fun" value="HTML"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th style="padding:15px;">6</th>
+        <th style="padding:15px;">Check for smooth Operation of Earth Switch mechanism </th>
+        <th style="color:plum;"><input type="radio" id="css" name="Operation" value="CSS"></th>
+        <th style="color:plum;"><input type="radio" id="html" name="Operation" value="HTML"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th style="padding:15px;">7</th>
+        <th style="padding:15px;">
+            Check for smooth operation of Breaker Racking in/out
+            mechanism.
+        </th>
+        <th style="color:plum;"><input type="radio" id="css" name="Operatio" value="CSS"></th>
+        <th style="color:plum;"><input type="radio" id="html" name="Operatio" value="HTML"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th style="padding:15px;">8</th>
+        <th style="padding:15px;">Check Whether Door Interlock Mechanism is OK </th>
+        <th style="color:plum;"><input type="radio" id="css" name="Operati" value="CSS"></th>
+        <th style="color:plum;"><input type="radio" id="html" name="Operati" value="HTML"> </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th style="padding:15px;">8</th>
+        <th style="padding:15px;">Check Whether Door Interlock Mechanism is OK </th>
+        <th style="color:plum;"><input type="radio" id="css" name="Operat" value="CSS"></th>
+        <th style="color:plum;"><input type="radio" id="html" name="Operat" value="HTML"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th style="padding:15px;">9</th>
+        <th style="padding:15px;">Remove old greases & Lubricate Surfaces</th>
+        <th style="color:plum;"><input type="radio" id="css" name="Opera" value="CSS"></th>
+        <th style="color:plum;"><input type="radio" id="html" name="Opera" value="HTML"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+
+    <tr>
+        <th style="padding:15px;">10</th>
+        <th style="padding:15px;">Check the Split pins, E-rings are in place. </th>
+        <th style="color:plum;"><input type="radio" id="css" name="Oper" value="CSS"></th>
+        <th style="color:plum;"><input type="radio" id="html" name="Oper" value="HTML"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+
+
+    <tr>
+        <th style="padding:15px;">11</th>
+        <th style="padding:15px;">Check all the breaker interlocks are functional. </th>
+        <th style="color:plum;"><input type="radio" id="css" name="Ope" value="CSS"></th>
+        <th style="color:plum;"><input type="radio" id="html" name="Ope" value="HTML"> </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th style="padding:15px;">12</th>
+        <th style="padding:15px;">
+            Check the spring charging both electrically &
+            mechanically is OK
+        </th>
+        <th style="color:plum;"><input type="radio" id="css" name="charging" value="CSS"> </th>
+        <th style="color:plum;"><input type="radio" id="html" name="charging" value="HTML"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th style="padding:15px;">13</th>
+        <th style="padding:15px;">
+            Check breaker mechanical & Electrical
+            Operation is ok.
+        </th>
+        <th style="color:plum;"><input type="radio" id="css" name="chargin" value="CSS"></th>
+        <th style="color:plum;"><input type="radio" id="html" name="chargin" value="HTML"> </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th style="padding:15px;">14</th>
+        <th style="padding:15px;">Check for Anti pumping relay Card is OK  </th>
+        <th style="color:plum;"><input type="radio" id="css" name="chargi" value="CSS"> </th>
+        <th style="color:plum;"><input type="radio" id="html" name="chargi" value="HTML"> </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th style="padding:15px;">15</th>
+        <th style="padding:15px;">
+            Check the functionality of heaters and Thermostat /
+            Hygrostat
+        </th>
+        <th style="color:plum;"><input type="radio" id="css" name="charg" value="CSS"> </th>
+        <th style="color:plum;"><input type="radio" id="html" name="charg" value="HTML"> </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th style="padding:15px;">16</th>
+        <th style="padding:15px;">Checks for any Cracks on PDS?  </th>
+        <th style="color:plum;"><input type="radio" id="css" name="char" value="CSS"></th>
+        <th style="color:plum;"><input type="radio" id="html" name="char" value="HTML"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+    </tr>
+
+    <tr>
+        <td colspan="5" style="background-color: #788f87; padding-top: 10px; padding-bottom: 10px; color: white;">
+            <h6 class="m-0"><b>(D) Cable Compartment</b></h6>
+        </td>
+    </tr>
+    <tr>
+        <th style="padding:15px;">1</th>
+        <th style="padding:15px;">Checks for any Cracks on PDS?   </th>
+        <th style="color:plum;"><input type="radio" id="css" name="cha" value="CSS"></th>
+        <th style="color:plum;"><input type="radio" id="html" name="cha" value="HTML"> </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th style="padding:15px;">2</th>
+        <th style="padding:15px;">Check Metal Paint Work is ok?  </th>
+        <th style="color:plum;"><input type="radio" id="css" name="ch" value="CSS"></th>
+        <th style="color:plum;"><input type="radio" id="html" name="ch" value="HTML"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th style="padding:15px;">3</th>
+        <th style="padding:15px;">
+            Check Bus bar torqued & marked
+            Evidence of Vermin?
+            Zero
+        </th>
+        <th style="color:plum;"><input type="radio" id="css" name="ch1" value="CSS"> </th>
+        <th style="color:plum;"><input type="radio" id="html" name="ch1" value="HTML"> </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th style="padding:15px;">4</th>
+        <th style="padding:15px;">
+            Check Fixed & moving Earth Switch Contacts in good
+            condition.
+        </th>
+        <th style="color:plum;"><input type="radio" id="css" name="ch2" value="CSS"> </th>
+        <th style="color:plum;"><input type="radio" id="html" name="ch2" value="HTML"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th style="padding:15px;">5</th>
+        <th style="padding:15px;">
+            Check any discharge marks/tracking on PDS/Cable
+            termination?
+            Relays
+        </th>
+        <th style="color:plum;"><input type="radio" id="css" name="ch3" value="CSS"> </th>
+        <th style="color:plum;"><input type="radio" id="html" name="ch3" value="HTML"> </th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th style="padding:15px;">6</th>
+        <th style="padding:15px;">Check Boots are properly installed  </th>
+        <th style="color:plum;"><input type="radio" id="css" name="ch4" value="CSS"> </th>
+        <th style="color:plum;"><input type="radio" id="html" name="ch4" value="HTML"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th style="padding:15px;">7</th>
+        <th style="padding:15px;">Check Gland opening properly sealed   </th>
+        <th style="color:plum;"><input type="radio" id="css" name="ch5" value="CSS"> </th>
+        <th style="color:plum;"><input type="radio" id="html" name="ch5" value="HTML"> </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th style="padding:15px;">8</th>
+        <th style="padding:15px;">
+            Check the functionality of heaters and Thermostat /
+            Hygrostat
+        </th>
+        <th style="color:plum;"><input type="radio" id="css" name="ch6" value="CSS"> </th>
+        <th style="color:plum;"><input type="radio" id="html" name="ch6" value="HTML"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th style="padding:15px;">8</th>
+        <th style="padding:15px;">Check for Contact of termination is good?   </th>
+        <th style="color:plum;"><input type="radio" id="css" name="ch7" value="CSS"></th>
+        <th style="color:plum;"><input type="radio" id="html" name="ch7" value="HTML"> </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <td colspan="5" style="background-color: #788f87; padding-top: 10px; padding-bottom: 10px; color: white;">
+            <h6 class="m-0"><b>(E) Bus bar Compartment</b></h6>
+        </td>
+    </tr>
+    <tr>
+        <th style="padding:15px;">1</th>
+        <th style="padding:15px;">Check for any Crack on PDS?  </th>
+        <th style="color:plum;"><input type="radio" id="css" name="ch8" value="CSS"> </th>
+        <th style="color:plum;"><input type="radio" id="html" name="ch8" value="HTML"> </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th style="padding:15px;">2</th>
+        <th style="padding:15px;">Check Metal Paint-work ok?  </th>
+        <th style="color:plum;"><input type="radio" id="css" name="ch9" value="CSS"> </th>
+        <th style="color:plum;"><input type="radio" id="html" name="ch9" value="HTML"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th style="padding:15px;">3</th>
+        <th style="padding:15px;">
+            Check Bus bar torqued & marked evidence of vermin?
+        </th>
+        <th style="color:plum;"><input type="radio" id="css" name="chaa1" value="CSS"> </th>
+        <th style="color:plum;"><input type="radio" id="html" name="chaa1" value="HTML"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th style="padding:15px;">4</th>
+        <th style="padding:15px;">Any discharge marks/tracking on PDS?  </th>
+        <th style="color:plum;"><input type="radio" id="css" name="chaa2" value="CSS"></th>
+        <th style="color:plum;"><input type="radio" id="html" name="chaa2" value="HTML"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th style="padding:15px;">5</th>
+        <th style="padding:15px;">Check Boots properly fastened? </th>
+        <th style="color:plum;"><input type="radio" id="css" name="chaa3" value="CSS"></th>
+        <th style="color:plum;"><input type="radio" id="html" name="chaa3" value="HTML"> </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th style="padding:15px;">6</th>
+        <th style="padding:15px;">Check Bus bar arrangement is correct?</th>
+        <th style="color:plum;"><input type="radio" id="css" name="chaa14" value="CSS"></th>
+        <th style="color:plum;"><input type="radio" id="html" name="chaa14" value="HTML"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th style="padding:15px;">7</th>
+        <th style="padding:15px;">Check for clearance between the boots? (Min 20mm) </th>
+        <th style="color:plum;"><input type="radio" id="css" name="chaa15" value="CSS"></th>
+        <th style="color:plum;"><input type="radio" id="html" name="chaa15" value="HTML"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+
+
+    <tr>
+        <td colspan="5" style="background-color: #788f87; padding-top: 10px; padding-bottom: 10px; color: white;">
+            <h6 class="m-0"><b>(F) PT Compartment</b></h6>
+        </td>
+    </tr>
+    <tr>
+        <th style="padding:15px;">1</th>
+        <th style="padding:15px;">Checks for any cracks on PDS </th>
+        <th style="color:plum;"><input type="radio" id="css" name="chaa6" value="CSS"> </th>
+        <th style="color:plum;"><input type="radio" id="html" name="chaa6" value="HTML"> </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th style="padding:15px;">2</th>
+        <th style="padding:15px;">Metal paint work ok?</th>
+        <th style="color:plum;"><input type="radio" id="css" name="chaa7" value="CSS"></th>
+        <th style="color:plum;"><input type="radio" id="html" name="chaa7" value="HTML"> </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th style="padding:15px;">3</th>
+        <th style="padding:15px;">
+            PT terminations torqued & marked?
+        </th>
+        <th style="color:plum;"><input type="radio" id="css" name="chaa8" value="CSS"> </th>
+        <th style="color:plum;"><input type="radio" id="html" name="chaa8" value="HTML"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th style="padding:15px;">4</th>
+        <th style="padding:15px;">Check for any discharge marks/tracking on PDS? </th>
+        <th style="color:plum;"><input type="radio" id="css" name="chaa9" value="CSS"> </th>
+        <th style="color:plum;"><input type="radio" id="html" name="chaa9" value="HTML"> </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th style="padding:15px;">5</th>
+        <th style="padding:15px;">Check fuse link not open circuited?  </th>
+        <th style="color:plum;"><input type="radio" id="css" name="chbbb1" value="CSS"> </th>
+        <th style="color:plum;"><input type="radio" id="html" name="chbbb1" value="HTML"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th style="padding:15px;">6</th>
+        <th style="padding:15px;">PT Contact on Bus bar OK </th>
+        <th style="color:plum;"><input type="radio" id="css" name="chbbb2" value="CSS"></th>
+        <th style="color:plum;"><input type="radio" id="html" name="chbbb2" value="HTML"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th style="padding:15px;">7</th>
+        <th style="padding:15px;">Check all secondary wires are OK?  </th>
+        <th style="color:plum;"><input type="radio" id="css" name="chbbb3" value="CSS"></th>
+        <th style="color:plum;"><input type="radio" id="html" name="chbbb3" value="HTML"> </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th style="padding:15px;">8</th>
+        <th style="padding:15px;">Check Alignment of Truck & rail assembly. </th>
+        <th style="color:plum;"><input type="radio" id="css" name="chbbb4" value="CSS"> </th>
+        <th style="color:plum;"><input type="radio" id="html" name="chbbb4" value="HTML"> </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th style="padding:15px;">9</th>
+        <th style="padding:15px;">Check for smooth movement of truck on the rails </th>
+        <th style="color:plum;"><input type="radio" id="css" name="chbbb5" value="CSS"> </th>
+        <th style="color:plum;"><input type="radio" id="html" name="chbbb5" value="HTML"> </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+</table>
+    @*<table class="table table-bordered" style="width: 100%; height: 70%; background-color: #f1f3ec66;">
+            <tr>
+                <th>CHECKED BY </th>
+                <th>SIGN</th>
+                <th>VERIFIED BY</th>
+                <th>SIGN</th>
+            </tr>
+            <tr>
+                <th> <input type="text" width="30px;" class="form-control"></th>
+                <th></th>
+                <th><input type="text" width="30px;" class="form-control"></th>
+                <th></th>
+            </tr>
+
+        </table>*@
+<div class="d-flex justify-content-end">
+    <button type="button" class="btn btn-primary" style="background-color:#191c3696;margin-bottom:10px;">Submit</button>
+</div>
+</div>
+
+
+

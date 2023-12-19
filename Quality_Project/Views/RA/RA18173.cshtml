@@ -1,0 +1,1358 @@
+﻿
+@{
+    ViewBag.Title = "RA18173";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    table, th {
+        text-align: center;
+    }
+
+    .table-bordered {
+        border-bottom: 1px solid black;
+    }
+</style>
+<div class="table-responsive-sm">
+    <div class="main_heading" style="background-color: #018bd3;height: 70px;">
+        <h3 style="text-align: center; padding-top:18px;color: white;"><b>DIELECTRIC WITHSTAND TEST</b> </h3>
+    </div>
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">18173 - RA - Doc No.QF 9R_TME_AMC_RA_001.QF 9R_TME_AMC_RA_001.QF 9R_TME_AMC_RA_001</center></th>
+
+        </tr>
+        <tr>
+            <th colspan="2">
+                TAMCO
+            </th>
+
+            <th colspan="5">
+                Risk Assessment
+                And
+                Job Safety Environmental Analysis
+
+            </th>
+
+        </tr>
+        <tr>
+            <th>
+                Date
+            </th>
+
+            <th>
+                <input type="date" width="30px;" class="form-control">
+            </th>
+            <th>
+                RA NO:
+            </th>
+            <th>
+                /AMC/RA//001
+            </th>
+
+            <th>
+                Rev.01
+            </th>
+            <th>
+                <input type="date" width="30px;" class="form-control">
+            </th>
+        </tr>
+    </table>
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">18173 – Deira City Center – Relay Replacement</center></th>
+
+        </tr>
+        <tr>
+            <th>
+                PROJECT:  18173 – Deira City Center – Relay Replacement
+            </th>
+            <th rowspan="2">
+                THIS RISK ASSESSMENT IS TO BE REVIEWED MONTHLY BY THE DEVELOPERS.
+            </th>
+        </tr>
+    </table>
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66">
+        
+        <tr style="background-color:#5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">LOCATION:  Deira City Center</center></th>
+
+        </tr>
+        <tr>
+            <th>
+                JOB DESCRIPTION:  Maintenance/Replacement,Testing and Commissioning Procedure of H.V. Panel boards and its equipment’s.
+            </th>
+        </tr>
+    </table>
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66">
+        <tr><th colspan="4" class="text-center">PLANNED HIGH RISK CONSTRUCTION ACTIVITY:</th></tr>
+
+
+
+
+        <tr>
+            <th>Work at Heights-Yes</th>
+            <th>Work on Roof– No</th>
+            <th>Excavations - No</th>
+            <th>Confined Space entry - No</th>
+
+
+
+
+
+
+        </tr>
+        <tr>
+            <th>Using Hazardous Substances-No</th>
+            <th>Demolition Work - No</th>
+            <th> Asbestos Removal - No</th>
+            <th>Use of heavy plant - No</th>
+        </tr>
+        <tr><th colspan="4">EMERGENCY ACTION:  Operatives to raise the alarm and leave the area to assembly point.  </th></tr>
+        <tr><th colspan="4">In the event of injury is a member of the work team First Aid Qualified?	X YES   	 NO   If yes, their Name? </th></tr>
+        <tr><th colspan="4">Point where an injured person may receive treatment:	MINOR/SERIOUS INJURY: Treatment Centre closer to the Project Location </th></tr>
+    </table>
+
+
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">RISK ASSESSMENT DEVELOPED BY:REVIEWED& APPROVED BY THE FOLLOWING PERSONNEL:</center></th>
+
+        </tr>
+        <tr>
+            <th>No:</th>
+            <th>Name</th>
+            <th>Signature</th>
+            <th>Position</th>
+            <th>Employee #</th>
+            <th>No</th>
+            <th>Name</th>
+            <th>Signature</th>
+            <th>Position</th>
+            <th>Date.</th>
+
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>DILEEP V ACHUTHAN</th>
+            <th></th>
+            <th>QUALITY CONTROL ENGINEER</th>
+            <th></th>
+            <th>1</th>
+            <th>ANSHAD MUHAMMED</th>
+            <th></th>
+            <th>Project Manager</th>
+            <th><input type="date" width="10px;" class="form-control"></th>
+
+        </tr>
+    </table>
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">Insulation Resistance Test</center></th>
+
+        </tr>
+        <tr>
+            <th>Electrical</th>
+            <th>YES x NO<input type="checkbox" width="10px;" class="form-control"></th>
+            <th>Tool</th>
+            <th>YES x NO<input type="checkbox" width="10px;" class="form-control"></th>
+            <th>Vibration</th>
+            <th>YES x NO<input type="checkbox" width="10px;" class="form-control"></th>
+            <th>Weather</th>
+            <th>YES x NO<input type="checkbox" width="10px;" class="form-control"></th>
+            <th>Hot Work</th>
+            <th>YES x NO<input type="checkbox" width="10px;" class="form-control"></th>
+            <th>Heat</th>
+            <th>YES x NO<input type="checkbox" width="10px;" class="form-control"></th>
+            <th>SMF or Asbestos</th>
+            <th>YES x NO<input type="checkbox" width="10px;" class="form-control"></th>
+        </tr>
+
+
+
+        <tr>
+            <th>Chemical</th>
+            <th>No x Yes<input type="checkbox" width="10px;" class="form-control"></th>
+            <th>Tool</th>
+            <th>No x Yes<input type="checkbox" width="10px;" class="form-control"></th>
+            <th>Vibration</th>
+            <th>No x Yes<input type="checkbox" width="10px;" class="form-control"></th>
+            <th>Weather</th>
+            <th>No x Yes<input type="checkbox" width="10px;" class="form-control"></th>
+            <th>Hot Work</th>
+            <th>No x Yes<input type="checkbox" width="10px;" class="form-control"></th>
+            <th>Heat</th>
+            <th>No x Yes<input type="checkbox" width="10px;" class="form-control"></th>
+            <th>SMF or Asbestos</th>
+            <th>No x Yes<input type="checkbox" width="10px;" class="form-control"></th>
+        </tr>
+
+
+
+
+        <tr>
+            <th>Gases</th>
+            <th>No x Yes<input type="checkbox" width="10px;" class="form-control"></th>
+            <th>Tool</th>
+            <th>No x Yes<input type="checkbox" width="10px;" class="form-control"></th>
+            <th>Vibration</th>
+            <th>No x Yes<input type="checkbox" width="10px;" class="form-control"></th>
+            <th>Weather</th>
+            <th>No x Yes<input type="checkbox" width="10px;" class="form-control"></th>
+            <th>Hot Work</th>
+            <th>No x Yes<input type="checkbox" width="10px;" class="form-control"></th>
+            <th>Heat</th>
+            <th>No x Yes<input type="checkbox" width="10px;" class="form-control"></th>
+            <th>SMF or Asbestos</th>
+            <th>No x Yes<input type="checkbox" width="10px;" class="form-control"></th>
+        </tr>
+    </table>
+
+
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">Insulation Resistance Test</center></th>
+
+        </tr>
+        <tr>
+            <th colspan="4">P.P.E REQUIREMENTS</th>
+            <th colspan="4">PLANT, EQUIPMENT & TOOLS FOR JOB</th>
+            <th colspan="2">TAGGING & SIGNS</th>
+            <th colspan="4">PERMITS & INSTRUCTION</th>
+
+        </tr>
+
+        <tr>
+            <th>Steel Capped Boots</th>
+            <th>X</th>
+            <th>36000V electrical gloves</th>
+            <th>X</th>
+
+            <th>Ladder</th>
+            <th>X</th>
+            <th>Extension Leads</th>
+            <th>X</th>
+
+            <th>Information Tags</th>
+            <th>X</th>
+
+
+            <th>Method of Statement</th>
+            <th>X</th>
+
+        </tr>
+
+
+
+
+        <tr>
+            <th>Hard Hat</th>
+            <th>X</th>
+            <th>High Vis Vest</th>
+            <th>X</th>
+
+            <th>Hand Tools</th>
+            <th>X</th>
+            <th>Power Source</th>
+            <th>X</th>
+
+            <th>LoTo Tags</th>
+            <th>X</th>
+
+
+            <th>Instruction Manuals</th>
+            <th>X</th>
+
+        </tr>
+
+
+
+        <tr>
+            <th>Tinted Safety Glasses EN 166b </th>
+            <th>X</th>
+            <th><input type="text" width="10px;" class="form-control"></th>
+            <th><input type="text" width="10px;" class="form-control"></th>
+
+            <th>Fire Extinguisher</th>
+            <th>X</th>
+            <th>Rubber Mat</th>
+            <th>X</th>
+
+            <th>General warning signage</th>
+            <th>X</th>
+
+
+            <th>Work Permit</th>
+            <th>X</th>
+
+        </tr>
+
+
+
+        <tr>
+            <th>Clear Safety Glasses EN 166b </th>
+            <th>X</th>
+            <th><input type="text" width="10px;" class="form-control"></th>
+            <th><input type="text" width="10px;" class="form-control"></th>
+
+            <th><input type="text" width="10px;" class="form-control"></th>
+            <th><input type="text" width="10px;" class="form-control"></th>
+            <th>Megger</th>
+            <th>X</th>
+
+            <th><input type="text" width="10px;" class="form-control"></th>
+            <th><input type="text" width="10px;" class="form-control"></th>
+
+
+            <th><input type="text" width="10px;" class="form-control"></th>
+            <th><input type="text" width="10px;" class="form-control"></th>
+
+        </tr>
+
+
+
+        <tr>
+            <th>Dust mask </th>
+            <th><input type="text" width="10px;" class="form-control"></th>
+            <th><input type="text" width="10px;" class="form-control"></th>
+            <th><input type="text" width="10px;" class="form-control"></th>
+
+            <th><input type="text" width="10px;" class="form-control"></th>
+            <th><input type="text" width="10px;" class="form-control"></th>
+            <th><input type="text" width="10px;" class="form-control"></th>
+            <th><input type="text" width="10px;" class="form-control"></th>
+            <th><input type="text" width="10px;" class="form-control"></th>
+            <th><input type="text" width="10px;" class="form-control"></th>
+
+
+            <th><input type="text" width="10px;" class="form-control"></th>
+            <th><input type="text" width="10px;" class="form-control"></th>
+
+        </tr>
+
+    </table>
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">Insulation Resistance Test</center></th>
+
+        </tr>
+
+        <tr>
+            <th>
+                What would the
+                SEVERITY       (S)
+                Of an occurrence be?
+            </th>
+            <th colspan="6">What is the LIKELIHOOD of an occurrence?       (L)</th>
+            <th>Hierarchy of Controls</th>
+        </tr>
+        <tr>
+            <th>
+            </th>
+            <th>X</th>
+            <th>
+                Almost
+                Certain
+                5
+            </th>
+            <th>
+                Very Likely 4
+            </th>
+            <th>
+                Likely 3
+            </th>
+            <th>
+                Unlikely 2
+            </th>
+            <th>
+                Very Unlikely 1
+            </th>
+            <th>Can the hazard be Eliminated or removed from the work place?</th>
+        </tr>
+
+
+
+
+        <tr>
+            <th>
+                Disaster
+                Multiple Fatalities
+
+            </th>
+            <th>5</th>
+            <th >
+                High 25
+            </th>
+            <th >
+                High 20
+            </th>
+            <th >
+                High 15
+            </th>
+            <th >
+                Medium 10
+            </th>
+            <th >
+                Medium 5
+            </th>
+            <th>Can the product or process be substituted for a less hazardous alternative?</th>
+        </tr>
+
+
+
+
+
+        <tr>
+            <th>
+                Very Serious
+                Major Illness or Injury, disability
+
+
+            </th>
+            <th>4</th>
+            <th>
+                High 20
+            </th>
+            <th >
+                High 16
+            </th>
+            <th>
+                High 12
+            </th>
+            <th >
+                Medium 8
+            </th>
+            <th >
+                Medium 4
+            </th>
+            <th>Can the hazard be engineered away with guards or barriers?</th>
+        </tr>
+
+
+
+
+        <tr>
+            <th>
+                Serious
+                Serious but non-permanent injury or ill health
+                Work days lost
+
+
+
+            </th>
+            <th>3</th>
+            <th >
+                High 15
+            </th>
+            <th >
+                High 12
+            </th>
+            <th >
+                Medium 9
+            </th>
+            <th>
+                Low 6
+            </th>
+            <th >
+                Low 3
+            </th>
+            <th>
+                Can AdministrationControls be adopted
+                i.e. procedures, job rotation etc
+            </th>
+        </tr>
+
+
+
+
+
+        <tr>
+            <th>
+                Substantial
+                Medical attention needed.
+                No work restrictions.
+
+
+
+
+            </th>
+            <th>2</th>
+            <th >
+                Medium 10
+            </th>
+            <th >
+                Medium 8
+            </th>
+            <th >
+                Low 6
+            </th>
+            <th >
+                Low 4
+            </th>
+            <th >
+                Low 2
+            </th>
+            <th>
+                Can Personal Protective Equipment & Clothing be worn to safe guard against hazards?
+            </th>
+        </tr>
+
+
+        <tr>
+            <th>
+                Minor
+                Minor cuts & bruises or sickness
+
+
+
+
+
+            </th>
+            <th>1</th>
+            <th >
+                Medium 5
+            </th>
+            <th >
+                Medium 4
+            </th>
+            <th >
+                Low 3
+            </th>
+            <th >
+                Low 2
+            </th>
+            <th >
+                Low 1
+            </th>
+            <th>
+                Can Personal Protective Equipment & Clothing be worn to safe guard against hazards?
+            </th>
+        </tr>
+
+
+    </table>
+
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">Insulation Resistance Test</center></th>
+
+        </tr>
+        <tr class="p-3 mb-2 bg-secondary">
+            <th>
+                No.
+            </th>
+            <th>
+                <b>Job Step</b>
+
+                What you do, NOT how you do it
+            </th>
+
+
+            <th>
+                <b>
+                    Hazard / Risk
+                    Exposure
+                </b>
+                What are the hazards of each job step?
+            </th>
+
+
+            <th>
+                L
+            </th>
+
+
+            <th>
+                S
+            </th>
+            <th>
+                <b>Risk Score</b>
+                L*S
+            </th>
+
+
+            <th>
+                <b>
+                    Work Method Statement
+                    For Control of Hazard Exposures
+                </b>
+                What hazard controls will be used?
+                Who will check the effectiveness of the controls?
+                What checks will be undertaken? E.g. (Inspection & ongoing monitoring)
+
+            </th>
+            <th>
+                L
+            </th>
+            <th>
+                S
+            </th>
+            <th>
+                New risk score
+                After controls applied
+
+                L X S
+
+            </th>
+            <th>
+                Action By
+            </th>
+        </tr>
+
+
+
+
+
+
+
+
+        <tr>
+            <th>1</th>
+            <th>Manual Handling of materials</th>
+
+            <th>
+                Manual handling Hazards(Strains, Sprains, Backache,
+                Stooping, Hernia, Cut Injuries, Bruises) ,
+                Slips, Trips and Falls,
+                Falling of materials.
+            </th>
+
+            <th>3</th>
+
+
+            <th>4</th>
+            <th>12</th>
+
+            <th class="text-align">
+                •	Select physically competent workers for shifting the materials manually.<br>
+                •	For manual handling, assess the load, taking account of weight/size/shape/ centre of gravity of them. As a guide for items over 20 kg consider mechanical aids/ appliance and or get assistance from others.
+                •	Weight must be within prescribed lifting limit for manual lift.<br>
+                •	Ensure sufficient rest and job rotation for the employees.<br>
+                •	Ensure adequate illumination, signage and barricades in the work place.<br>
+                •	Provide sufficient information related to manual handling and ensure the employees follow the correct Manual Handling Procedures.<br>
+                •	Housekeeping of the area must be ensured prior to start of personal involvement, remove all Slips, Trips and Fall Hazards.<br>
+                •	Supervisor /Foreman to provide and ensure  appropriate PPE comprising of Hard hats, Safety Shoes, High Visibility Vests, Safety Eye Wear and Gloves to be worn by the operatives.<br>
+
+
+            </th>
+            <th>
+                1
+            </th>
+            <th>
+                4
+            </th>
+            <th>
+                4
+
+            </th>
+            <th>
+                Supervisor/ Engineer s
+            </th>
+        </tr>
+
+        <tr>
+            <th>
+                2
+            </th>
+            <th>
+                Use of hand tools & power tools
+            </th>
+
+
+            <th>
+                •	Burns<br>
+                •	Electrocution<br>
+                •	Shock<br>
+                •	Arcing<br>
+                •	Fire<br>
+
+                •	Explosion <br>
+                •	Cut injuries<br>
+                •	 Property Damage <br>
+                •	 Fatality <br>
+
+            </th>
+
+
+            <th>
+                4
+            </th>
+
+
+            <th>
+                5
+            </th>
+            <th>
+                20
+            </th>
+
+
+            <th>
+                •	Visually inspection to be conducted by operatives prior to using hand tools.<br>
+                •	All the tools shall be in good condition and free from any kind of damages.<br>
+                •	Only trained and competent personnel to use power tools.<br>
+                •	All tools must be checked and ensured that, the tool is in good condition prior to use. <br>
+                •	Ensure all power tools are inspected and PAT tested periodically by competent person and colour coded.<br>
+                •	Temporary DB to be provided and inspected regularly by competent person.
+            </th>
+            <th>
+                L
+            </th>
+            <th>
+                S
+            </th>
+            <th>
+                New risk score
+                After controls applied
+
+                L X S
+
+            </th>
+            <th>
+                Action By
+            </th>
+        </tr>
+
+
+        <tr>
+            <th>
+                3
+            </th>
+            <th>
+                Working interface with other contractors/operatives.
+            </th>
+
+
+            <th>
+                •	Damage to Electrical Equipment<br>
+                •	Work with exposed Live Conductors Electrocution<br>
+                •	Electric shock <br>
+                •	Burns<br>
+                •	Fatality<br>
+
+            </th>
+
+
+            <th>
+                4
+            </th>
+
+
+            <th>
+                5
+            </th>
+            <th>
+                20
+            </th>
+
+
+            <th>
+                •	Select physically competent workers for shifting the materials manually.<br>
+                •	For manual handling, assess the load, taking account of weight/size/shape/ centre of gravity of them. As a guide for items over 20 kg consider mechanical aids/ appliance and or get assistance from others.<br>
+                •	Weight must be within prescribed lifting limit for manual lift.<br>
+                •	Ensure sufficient rest and job rotation for the employees.
+                •	Ensure adequate illumination, signage and barricades in the work place.
+                •	Provide sufficient information related to manual handling and ensure the employees follow the correct Manual Handling Procedures.<br>
+                •	Housekeeping of the area must be ensured prior to start of personal involvement, remove all Slips, Trips and Fall Hazards.<br>
+                •	Supervisor /Foreman to provide and ensure  appropriate PPE comprising of Hard hats, Safety Shoes, High Visibility Vests, Safety Eye Wear and Gloves to be worn by the operatives.<br>
+            </th>
+            <th>
+                1
+            </th>
+            <th>
+                5
+            </th>
+            <th>
+                5
+
+            </th>
+            <th>
+                Supervisor/ Engineer
+            </th>
+        </tr>
+
+        <tr>
+            <th>
+                4
+            </th>
+            <th>
+                Working with electricity
+            </th>
+
+
+            <th>
+                •	Electricity<br>
+                •	Conductors ( water, metal, concrete )<br>
+                •	Broken wires<br>
+                •	Improper plug, case<br>
+                •	Overloading<br>
+                •	Electrocution or death <br>
+                •	Burns and shocks<br>
+                •	Muscle contraction<br>
+                •	Heart , lung Paralysis<br>
+                •	Fire<br>
+
+
+            </th>
+
+
+            <th>
+                3
+            </th>
+
+
+            <th>
+                5
+            </th>
+            <th>
+                15
+            </th>
+
+
+            <th>
+                •	Only those persons who have been adequately trained and experienced in the work of electricity to allow for the same.<br>
+                •	Electrical work shall not carry out in wet Conditions.<br>
+                •	LOTO procedure to be followed during testing & commissioning.<br>
+                •	Fire Extinguisher shall be available<br>
+            </th>
+            <th>
+                1
+            </th>
+            <th>
+                5
+            </th>
+            <th>
+                5
+
+            </th>
+            <th>
+                Supervisor/ Engineer
+            </th>
+        </tr>
+
+
+        <tr>
+            <th>
+                5
+            </th>
+            <th>
+                Use of electrical testing/monitoring equipment for T&C/Maintenance activities
+            </th>
+
+
+            <th>
+                •	Electric shock,<br>
+                •	Working with exposed live conductors / cables.<br>
+                •	Working with damaged electrical equipment/ tools<br>
+                •	Slip/Trip, Fall  <br>
+
+
+            </th>
+
+
+            <th>
+                4
+            </th>
+
+
+            <th>
+                5
+            </th>
+            <th>
+                20
+            </th>
+
+
+            <th>
+                •	Valid HSE (T&C) permit to be obtained prior to work and follow the procedures.<br>
+                •	Only authorised testing team with trained operatives to be engaged for testing activity.<br>
+                •	LOTO (Lock out tag out) procedure to be implemented during and / after testing completion.<br>
+                •	All the involved should be briefed on method statement and risk assessment <br>
+                •	All testing instruments must be calibrated and free from damage. <br>
+                •	Testing Equipment must be calibrated and certificate should be available at work place.<br>
+                •	All the tools used should be double insulated <br>
+                •	Earthing should be done at the point of work.<br>
+                •	Test equipment’s should be checked against the reference source before testing the system.<br>
+                •	Close supervision should be ensured.<br>
+                •	Unauthorised entry should be restricted.<br>
+                •	Work area should be well illuminated.<br>
+                •	All personal jewellery and watches should be removed.<br>
+                •	 Pre-test to be done for the equipment and ensure that the kit trips in the event of any accidental contact or leakage.<br>
+                •	 Only competent persons shall use electrical testing equipment.<br>
+                •	 User shall ensure that electrically operated tools and equipment are inspected daily and that damaged or non-functioning equipment is removed from site.
+                •	 Lifting/lowering of tools should be done by hand or ropes not with extension Leads/cables. <br>
+                •	Adequate cable management to be followed.<br>
+                •	Colour coding must be done as per the project HSE plan on monthly basis.<br>
+                •	Barricade the testing area and provide warning / caution notices / boards.<br>
+                •	 Proper coordination between the line staff and testing engineer for effective communication.<br>
+                •	 Select right PPE like electrical hand gloves tested for certain electrical voltages.<br>
+                •	 Remove the temporary link when testing is  follow manufacturer instruction.
+                •	All the job specific PPE should be used during the activity<br>
+                •	The testing area should be controlled by the security personal and a log book should be maintained.<br>
+                •	Electrical room must be closed with lock, Responsible Site Engineer and Supervisor’s need to ensure that no cable is being exposed prior to the Work in the panel.<br>
+                •	High Voltage hand gloves (Insulating gloves for electrical use) must be provided and used. <br>
+                •	Employees working in electricity shall be instructed in using the proper fire extinguisher in electrical fires such as DCP & CO2.
+                •	Assign watchman to prevent unauthorized entry.
+                •	 Protect all cables/ wires above ceiling using insulating materials.<br>
+                •	 Treat all circuits as live circuits.
+                •	 Do not place sharp tools over cables/ wires which are live.<br>
+                •	 Demarcate live cable by means of warning/ caution/ prohibition signage’s.<br>
+                •	 In case of emergency follow the approved emergency response plan.<br>
+                •	Use only cords and equipments that are rated for the used loads<br>
+                •	RCD should be provided and checked before each use to make certain it trips.<br>
+                After completion of the testing discharge the stored energy.
+                <br>
+            </th>
+            <th>
+                1
+            </th>
+            <th>
+                5
+            </th>
+            <th>
+                5
+
+            </th>
+            <th>
+                Supervisor/ Engineer
+            </th>
+        </tr>
+
+
+        <tr>
+            <th>
+                6
+            </th>
+            <th>
+                Waste generation and house keeping
+            </th>
+
+
+            <th>
+                Environmental hazards,<br>
+                Slips, Trips and Falls,<br>
+                Fire,<br>
+                Weil’s disease<br>
+
+
+
+            </th>
+
+
+            <th>
+                3
+            </th>
+
+
+            <th>
+                3
+            </th>
+            <th>
+                9
+            </th>
+
+
+            <th>
+                •	Ensure proper material stacking all over the workplace.<br>
+                •	Maintain proper housekeeping.<br>
+                •	All waste shall be deposited in the designated waste bins/area, <br>
+                •	All empty chemical containers need to remove from the work area with immediate effect.<br>
+                •	All empty chemical containers and other type of chemical waste if any, shall be disposed to the designated chemical waste bins at HLG waste segregation area.<br>
+                •	Never allow material stacking near to hot work area, on access and egress, near edges and near to openings <br>
+                •	Main contractor needs to ensure pest control on site.
+                •	Must comply with HLS’s M.A.S – Housekeeping.
+
+            </th>
+            <th>
+                1
+            </th>
+            <th>
+                3
+            </th>
+            <th>
+                3
+
+            </th>
+            <th>
+                Supervisor/ Engineer
+            </th>
+        </tr>
+
+
+        <tr>
+            <th>
+                7
+            </th>
+            <th>
+                Environmental Hazards<br>
+                1)	Heat<br>
+                2)	Noise<br>
+                3)	Dust   <br>
+
+
+            </th>
+
+
+            <th>
+                Heat stress illness<br>
+                Burns<br>
+                Environmental hazards<br>
+
+
+
+
+            </th>
+
+
+            <th>
+                3
+            </th>
+
+
+            <th>
+                3
+            </th>
+            <th>
+                9
+            </th>
+
+
+            <th>
+                •	Working in summer season must be carried out with extra care and caution, carryout work in sessions, drink plenty of water, hydrolyte etc. <br>
+                •	No one is allowed to work under direct sunlight during 12:30 to 15:00 of June 15- Sep15.<br>
+                •	Provide sufficient ventilation in the work area.<br>
+                •	Sufficient rest and job rotation for the task performers.<br>
+                •	Noise assessment to be carried out periodically.<br>
+                •	Workers must wear ear protection if the noise level exceeds 85 db.<br>
+                •	Operatives must wear dust mask while working at dusty area.<br>
+                •	Provide competent supervision at all times.<br>
+                •	Maintain proper housekeeping.
+                •	Must comply with HLG’s M.A.S- Control of Substances Hazardous to Health. <br>
+
+
+            </th>
+            <th>
+                1
+            </th>
+            <th>
+                3
+            </th>
+            <th>
+                3
+
+            </th>
+            <th>
+                Supervisor/ Engineer
+            </th>
+        </tr>
+
+
+        <tr>
+            <th>
+                8
+            </th>
+            <th>
+                Working at night
+
+
+            </th>
+
+
+            <th>
+                Slip, trip, fall, fire, injuries, fatality, property damage
+
+
+
+
+            </th>
+
+
+            <th>
+                4
+            </th>
+
+
+            <th>
+                3
+            </th>
+            <th>
+                12
+            </th>
+
+
+            <th>
+                •	Ensure adequate illumination is available at the work area, material storage area, walkways, access and egress and at welfare facilities area<br>
+                •	Emergency lighting must be installed and main contractor should ensure it is in working condition<br>
+                •	Task lighting should be provide and it has to be ensured by the supervisor<br>
+                •	Ensure adequate briefing and instructions have been given to the work force<br>
+                •	Supervisor/foreman to provide and ensure appropriate PPE comprising hard hats, safety shoes, high visibility vests, safety eye wear and gloves to be worn by all operatives<br>
+                •	Provide competent supervision  at all time<br>
+
+
+
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+
+            </th>
+            <th>
+            </th>
+        </tr>
+
+
+
+
+
+
+    </table>
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66">
+
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">ANY RESIDUAL RISK SCORE EXCEEDING 12 (HIGH RISK) MUST BE REVIEWED AND REDUCED FURTHER BEFORE ANY WORK ACTIVITY COMMENCES</center></th>
+
+        </tr>
+
+        <tr>
+            <th colspan="2">Approved By:</th>
+            <th colspan="2">DILEEP V ACHUTHAN	</th>
+            <th colspan="2">Position:QUALITY CONTROL/ HSE ENGINEER</th>
+            <th colspan="2"> Assessment Review for the month of:</th>
+        </tr>
+
+
+        <tr>
+            <th>1<input type="checkbox" width="10px;" class="form-control"></th>
+            <th>2<input type="checkbox" width="10px;" class="form-control"></th>
+            <th>3<input type="checkbox" width="10px;" class="form-control"></th>
+
+            <th>4<input type="checkbox" width="10px;" class="form-control"></th>
+            <th>5<input type="checkbox" width="10px;" class="form-control"></th>
+            <th>6<input type="checkbox" width="10px;" class="form-control"></th>
+            <th>7<input type="checkbox" width="10px;" class="form-control"></th>
+            <th>8<input type="checkbox" width="10px;" class="form-control"></th>
+
+
+        </tr>
+        <tr>
+            <th>9<input type="checkbox" width="10px;" class="form-control"></th>
+            <th>10<input type="checkbox" width="10px;" class="form-control"></th>
+            <th>11<input type="checkbox" width="10px;" class="form-control"></th>
+
+            <th>12<input type="checkbox" width="10px;" class="form-control"></th>
+            <th>13<input type="checkbox" width="10px;" class="form-control"></th>
+            <th>14<input type="checkbox" width="10px;" class="form-control"></th>
+            <th>15<input type="checkbox" width="10px;" class="form-control"></th>
+            <th>16<input type="checkbox" width="10px;" class="form-control"></th>
+
+
+        </tr>
+        <tr>
+            <th>17<input type="checkbox" width="10px;" class="form-control"></th>
+            <th>18<input type="checkbox" width="10px;" class="form-control"></th>
+            <th>19<input type="checkbox" width="10px;" class="form-control"></th>
+
+            <th>20<input type="checkbox" width="10px;" class="form-control"></th>
+
+
+
+        </tr>
+
+    </table>
+
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66">
+
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">Initial the box to confirm that you have reviewed this Risk Assessment daily</center></th>
+
+        </tr>
+
+
+        <tr>
+            <th>
+                Date
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Signature
+            </th>
+            <th>
+                Date
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Signature
+            </th>
+
+        </tr>
+
+
+
+
+
+        <tr>
+            <th>
+                <input type="date" width="10px;" class="form-control">
+            </th>
+            <th>
+                <input type="text" width="10px;" class="form-control">
+            </th>
+            <th>
+
+            </th>
+            <th>
+                <input type="date" width="10px;" class="form-control">
+            </th>
+            <th>
+                <input type="text" width="10px;" class="form-control">
+            </th>
+            <th>
+
+            </th>
+
+        </tr>
+
+
+        <tr>
+            <th>
+                <input type="date" width="10px;" class="form-control">
+            </th>
+            <th>
+                <input type="text" width="10px;" class="form-control">
+            </th>
+            <th>
+
+            </th>
+            <th>
+                <input type="date" width="10px;" class="form-control">
+            </th>
+            <th>
+                <input type="text" width="10px;" class="form-control">
+            </th>
+            <th>
+
+            </th>
+
+        </tr>
+
+        <tr>
+            <th>
+                <input type="date" width="10px;" class="form-control">
+            </th>
+            <th>
+                <input type="text" width="10px;" class="form-control">
+            </th>
+            <th>
+
+            </th>
+            <th>
+                <input type="date" width="10px;" class="form-control">
+            </th>
+            <th>
+                <input type="text" width="10px;" class="form-control">
+            </th>
+            <th>
+
+            </th>
+
+        </tr>
+
+
+        <tr>
+            <th>
+                <input type="date" width="10px;" class="form-control">
+            </th>
+            <th>
+                <input type="text" width="10px;" class="form-control">
+            </th>
+            <th>
+
+            </th>
+            <th>
+                <input type="date" width="10px;" class="form-control">
+            </th>
+            <th>
+                <input type="text" width="10px;" class="form-control">
+            </th>
+            <th>
+
+            </th>
+
+        </tr>
+
+
+        <tr>
+            <th>
+                <input type="date" width="10px;" class="form-control">
+            </th>
+            <th>
+                <input type="text" width="10px;" class="form-control">
+            </th>
+            <th>
+
+            </th>
+            <th>
+                <input type="date" width="10px;" class="form-control">
+            </th>
+            <th>
+                <input type="text" width="10px;" class="form-control">
+            </th>
+            <th>
+
+            </th>
+
+        </tr>
+
+
+        <tr>
+            <th>
+                <input type="date" width="10px;" class="form-control">
+            </th>
+            <th>
+                <input type="text" width="10px;" class="form-control">
+            </th>
+            <th>
+
+            </th>
+            <th>
+                <input type="date" width="10px;" class="form-control">
+            </th>
+            <th>
+                <input type="text" width="10px;" class="form-control">
+            </th>
+            <th>
+
+            </th>
+
+        </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </table>
+    <div class="d-flex justify-content-end">
+        <button type="button" class="btn btn-primary" style="background-color:#191c3696;margin-bottom:10px;">Submit</button>
+    </div>
+
+</div>

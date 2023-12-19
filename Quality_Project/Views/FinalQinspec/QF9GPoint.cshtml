@@ -1,0 +1,230 @@
+﻿
+@{
+    ViewBag.Title = "QF9GPoint";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    .main_input {
+        height: 100%;
+    }
+
+    .table-bordered {
+        border-bottom: 1px solid black;
+    }
+
+    body {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+</style>
+
+<div class="main_heading" style="background-color: #018bd3;height: 70px;">
+    <h3 style="text-align: center; padding-top:18px;color: white;"><b>POINT TO POINT CHECK TEST FORM</b> </h3>
+</div>
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white">POINT TO POINT CHECK TEST FORM</center></th>
+
+    </tr>
+    <tr>
+        <th>Customer/Client</th>
+        <td colspan="3"><input type="text" width="30px;" class="form-control"></th>
+        <th>ENQ/Job Number</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th colspan="1">Project Title </th>
+        <td colspan="5"><input type="text" leght="100px" ;width="30px;" class="form-control"></th>
+
+    </tr>
+    <tr>
+        <th>Switchgear Board Ref:</th>
+        <td colspan="3"><input type="text" width="30px;" class="form-control"></th>
+        <th>Panel Ref:</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+</table>
+
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+
+    <tr>
+        <th>Sr. No.</th>
+        <th>Description</th>
+        <th>Status</th>
+        <th>Remarks</th>
+    </tr>
+    <tr>
+        <th colspan="3">1) AC circuit check:</th>
+    </tr>
+    <tr>
+        <th>A</th>
+        <th>AC supply check</th>
+        <th><input type="text" class="form-control"></th>
+        <th><input type="text" class="form-control"></th>
+    </tr>
+    <tr>
+        <th>B</th>
+        <th>Check the Operation of Door limit Switch with Lamp</th>
+        <th><input type="text" class="form-control"></th>
+        <th><input type="text" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th>C</th>
+        <th>Check Space Heater Operation , Switch & LED indication</th>
+        <th><input type="text" class="form-control"></th>
+        <th><input type="text" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th>D</th>
+        <th>Perform Point to Point Check</th>
+        <th><input type="text" class="form-control"></th>
+        <th><input type="text" class="form-control"></th>
+    </tr>
+
+</table>
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white">2) DC circuit check</center></th>
+
+    </tr>
+
+    <tr>
+        <th colspan="3">:</th>
+    </tr>
+    <tr>
+        <th>A</th>
+        <th>DC supply check for Main Incoming  (Polarity Check)</th>
+        <th><input type="text" class="form-control"></th>
+        <th><input type="text" class="form-control"></th>
+    </tr>
+    <tr>
+        <th>B</th>
+        <th>+Ve to Gnd  and –Ve  to Gnd Resistance</th>
+        <th><input type="text" class="form-control"></th>
+        <th><input type="text" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th>C</th>
+        <th>Check Supply and Polarity  of the Close Circuit MCB,Trip Circuit MCB</th>
+        <th><input type="text" class="form-control"></th>
+        <th><input type="text" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th>D</th>
+        <th>Perform Point to Point Check</th>
+        <th><input type="text" class="form-control"></th>
+        <th><input type="text" class="form-control"></th>
+    </tr>
+</table>
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white">3) General checks</center></th>
+
+    </tr>
+
+
+
+    <tr>
+        <th colspan="3">:</th>
+    </tr>
+    <tr>
+        <th>A</th>
+        <th>Check and Confirm  Healthiness of all Fuses, Resistors, MCB’s( Test Tripping Function)</th>
+        <th><input type="text" class="form-control"></th>
+        <th><input type="text" class="form-control"></th>
+    </tr>
+    <tr>
+        <th>B</th>
+        <th>Check and Confirm  Tightness of all Terminations (ie terminal blocks, wires ,lugs)</th>
+        <th><input type="text" class="form-control"></th>
+        <th><input type="text" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th>C</th>
+        <th>Check and Confirm General Arrangement.</th>
+        <th><input type="text" class="form-control"></th>
+        <th><input type="text" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th>D</th>
+        <th>Check and Confirm the Legend or Item Part Number </th>
+        <th><input type="text" class="form-control"></th>
+        <th><input type="text" class="form-control"></th>
+    </tr>
+</table>
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white">Test  Equipment Used</center></th>
+
+    </tr>
+
+    <tr>
+        <th>Equipment Name</th>
+        <th>Make/Model</th>
+        <th>Serial No</th>
+        <th>Calibration Due Date</th>
+    </tr>
+    <tr>
+        <th>Micro Ohm Meter</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="date" width="30px;" class="form-control"></th>
+
+    </tr>
+</table>
+
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+
+
+    <tr>
+        <th></th>
+        <th>Tested By</th>
+        <th>Quality Control Engineer</th>
+        <th>Project Manager</th>
+
+    </tr>
+    <tr>
+        <th>Name</th>
+        <th><input type="text" class="form-control"></th>
+        <th><input type="text" class="form-control"></th>
+        <th><input type="text" class="form-control"></th>
+
+    </tr>
+    <tr>
+        <th>Sign</th>
+        <th></th>
+        <th></th>
+
+    <tr>
+        <th>Date</th>
+        <th><input type="date" class="form-control"></th>
+        <th><input type="date" class="form-control"></th>
+        <th><input type="date" class="form-control"></th>
+    </tr>
+
+</table>
+
+
+<div class="d-flex justify-content-end">
+    <button type="button" class="btn btn-primary" style="background-color:#191c3696;margin-bottom:10px;">Submit</button>
+</div>
+
+

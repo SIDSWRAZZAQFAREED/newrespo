@@ -1,0 +1,140 @@
+﻿
+@{
+    ViewBag.Title = "QF9F";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    table, th {
+        text-align: center;
+    }
+
+    .table-bordered {
+        border-bottom: 1px solid black;
+    }
+</style>
+<style>
+    input[type=checkbox] {
+        accent-color: pink;
+        outline: 2px solid plum;
+</style>
+
+<div class="table-responsive-sm">
+    <div class="main_heading" style="background-color:#018bd3;height: 70px;">
+        <h3 style="text-align: center; padding-top:18px;color: white;"><b>AMBIENT TEMPERATURE </b> </h3>
+    </div>
+
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="6"><center style="font-size:larger;color:white">1)	CONTACT RESISTANCE TEST</center></th>
+
+        </tr>
+
+        <tr>
+            <th>S.N</th>
+            <th>Test Section</th>
+            <th>Phase</th>
+            <th>Contact Resistance (µΩ)</th>
+            <th>Limits</th>
+            <th>Result</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>L1</td>
+            <td><input type="text" class="form-control" placeholder="Enter Phase"></td>
+            <td><input type="text" class="form-control" placeholder="Enter Resistance"></td>
+            <td><input type="text" class="form-control" placeholder="Enter Limits"></td>
+            <td><input type="text" class="form-control" placeholder="Enter Result"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>L2</td>
+            <td><input type="text" class="form-control" placeholder="Enter Phase"></td>
+            <td><input type="text" class="form-control" placeholder="Enter Resistance"></td>
+            <td><input type="text" class="form-control" placeholder="Enter Limits"></td>
+            <td><input type="text" class="form-control" placeholder="Enter Result"></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>L3</td>
+            <td><input type="text" class="form-control" placeholder="Enter Phase"></td>
+            <td><input type="text" class="form-control" placeholder="Enter Resistance"></td>
+            <td><input type="text" class="form-control" placeholder="Enter Limits"></td>
+            <td><input type="text" class="form-control" placeholder="Enter Result"></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>L1</td>
+            <td><input type="text" class="form-control" placeholder="Enter Phase"></td>
+            <td><input type="text" class="form-control" placeholder="Enter Resistance"></td>
+            <td><input type="text" class="form-control" placeholder="Enter Limits"></td>
+            <td><input type="text" class="form-control" placeholder="Enter Result"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>L2</td>
+            <td><input type="text" class="form-control" placeholder="Enter Phase"></td>
+            <td><input type="text" class="form-control" placeholder="Enter Resistance"></td>
+            <td><input type="text" class="form-control" placeholder="Enter Limits"></td>
+            <td><input type="text" class="form-control" placeholder="Enter Result"></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>L3</td>
+            <td><input type="text" class="form-control" placeholder="Enter Phase"></td>
+            <td><input type="text" class="form-control" placeholder="Enter Resistance"></td>
+            <td><input type="text" class="form-control" placeholder="Enter Limits"></td>
+            <td><input type="text" class="form-control" placeholder="Enter Result"></td>
+        </tr>
+        <!-- Repeat the above structure for additional rows -->
+
+
+    </table>
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">Test  Equipment Used:</center></th>
+
+        </tr>
+        <tr>
+            <th></th>
+            <th>Equipment Name</th>
+            <th>Make/Model</th>
+            <th>Serial No</th>
+            <th>
+                Calibration Due Date
+            </th>
+        </tr>
+        <tr>
+            <th>Multi Meter</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+            <th>Insulation Resistance Tester</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+            <th>Voltage Injection Kit</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+    </table>
+    <div class="d-flex justify-content-end">
+        <button type="button" class="btn btn-primary ml-auto" style="background-color:#191c3696;margin-bottom:10px">Submit</button>
+    </div>
+
+</div>

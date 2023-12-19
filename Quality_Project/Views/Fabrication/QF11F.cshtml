@@ -1,0 +1,340 @@
+﻿
+@{
+    ViewBag.Title = "QF11F";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>QF11F</h2>
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    .main_input {
+        height: 100%;
+    }
+
+    .table-bordered {
+        border-bottom: 1px solid black;
+    }
+</style>
+<div>
+    <div class="main_heading" style="background-color: #018bd3;height: 70px;">
+        <h3 style="text-align: center; padding-top:18px;color: white;"><b>Sheet</b> </h3>
+    </div>
+    @*--table1--*@
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66; margin-bottom: 10px;">
+
+        <tr style="background-color: #5f98ab;">
+            <th colspan="6"><center style="font-size:larger;color:white"> SHEET POWDER PAINTING</center></th>
+
+        </tr>
+        <tr>
+            <th>SL No.</th>
+            <th>Manufacturing Check Points</th>
+            <th colspan="2">Checked</th>
+            <th>Operator</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th> </th>
+            <th>Yes </th>
+            <th>No </th>
+
+
+        </tr>
+        <tr>
+            <td colspan="5" style="color:green;background-color:lightgrey;"> <br> </th>
+
+        </tr>
+
+        <!-- Row 1 for Select the correct raw material for the bus bar as per approved drawing -->
+        <tr>
+            <th>1</th>
+            <th>
+                Select the correct processed/semi-finished parts for powder painting as per approved drawing.
+                <br><input type="checkbox" id="Sheet steel" name="Sheet steel" value="Yes">
+                <label for="Sheet steel">Sheet steel</label>
+
+
+
+                <input type="checkbox" id="Perforatedsheet" name="Perforatedsheet" value="Yes">
+                <label for="Perforatedsheet">Perforated sheet</label>
+
+                <input type="checkbox" id="StainlessSteel" name="StainlessSteel" value="Yes">
+                <label for="StainlessSteel">Stainless Steel</label>
+                <input type="checkbox" id="Mildsteewiremesh" name="Mildsteewiremesh" value="Yes">
+                <label for="Mildsteewiremesh">Mild steel, wire mesh</label>
+                <input type="checkbox" id="GradeD" name="GradeD" value="Yes">
+                <label for="GradeD">Grade D</label>
+                <input type="checkbox" id="GradeHR4" name="GradeHR4" value="Yes">
+                <label for="GradeHR4">Grade HR4</label><br />
+                <input type="checkbox" id="SPHC" name="SPHC" value="Yes">
+                <label for="SPHC">SPHC</label>
+                <input type="checkbox" id="CRCA" name="CRCA" value="Yes">
+                <label for="CRCA">CRCA</label>
+
+            </th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="Yes"></th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="No"></th>
+            <th style="text-align: center;">
+                <select class="form-control" style="width: 100px;">
+                    <option value="Option1">Option 1</option>
+                    <option value="Option2">Option 2</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </th>
+        </tr>
+
+        <!-- Row 2 for Ensure that the dimensions of the processed parts are within the acceptable tolerance limit -->
+        <tr>
+            <th>2</th>
+            <th>
+                No warping, sharp edges, excess powder, and burrs on the processed parts.
+            </th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="Yes"></th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="No"></th>
+            <th style="text-align: center;">
+                <select class="form-control" style="width: 100px;">
+                    <option value="Option1">Option 1</option>
+                    <option value="Option2">Option 2</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </th>
+        </tr>
+
+        <tr>
+            <th>3</th>
+            <th>
+                Ensure that the correct powder has been opted for the painting process.<br>
+                <input type="checkbox" id="Sheet steel" name="Sheet steel" value="Yes">
+                <label for="Sheet steel">RAL 1023  </label>
+
+                <input type="checkbox" id="Perforatedsheet" name="Perforatedsheet" value="Yes">
+                <label for="Perforatedsheet">RAL 3003 </label>
+                <input type="checkbox" id="StainlessSteel" name="StainlessSteel" value="Yes">
+                <label for="StainlessSteel">RAL 5007 </label>
+                <input type="checkbox" id="Mildsteewiremesh" name="Mildsteewiremesh" value="Yes">
+                <label for="Mildsteewiremesh"> RAL 7032 </label>
+                <input type="checkbox" id="GradeD" name="GradeD" value="Yes">
+                <label for="GradeD">RAL 7035  </label>
+                <input type="checkbox" id="GradeHR4" name="GradeHR4" value="Yes">
+                <label for="GradeHR4">RAL 9003 </label>
+                <input type="checkbox" id="SPHC" name="SPHC" value="Yes">
+                <label for="SPHC">RAL 9005 </label>
+                <input type="checkbox" id="CRCA" name="CRCA" value="Yes">
+                <label for="CRCA">SMOOTH </label>>
+                <input type="checkbox" id="SPHC" name="SPHC" value="Yes">
+                <label for="SPHC">MATT  </label><br>
+
+            </th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="Yes"></th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="No"></th>
+            <th style="text-align: center;">
+                <select class="form-control" style="width: 100px;">
+                    <option value="Option1">Option 1</option>
+                    <option value="Option2">Option 2</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </th>
+        </tr>
+        <tr>
+            <th>4</th>
+            <th>
+                Ensure that the powder, chemicals etc. used for the painting process are valid and within the shelf-life period.
+            </th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="Yes"></th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="No"></th>
+            <th style="text-align: center;">
+                <select class="form-control" style="width: 100px;">
+                    <option value="Option1">Option 1</option>
+                    <option value="Option2">Option 2</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </th>
+        </tr>
+
+        <tr>
+            <th>5</th>
+            <th>
+                Ensure the coating thickness values are measured across all the processed parts.
+            </th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="Yes"></th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="No"></th>
+            <th style="text-align: center;">
+                <select class="form-control" style="width: 100px;">
+                    <option value="Option1">Option 1</option>
+                    <option value="Option2">Option 2</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </th>
+        </tr>
+        <tr>
+            <th>6</th>
+            <th>
+                Ensure that the crosshatch test is performed to ensure the paint adhesion on the processed part.
+            </th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="Yes"></th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="No"></th>
+            <th style="text-align: center;">
+                <select class="form-control" style="width: 100px;">
+                    <option value="Option1">Option 1</option>
+                    <option value="Option2">Option 2</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </th>
+        </tr>
+        <tr>
+            <th>7</th>
+            <th>
+                Ensure that the salt spray test, lab tests for degreasing solution, zinc phosphating solution etc. are tested periodically
+            </th>
+            <
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="Yes"></th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="No"></th>
+            <th style="text-align: center;">
+                <select class="form-control" style="width: 100px;">
+                    <option value="Option1">Option 1</option>
+                    <option value="Option2">Option 2</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </th>
+        </tr>
+
+        <tr>
+            <th>8</th>
+            <th>
+                Ensure that the conveyor speed, oven temperatures etc. are adjusted and calibrated regularly to control the flow of the powder guns precisely.
+            </th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="Yes"></th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="No"></th>
+            <th style="text-align: center;">
+                <select class="form-control" style="width: 100px;">
+                    <option value="Option1">Option 1</option>
+                    <option value="Option2">Option 2</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </th>
+        </tr>
+        <tr>
+            <th>9</th>
+            <th>
+                Ensure that the coating thickness values are within the acceptable limits as per the approved drawings and local regulations.
+                Individual areas coating thickness shall not fall under the minimum acceptable value, which is 100 microns. (Keep the QF 6A checklist for paint coating thickness record)
+            </th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="Yes"></th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="No"></th>
+            <th style="text-align: center;">
+                <select class="form-control" style="width: 100px;">
+                    <option value="Option1">Option 1</option>
+                    <option value="Option2">Option 2</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </th>
+        </tr>
+        <tr>
+            <th>10</th>
+            <th>
+                Ensure to store the processed parts in such a way as to avoid all risks of deformation or deterioration
+                of the paintwork.
+            </th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="Yes"></th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="No"></th>
+            <th style="text-align: center;">
+                <select class="form-control" style="width: 100px;">
+                    <option value="Option1">Option 1</option>
+                    <option value="Option2">Option 2</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </th>
+        </tr>
+        <tr>
+            <th>11</th>
+            <th>
+                Ensure to mark each processed parts for identification or traceability.
+            </th>
+            <
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="Yes"></th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="No"></th>
+            <th style="text-align: center;">
+                <select class="form-control" style="width: 100px;">
+                    <option value="Option1">Option 1</option>
+                    <option value="Option2">Option 2</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </th>
+        </tr>
+        <tr>
+            <th>12</th>
+            <th>
+                Processed parts are as per the approved drawings Semi-finished product part number:
+            </th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="Yes"></th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="No"></th>
+            <th style="text-align: center;">
+                <select class="form-control" style="width: 100px;">
+                    <option value="Option1">Option 1</option>
+                    <option value="Option2">Option 2</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </th>
+        </tr>
+    </table>
+
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66; margin-bottom: 10px;">
+
+        <tr style="background-color: #5f98ab;">
+            <th colspan="6"><center style="font-size:larger;color:white"> Quality Control</center></th>
+
+        </tr>
+        <tr>
+            <th>SL No.</th>
+            <th>Manufacturing Check Points</th>
+            <th colspan="2">Checked</th>
+            <th>Operator</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th> </th>
+            <th>Yes </th>
+            <th>No </th>
+
+
+        </tr>
+
+        <tr>
+            <th>1</th>
+            <th>Verify and validate the semi-finished product conformity as per approved project specifications and drawings.</th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="Yes"></th>
+            <th style="color: plum; text-align: center;"><input type="radio" name="radio" value="No"></th>
+            <th style="text-align: center;">
+                <select class="form-control" style="width: 100px;">
+                    <option value="Option1">Option 1</option>
+                    <option value="Option2">Option 2</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </th>
+        </tr>
+
+        <tr>
+            <th>2</th>
+            <th>
+                If not complied, issue nonconformity report (NCR) and corrective and preventive action (CAPA) requests.
+            </th>
+            <th style="color:plum;"><label for="row2CheckedYes">NCR Ref: - </th>
+            <th style="color:plum;"><label for="row2CheckedNo">CAPA Ref: -</label></th>
+            <th style="text-align: center;">
+                <select class="form-control" style="width: 100px;">
+                    <option value="Option1">Option 1</option>
+                    <option value="Option2">Option 2</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </th>
+        </tr>
+    </table>
+    <div class="d-flex justify-content-end">
+        <button type="button" class="btn btn-primary " style="background-color:#191c3696;margin-bottom:10px;">Submit</button>
+    </div>
+
+</div>

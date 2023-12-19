@@ -1,0 +1,172 @@
+﻿
+@{
+    ViewBag.Title = "QF9Z";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    table, th {
+        text-align: center;
+    }
+    .table-bordered {
+        border-bottom: 1px solid black;
+    }
+</style>
+
+<div class="table-responsive-sm">
+    <div class="main_heading" style="background-color: #018bd3;height: 70px;">
+        <h3 style="text-align: center; padding-top: 22px; color: white; font-size: x-large;"><b>CURRENT TRANSFORMER NAMEPLATE DETAILS</b> </h3>
+    </div>
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">RELAY DATA</center></th>
+
+        </tr>
+
+        <tr>
+            <th>Relay Type/Model</th>
+            <td><input type="text" class="form-control"></td>
+            <th>Aux. Voltage</th>
+            <td><input type="text" class="form-control"></td>
+            <th>Serial No</th>
+            <td><input type="text" class="form-control"></td>
+        </tr>
+
+        <tr>
+            <th>Rated Current</th>
+            <td><input type="text" class="form-control"></td>
+            <th>CT Ratio</th>
+
+            <td><input type="text" class="form-control"></td>
+            <th>Make</th>
+
+            <td><input type="text" class="form-control"></td>
+
+        </tr>
+        <tr>
+            <th>Equipment Tag</th>
+            <td><input type="text" class="form-control"></td>
+            <th>VT Ratio</th>
+            <td><input type="text" class="form-control"></td>
+            <th>Relay Function</th>
+            <td><input type="text" class="form-control"></td>
+        </tr>
+        <!-- Repeat the above structure for additional rows -->
+    </table>
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">AMBIENT TEMPERATURE</center></th>
+
+        </tr>
+        <tr>
+            <th>SL No.</th>
+            <th>Test Section</th>
+            <th>Description</th>
+            <th>Phase</th>
+            <th>Contact Resistance (µΩ)</th>
+            <th>Torque (NM)-Bolt Size</th>
+            <th>Limits</th>
+            <th>Result</th>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td>L1</td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td>L2</td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td>L3</td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td>L1</td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td>L2</td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td>L3</td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td>L1</td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td>L2</td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td>L3</td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+            <td><input type="text" class="form-control"></td>
+        </tr>
+        <!-- Repeat the above structure for additional rows -->
+
+    </table>
+    <div class="d-flex justify-content-end">
+        <button type="button" class="btn btn-primary ml-auto" style="background-color:#191c3696;margin-bottom:10px">Submit</button>
+    </div>
+</div>

@@ -1,0 +1,247 @@
+﻿
+@{
+    ViewBag.Title = "QF9HSchemeCheckTestForm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table, th {
+            text-align: center;
+        }
+
+        .table-bordered {
+            border-bottom: 1px solid black;
+        }
+    </style>
+<div class="table-responsive-sm">
+    <div class="main_heading" style="background-color: #018bd3;height: 70px;">
+        <h3 style="text-align: center; padding-top:18px;color: white;"><b>DIELECTRIC WITHSTAND TEST</b> </h3>
+    </div>
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">POINT TO POINT CHECK TEST FORM</center></th>
+
+        </tr>
+        
+        <tr>
+            <th>Customer/Client</th>
+            <td colspan="3"><input type="text" width="30px;" class="form-control"></th>
+            <th>ENQ/Job Number</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+            <th colspan="1">Project Title </th>
+            <td colspan="5"><input type="text" leght="100px" ;width="30px;" class="form-control"></th>
+
+        </tr>
+        <tr>
+            <th>Switchgear Board Ref:</th>
+            <td colspan="3"><input type="text" width="30px;" class="form-control"></th>
+            <th>Panel Ref:</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+    </table>
+
+
+
+
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">Insulation Resistance Test</center></th>
+
+        </tr>
+        <tr>
+            <th>Sr. No.</th>
+            <th>Functions and Operations</th>
+            <th>Remarks</th>
+        </tr>
+        <tr>
+            <th colspan="3">1)Electrical Operational checks:</th>
+        </tr>
+        <tr>
+            <th>A</th>
+            <th>Verify the VCB rack in/rack out interlock mechanism.</th>
+            <th><input type="text" class="form-control"></th>
+
+        </tr>
+        <tr>
+            <th>B</th>
+            <th>Verify the VCB Test/Service Position Indicators </th>
+            <th><input type="text" class="form-control"></th>
+
+        </tr>
+
+        <tr>
+            <th>C</th>
+            <th>Check  Test/Service status up to Field termination Box </th>
+            <th><input type="text" class="form-control"></th>
+
+        </tr>
+
+        <tr>
+            <th>D</th>
+            <th>Local Closing /Tripping  Operation by TNC Switch when VCBin Test position</th>
+            <th><input type="text" class="form-control"></th>
+        </tr>
+
+
+
+
+        <th>E</th>
+        <th>Local Closing/Tripping  Operation  by TNC Switch  when VCB in Service position</th>
+        <th><input type="text" class="form-control"></th>
+
+        </tr>
+        <tr>
+            <th>F</th>
+            <th>Remote Closing /Tripping Operation from  Field Termination Box when VCBin Serviceposition</th>
+            <th><input type="text" class="form-control"></th>
+
+        </tr>
+
+        <tr>
+            <th>G</th>
+            <th>Check VCB OFF LED Indication, status up to Field termination Box</th>
+            <th><input type="text" class="form-control"></th>
+
+        </tr>
+
+        <tr>
+            <th>H</th>
+            <th>Check VCB ON LED Indication, status up to Field termination Box</th>
+            <th><input type="text" class="form-control"></th>
+
+        </tr>
+
+
+
+
+
+        <th>I</th>
+        <th>Verify the Earth Switch Closing/Opening interlock mechanism</th>
+        <th><input type="text" class="form-control"></th>
+
+        </tr>
+        <tr>
+            <th>J</th>
+            <th>Check ESW  ON LED Indication, status up to Field termination Box</th>
+            <th><input type="text" class="form-control"></th>
+
+        </tr>
+
+        <tr>
+            <th>K</th>
+            <th>Check and confirm electrical spring charging mechanism.</th>
+            <th><input type="text" class="form-control"></th>
+
+        </tr>
+
+        <tr>
+            <th>L</th>
+            <th>Check and confirm Trip Circuit Healthy Circuit.</th>
+            <th><input type="text" class="form-control"></th>
+
+        </tr>
+        <tr>
+            <th>M</th>
+            <th>Check Trip Circuit Healthy status up to Field termination Box </th>
+            <th><input type="text" class="form-control"></th>
+
+        </tr>
+        <tr>
+            <th>N</th>
+            <th>Check Protection relay Faulty(Watch Dog) status up to Field termination Box</th>
+            <th><input type="text" class="form-control"></th>
+
+        </tr>
+        <tr>
+            <th>O</th>
+            <th>Check Local/Remote selection in Remote mode(Service) status up to Field termination Box </th>
+            <th><input type="text" class="form-control"></th>
+
+        </tr>
+        <tr>
+            <th>P</th>
+            <th>Check and confirm VCB Tripping via Protection Relay. </th>
+            <th><input type="text" class="form-control"></th>
+
+        </tr>
+        <tr>
+            <th>Q</th>
+            <th>Check Protection relay operated status up to Field termination Box</th>
+            <th><input type="text" class="form-control"></th>
+
+        </tr>
+        <tr>
+            <th>R</th>
+            <th>Check and confirm VCB Tripping via lock-out relay (If applicable</th>
+            <th><input type="text" class="form-control"></th>
+
+        </tr>
+        <tr>
+            <th>S</th>
+            <th>Check and confirm Close blocking circuit via Protection Relay.</th>
+            <th><input type="text" class="form-control"></th>
+
+        </tr>
+        <tr>
+            <th>T</th>
+            <th>Check and confirm TTB function check (Trip Isolation, Relay Supply isolation)</th>
+            <th><input type="text" class="form-control"></th>
+
+        </tr>
+
+        <tr>
+            <th>U</th>
+            <th>Check and confirm Trip Link function check (Trip Isolation) </th>
+            <th><input type="text" class="form-control"></th>
+
+        </tr>
+        <tr>
+            <th>V</th>
+            <th>Check AC/DC  Supply Fail status up to Field termination Box</th>
+            <th><input type="text" class="form-control"></th>
+
+        </tr>
+    </table>
+    <table class="table table-bordered" style="margin-top: 10px;  width: 100%; height: 70%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">Insulation Resistance Test</center></th>
+
+        </tr>
+        <tr>
+            <th></th>
+            <th>Tested By</th>
+            <th>Quality Control Engineer</th>
+            <th>Project Manager</th>
+
+        </tr>
+        <tr>
+            <th>Name</th>
+            <th><input type="text" class="form-control"></th>
+            <th><input type="text" class="form-control"></th>
+            <th><input type="text" class="form-control"></th>
+
+        </tr>
+        <tr>
+            <th>Sign</th>
+            <th></th>
+            <th></th>
+
+        <tr>
+            <th>Date</th>
+            <th><input type="date" class="form-control"></th>
+            <th><input type="date" class="form-control"></th>
+            <th><input type="date" class="form-control"></th>
+        </tr>
+
+    </table>
+    <button type="button" class="btn btn-primary" style="background-color: #191c3696;">Submit</button>
+</div>
+
+

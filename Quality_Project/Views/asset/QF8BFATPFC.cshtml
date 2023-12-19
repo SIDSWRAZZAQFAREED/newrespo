@@ -1,0 +1,603 @@
+﻿
+@{
+    ViewBag.Title = "QF8BFATPFC";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    table, th {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .table-bordered {
+        border-bottom: 1px solid black;
+    }
+</style>
+<div class="main_heading" style="background-color: #018bd3;height: 70px;">
+    <h3 style="text-align: center; padding-top:18px;color: white;"><b><u>FAT Test Checklist</u></b> </h3>
+</div>
+
+<table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+   
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white">FACTORY ACCEPTANCE TEST REPORT</center></th>
+
+    </tr>
+
+    <tr>
+        <th colspan="1" style="padding:15px;">
+            CAPACITOR PANEL No.:
+
+        </th>
+        <th colspan="5"><input type="text" leght="100px" ;width="30px;" class="form-control"></th>
+
+    </tr>
+    <tr>
+        <th style="padding:15px;">Bus A or B:</th>
+        <td colspan="5"><input type="text" width="30px;" class="form-control"></td>
+
+    </tr>
+    <tr>
+        <th style="padding:15px;">Type:</th>
+
+
+        <td colspan="5"><input type="text" width="30px;" class="form-control"></td>
+
+    </tr>
+</table>
+
+<table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white">Partial test after assembly of frame and busbars</center></th>
+
+    </tr>
+    <tr>
+        <th>1.1</th>
+        <th>
+            Identity check and visual check
+
+        </th>
+    </tr>
+
+    <tr>
+        <th>1.1.1</th>
+        <th>
+            Types of tiers according to drawings.
+
+
+        </th>
+    </tr>
+    <tr>
+        <th>1.1.2</th>
+        <th>
+            Transport splits and arrangements according to drawings.
+
+
+        </th>
+    </tr>
+    <tr>
+        <th>1.1.3</th>
+        <th>
+            Panels and busbars match technical data and current flow from drawings.
+
+
+        </th>
+    </tr>
+    <tr>
+        <th>1.1.4</th>
+        <th>
+            Cross section of busbars correct.
+
+
+        </th>
+    </tr>
+    <tr>
+        <th>1.1.5</th>
+        <th>
+            Confirm all busbars are tinned.
+
+
+        </th>
+    </tr>
+</table>
+
+
+
+
+
+<table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white">Mechanical test</center></th>
+
+    </tr>
+    <tr>
+        <th>1.2.1</th>
+        <th>
+            Check tightening torques of screwed connection and busbar joints and marking.
+
+
+        </th>
+    </tr>
+
+    <tr>
+        <th>Test stamp/Date</th>
+        <th>
+            <input type="text">
+
+
+        </th>
+    </tr>
+    <tr>
+        <th>1.2.2</th>
+        <th>
+            Check sheet metal and equipment fastener torques (5% sample)
+
+
+
+        </th>
+    </tr>
+    <tr>
+        <th>1.2.3</th>
+        <th>
+            Check fasteners joining adjacent tiers.
+
+        </th>
+    </tr>
+</table>
+
+
+<table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white">Insulation test</center></th>
+
+    </tr>
+    <tr>
+        <th >1.3.1</th>
+        <th>main Bushbars</th>
+        <th colspan="3">
+            Insulation test
+        </th>
+
+        <th>
+            Mohm Result
+
+        </th>
+    </tr>
+    <tr>
+        <th>
+        </th>
+        <th>
+        </th>
+        <th style="padding:15px;">
+            R to Y,B,E
+        </th>
+        <th><input type="text"></th>
+        <th rowspan="1" style="padding:15px;">
+            1000V
+
+
+        </th>
+
+        <th><input type="text"></th>
+    </tr>
+
+
+
+    <tr>
+        <th>
+        </th>
+        <th>
+        </th>
+        <th style="padding:15px;">
+            Y to R,B,E
+
+        </th>
+        <th><input type="text"></th>
+        <th rowspan="1">
+            1000V
+        </th>
+        <th><input type="text"></th>
+    </tr>
+
+
+
+    <tr>
+        <th>
+
+        </th>
+        <th>
+
+        </th>
+        <th style="padding:15px;">
+            B to R,Y,E
+
+
+        </th>
+        <th><input type="text"></th>
+        <th rowspan="1" style="padding:15px;">
+            1000V
+        </th>
+        <th><input type="text"></th>
+    </tr>
+</table>
+
+
+<table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white">FACTORY ACCEPTANCE TEST REPORT</center></th>
+
+    </tr>
+
+    <tr>
+        <th>Test Equipment</th>
+        <th>Inst.No</th>
+        <th>Cal.Date</th>
+        <th>Cal Due Date</th>
+    </tr>
+
+
+    <tr>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="date" width="30px;" class="form-control"></th>
+        <th><input type="date" width="30px;" class="form-control"></th>
+
+    </tr>
+
+
+    <tr>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="date" width="30px;" class="form-control"></th>
+        <th><input type="date" width="30px;" class="form-control"></th>
+
+    </tr>
+</table>
+
+
+
+<table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white">FAT Test Checklist</center></th>
+
+    </tr>
+    <tr>
+        <th colspan="6">
+            POWER FACTOR  CONTROL  PANEL
+
+        </th>
+
+    </tr>
+
+    <tr>
+        <th colspan="1" style="padding:15px;">
+            CAPACITOR PANEL No.:
+
+        </th>
+        <th colspan="5"><input type="text" leght="100px" ;width="30px;" class="form-control"></th>
+
+    </tr>
+    <tr>
+        <th style="padding:15px;">Bus A or B:</th>
+        <td colspan="5"><input type="text" width="30px;" class="form-control"></td>
+
+    </tr>
+    <tr>
+        <th style="padding:15px;">Type:</th>
+
+
+        <td colspan="5"><input type="text" width="30px;" class="form-control"></td>
+
+    </tr>
+</table>
+
+<table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white">Partial test after completion</center></th>
+
+    </tr>
+    <tr>
+        <th>2.1</th>
+        <th>
+            Identity check and visual check
+
+        </th>
+    </tr>
+
+    <tr>
+        <th>2.1.0</th>
+        <th>
+            Check that partial completion of assembly sticker is stamped and dated.
+
+
+        </th>
+    </tr>
+    <tr>
+        <th>2.1.1</th>
+        <th>
+            Check the type of capacitor and reactors are as per drawings
+
+
+
+        </th>
+    </tr>
+    <tr>
+        <th>2.1.2</th>
+        <th>
+            Check the mounting of capacitors and reactors
+
+
+
+        </th>
+    </tr>
+    <tr>
+        <th>2.1.3</th>
+        <th>
+            Check devices and component markers against equipment schedule.
+
+
+
+        </th>
+    </tr>
+    <tr>
+        <th>2.1.4</th>
+        <th>
+            Check correct installation of devices
+
+
+
+        </th>
+    </tr>
+    <tr>
+        <th>2.1.4</th>
+        <th>
+            Anti-Condensation heating with temp.control provided
+
+
+        </th>
+    </tr>
+    <tr>
+        <th>2.1.5</th>
+        <th>
+            Interlock with incomer for door operation (Isolator type)
+
+
+
+        </th>
+    </tr>
+    <tr>
+        <th>2.1.6</th>
+        <th>
+            Paint colour and finish correct.		RAL 7032 Stipple
+
+
+
+        </th>
+    </tr>
+    <tr>
+        <th>2.1.7</th>
+        <th>
+            Assembly of doors and panels correct.
+
+
+
+        </th>
+    </tr>
+
+    <tr>
+        <th>2.1.8</th>
+        <th>
+            Transport splits and re-connection parts complete.
+
+
+
+        </th>
+    </tr>
+</table>
+
+
+
+<table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white">Wiring</center></th>
+
+    </tr>
+    <tr>
+        <th>2.2.1</th>
+        <th>
+            Ensure wiring is not passing over any sharp edges.
+
+
+        </th>
+    </tr>
+
+    <tr>
+        <th>2.2.2</th>
+        <th>
+            Wiring colours correct.
+
+
+        </th>
+    </tr>
+    <tr>
+        <th>2.2.3</th>
+        <th>
+            Segregation of wiring correct.
+
+
+
+
+        </th>
+    </tr>
+    <tr>
+        <th>2.2.4</th>
+        <th>
+            Cross section of wiring correct.
+
+
+
+
+        </th>
+    </tr>
+    <tr>
+        <th>2.2.5</th>
+        <th>
+            Short-circuit proof wiring installation correct.
+
+
+
+
+        </th>
+    </tr>
+    <tr>
+        <th>2.2.6</th>
+        <th>
+            Wire marking and identification system complete.
+
+
+
+
+        </th>
+    </tr>
+    <tr>
+        <th>2.2.7</th>
+        <th>
+            Tightness of terminations checked.
+
+
+
+        </th>
+    </tr>
+
+</table>
+
+
+
+<table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white">Mechanical test</center></th>
+
+    </tr>
+    <tr>
+        <th>2.3.1</th>
+        <th>
+            Check fixing of equipments,chasses and functional units.
+
+
+
+        </th>
+    </tr>
+
+    <tr>
+        <th>2.3.2</th>
+        <th>
+            Check the operation of doors and moving parts.
+
+
+
+        </th>
+    </tr>
+
+
+</table>
+
+
+
+
+
+
+
+<table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white">Protective measures</center></th>
+
+    </tr>
+    <tr>
+        <th>2.4.1</th>
+        <th>
+            Check all connection of protective conductors
+
+
+
+
+        </th>
+    </tr>
+
+    <tr>
+        <th>2.4.2</th>
+        <th>
+            Check shrouding on exposed equipment
+
+
+
+
+        </th>
+    </tr>
+    <tr>
+        <th>2.4.3</th>
+        <th>
+            Check shrouding on incoming connections.
+
+
+
+
+        </th>
+    </tr>
+
+
+</table>
+
+
+
+
+
+
+<table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white">FACTORY ACCEPTANCE TEST REPORT</center></th>
+
+    </tr>
+
+    <tr>
+        <th>Test Equipment</th>
+        <th>Inst.No</th>
+        <th>Cal.Date</th>
+        <th>Cal Due Date</th>
+    </tr>
+
+
+    <tr>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="date" width="30px;" class="form-control"></th>
+        <th><input type="date" width="30px;" class="form-control"></th>
+
+    </tr>
+
+
+    <tr>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="date" width="30px;" class="form-control"></th>
+        <th><input type="date" width="30px;" class="form-control"></th>
+
+    </tr>
+</table>
+<div class="d-flex justify-content-end">
+    <button type="button" class="btn btn-primary" style="background-color: #191c3696;">Submit</button>
+</div>
+
+
+

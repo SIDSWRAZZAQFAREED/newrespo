@@ -1,0 +1,919 @@
+﻿
+@{
+    ViewBag.Title = "Sheet";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Sheet</h2>
+
+<body>
+    @*--table1--*@
+    <table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66 ">
+        <th colspan="9">SHEET NIBBLING AND PUNCHING</th>
+        <tr>
+            <th>SL No.</th>
+            <th>Manufacturing Check Points</th>
+            <th>
+                Checked
+
+                Yes | No
+
+            </th>
+            <th>Operator Signature</th>
+        </tr>
+
+        <!-- Row 1 for Select the correct raw material for the bus bar as per approved drawing -->
+        <tr>
+            <td>1</td>
+            <td>
+                Select the correct raw material for the parts as per approved drawing.
+                <br>
+                <input type="checkbox" id="Sheet steel" name="Sheet steel" value="Yes">
+                <label for="Sheet steel">Sheet steel</label>
+                <br>
+                <input type="checkbox" id="Aluminum" name="Aluminum" value="Yes">
+                <label for="Aluminum">Aluminum</label>
+                <br>
+                <input type="checkbox" id="Brass " name="Brass " value="Yes">
+                <label for="Brass ">Brass</label>
+                <br>
+                <input type="checkbox" id="GRP" name="GRP" value="Yes">
+                <label for="GRP">GRP</label>
+                <br>
+                <input type="checkbox" id="Polycarbonate" name="Polycarbonate" value="Yes">
+                <label for="Polycarbonate">Polycarbonate</label>
+                <br>
+                <input type="checkbox" id="Perforatedsheet" name="Perforatedsheet" value="Yes">
+                <label for="Perforatedsheet">Perforated sheet</label><br>
+                <input type="checkbox" id="SMC" name="SMC" value="Yes">
+                <label for="SMC">SMC</label><br>
+                <input type="checkbox" id="StainlessSteel" name="StainlessSteel" value="Yes">
+                <label for="StainlessSteel">Stainless Steel</label><br>
+                <input type="checkbox" id="Mildsteewiremesh" name="Mildsteewiremesh" value="Yes">
+                <label for="Mildsteewiremesh">Mild steel, wire mesh</label><br>
+                <input type="checkbox" id="GradeD" name="GradeD" value="Yes">
+                <label for="GradeD">Grade D</label><br>
+                <input type="checkbox" id="GradeHR4" name="GradeHR4" value="Yes">
+                <label for="GradeHR4">Grade HR4</label><br>
+                <input type="checkbox" id="SPHC" name="SPHC" value="Yes">
+                <label for="SPHC">SPHC</label><br>
+                <input type="checkbox" id="CRCA" name="CRCA" value="Yes">
+                <label for="CRCA">CRCA</label>
+
+            </td>
+            <td>
+                <input type="checkbox" id="rowCheckedYes" name="rowCheckedYes" value="Yes">
+                <label for="rowCheckedYes">Yes</label>
+                <input type="checkbox" id="rowCheckedNo" name="rowCheckedNo" value="No">
+                <label for="rowCheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+
+        <!-- Row 2 for Ensure that the dimensions of the processed parts are within the acceptable tolerance limit -->
+        <tr>
+            <td>2</td>
+            <td>
+                No warping, sharp edges and burrs on the processed parts.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>
+                Ensure that the dimensions of the processed parts are within the acceptable tolerance limit provided in the drawing. Tolerance Limit   ±0.5mm & ±0.5°
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>
+                Ensure to store the processed parts in such a way as to avoid all risks of deformation.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>
+                Ensure to mark each processed parts for identification or traceability.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>
+                Processed parts are as per the approved drawings Semi-finished product part number:
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+
+    </table>
+
+    @*--table2--*@
+    <table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66 ">
+        <th colspan="9">Quality Control</th>
+        <tr>
+            <th>SL No.</th>
+            <th>Quality Control Check Points</th>
+            <th>
+                Approved
+
+                Yes | No
+
+            </th>
+            <th>QC Signature</th>
+        </tr>
+
+        <!-- Row 1 for Select the correct raw material for the bus bar as per approved drawing -->
+        <!-- Row 2 for Ensure that the dimensions of the processed parts are within the acceptable tolerance limit -->
+        <tr>
+            <td>1</td>
+            <td>
+                Verify and validate the semi-finished product conformity as per approved project specifications and drawings.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>
+                If not complied , issue nonconformity report (NCR) and corrective and preventive action (CAPA) requests.
+            </td>
+            <td>
+                <label for="row2CheckedYes">
+                    NCR Ref: -
+
+
+                </label>
+                <label for="row2CheckedNo">CAPA Ref: -</label>
+            </td>
+            <td></td>
+        </tr>
+
+    </table>
+
+
+
+
+
+    @*--table3--*@
+    <table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66 ">
+        <th colspan="9">SHEET BENDING</th>
+        <tr>
+            <th>SL No.</th>
+            <th>Manufacturing Check Points</th>
+            <th>
+                Checked
+
+                Yes | No
+
+            </th>
+            <th>Operator Signature</th>
+        </tr>
+
+        <!-- Row 1 for Select the correct raw material for the bus bar as per approved drawing -->
+        <tr>
+            <td>1</td>
+            <td>
+                Select the correct processed/semi-finished parts for bending as per approved drawing.
+                <br>
+                <input type="checkbox" id="Sheet steel" name="Sheet steel" value="Yes">
+                <label for="Sheet steel">Sheet steel</label>
+                <br>
+                <input type="checkbox" id="Aluminum" name="Aluminum" value="Yes">
+                <label for="Aluminum">Aluminum</label>
+                <br>
+                <input type="checkbox" id="Brass " name="Brass " value="Yes">
+                <label for="Brass ">Brass</label>
+                <br>
+                <input type="checkbox" id="GRP" name="GRP" value="Yes">
+                <label for="GRP">GRP</label>
+                <br>
+                <input type="checkbox" id="Polycarbonate" name="Polycarbonate" value="Yes">
+                <label for="Polycarbonate">Polycarbonate</label><br>
+
+                <input type="checkbox" id="Perforatedsheet" name="Perforatedsheet" value="Yes">
+                <label for="Perforatedsheet">Perforated sheet</label><br>
+                <input type="checkbox" id="SMC" name="SMC" value="Yes">
+                <label for="SMC">SMC</label><br>
+                <input type="checkbox" id="StainlessSteel" name="StainlessSteel" value="Yes">
+                <label for="StainlessSteel">Stainless Steel</label><br>
+                <input type="checkbox" id="Mildsteewiremesh" name="Mildsteewiremesh" value="Yes">
+                <label for="Mildsteewiremesh">Mild steel, wire mesh</label><br>
+                <input type="checkbox" id="GradeD" name="GradeD" value="Yes">
+                <label for="GradeD">Grade D</label><br>
+                <input type="checkbox" id="GradeHR4" name="GradeHR4" value="Yes">
+                <label for="GradeHR4">Grade HR4</label><br>
+                <input type="checkbox" id="SPHC" name="SPHC" value="Yes">
+                <label for="SPHC">SPHC</label><br>
+                <input type="checkbox" id="CRCA" name="CRCA" value="Yes">
+                <label for="CRCA">CRCA</label><br>
+
+            </td>
+            <td>
+                <input type="checkbox" id="rowCheckedYes" name="rowCheckedYes" value="Yes">
+                <label for="rowCheckedYes">Yes</label>
+                <input type="checkbox" id="rowCheckedNo" name="rowCheckedNo" value="No">
+                <label for="rowCheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+
+        <!-- Row 2 for Ensure that the dimensions of the processed parts are within the acceptable tolerance limit -->
+        <tr>
+            <td>2</td>
+            <td>
+                No bending cracks, warping, sharp edges, and burrs on the processed parts.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>
+                Ensure that the dimensions of the processed parts are within the acceptable tolerance limit provided in the drawing. Tolerance Limit   ±0.5mm & ±0.5°.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>
+                Ensure to store the processed parts in such a way as to avoid all risks of deformation.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>
+                Ensure to mark each processed parts for identification or traceability.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>
+                Make sure that proper bending angle is selected and obtained to maintain IP of the sub assembled parts as per the drawing.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>
+                Processed parts are as per the approved drawings Semi-finished product part number:
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+
+    </table>
+
+    @*--table4--*@
+    <table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66 ">
+        <th colspan="9">Quality Control</th>
+        <tr>
+            <th>SL No.</th>
+            <th>Quality Control Check Points</th>
+            <th>
+                Approved
+
+                Yes | No
+
+            </th>
+            <th>QC Signature</th>
+        </tr>
+
+        <!-- Row 1 for Select the correct raw material for the bus bar as per approved drawing -->
+        <!-- Row 2 for Ensure that the dimensions of the processed parts are within the acceptable tolerance limit -->
+        <tr>
+            <td>1</td>
+            <td>
+                Verify and validate the semi-finished product conformity as per approved project specifications and drawings.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>
+                If not complied , issue nonconformity report (NCR) and corrective and preventive action (CAPA) requests.
+            </td>
+            <td>
+                <label for="row2CheckedYes">
+                    NCR Ref: -
+
+
+                </label>
+                <label for="row2CheckedNo">CAPA Ref: -</label>
+            </td>
+            <td></td>
+        </tr>
+
+    </table>
+
+    @*--table5--*@
+    <table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66 ">
+        <th colspan="9">SHEET WELDING AND GRINDING</th>
+        <tr>
+            <th>SL No.</th>
+            <th>Manufacturing Check Points</th>
+            <th>
+                Checked
+
+                Yes | No
+
+            </th>
+            <th>Operator Signature</th>
+        </tr>
+
+        <!-- Row 1 for Select the correct raw material for the bus bar as per approved drawing -->
+        <tr>
+            <td>1</td>
+            <td>
+                Select the correct processed/semi-finished parts for welding and grinding as per approved drawing.            <br>
+                <br>
+                <input type="checkbox" id="Sheet steel" name="Sheet steel" value="Yes">
+                <label for="Sheet steel">Sheet steel</label>
+                <br>
+                <input type="checkbox" id="Aluminum" name="Aluminum" value="Yes">
+                <label for="Aluminum">Aluminum</label>
+                <br>
+                <input type="checkbox" id="Brass " name="Brass " value="Yes">
+                <label for="Brass ">Brass</label>
+                <br>
+                <input type="checkbox" id="GRP" name="GRP" value="Yes">
+                <label for="GRP">GRP</label>
+                <br>
+                <input type="checkbox" id="Polycarbonate" name="Polycarbonate" value="Yes">
+                <label for="Polycarbonate">Polycarbonate</label>
+                <br>
+                <input type="checkbox" id="Perforatedsheet" name="Perforatedsheet" value="Yes">
+                <label for="Perforatedsheet">Perforated sheet</label><br>
+                <input type="checkbox" id="SMC" name="SMC" value="Yes">
+                <label for="SMC">SMC</label><br>
+                <input type="checkbox" id="StainlessSteel" name="StainlessSteel" value="Yes">
+                <label for="StainlessSteel">Stainless Steel</label><br>
+                <input type="checkbox" id="Mildsteewiremesh" name="Mildsteewiremesh" value="Yes">
+                <label for="Mildsteewiremesh">Mild steel, wire mesh</label><br>
+                <input type="checkbox" id="GradeD" name="GradeD" value="Yes">
+                <label for="GradeD">Grade D</label><br>
+                <input type="checkbox" id="GradeHR4" name="GradeHR4" value="Yes">
+                <label for="GradeHR4">Grade HR4</label><br>
+                <input type="checkbox" id="SPHC" name="SPHC" value="Yes">
+                <label for="SPHC">SPHC</label><br>
+                <input type="checkbox" id="CRCA" name="CRCA" value="Yes">
+                <label for="CRCA">CRCA</label><br>
+
+            </td>
+            <td>
+                <input type="checkbox" id="rowCheckedYes" name="rowCheckedYes" value="Yes">
+                <label for="rowCheckedYes">Yes</label>
+                <input type="checkbox" id="rowCheckedNo" name="rowCheckedNo" value="No">
+                <label for="rowCheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+
+        <!-- Row 2 for Ensure that the dimensions of the processed parts are within the acceptable tolerance limit -->
+        <tr>
+            <td>2</td>
+            <td>
+                No warping, sharp edges, and burrs on the processed parts.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>
+                Ensure weld joints cleaned properly.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>
+                Ensure excess welding grounded to flat surface.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>
+                Ensure that all corners are closed and welded as per drawing requirements.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>
+                Ensure that the alignment of the studs welded on the parts are straight and levelled.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>
+                Ensure that the dimensions of the processed parts are within the acceptable tolerance limit provided in the drawing. Tolerance Limit   ±0.5mm & ±0.5°
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>7</td>
+            <td>
+                Ensure to store the processed parts in such a way as to avoid all risks of deformation.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>
+                Ensure to mark each processed parts for identification or traceability.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>
+                Make sure that proper bending angle is selected to maintain IP of the sub assembled parts as per the drawing.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>
+                Processed parts are as per the approved drawings Semi-finished product part number:
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+
+    @*--table6--*@
+    <table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66 ">
+        <th colspan="9">Quality Control</th>
+        <tr>
+            <th>SL No.</th>
+            <th>Quality Control Check Points</th>
+            <th>
+                Approved
+
+                Yes | No
+
+            </th>
+            <th>QC Signature</th>
+        </tr>
+
+        <!-- Row 1 for Select the correct raw material for the bus bar as per approved drawing -->
+        <!-- Row 2 for Ensure that the dimensions of the processed parts are within the acceptable tolerance limit -->
+        <tr>
+            <td>1</td>
+            <td>
+                Verify and validate the semi-finished product conformity as per approved project specifications and drawings.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>
+                If not complied , issue nonconformity report (NCR) and corrective and preventive action (CAPA) requests.
+            </td>
+            <td>
+                <label for="row2CheckedYes">
+                    NCR Ref: -
+
+
+                </label>
+                <label for="row2CheckedNo">CAPA Ref: -</label>
+            </td>
+            <td></td>
+        </tr>
+
+    </table>
+
+
+
+
+    @*--table7--*@
+    <table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66 ">
+        <th colspan="9">SHEET POWDER PAINTING</th>
+        <tr>
+            <th>SL No.</th>
+            <th>Manufacturing Check Points</th>
+            <th>
+                Checked
+
+                Yes | No
+
+            </th>
+            <th>Operator Signature</th>
+        </tr>
+
+        <!-- Row 1 for Select the correct raw material for the bus bar as per approved drawing -->
+        <tr>
+            <td>1</td>
+            <td>
+                Select the correct processed/semi-finished parts for powder painting as per approved drawing.
+                <br><input type="checkbox" id="Sheet steel" name="Sheet steel" value="Yes">
+                <label for="Sheet steel">Sheet steel</label>
+
+                <br>
+
+                <input type="checkbox" id="Perforatedsheet" name="Perforatedsheet" value="Yes">
+                <label for="Perforatedsheet">Perforated sheet</label>
+                <br>
+                <input type="checkbox" id="StainlessSteel" name="StainlessSteel" value="Yes">
+                <label for="StainlessSteel">Stainless Steel</label><br>
+                <input type="checkbox" id="Mildsteewiremesh" name="Mildsteewiremesh" value="Yes">
+                <label for="Mildsteewiremesh">Mild steel, wire mesh</label><br>
+                <input type="checkbox" id="GradeD" name="GradeD" value="Yes">
+                <label for="GradeD">Grade D</label><br>
+                <input type="checkbox" id="GradeHR4" name="GradeHR4" value="Yes">
+                <label for="GradeHR4">Grade HR4</label><br>
+                <input type="checkbox" id="SPHC" name="SPHC" value="Yes">
+                <label for="SPHC">SPHC</label><br>
+                <input type="checkbox" id="CRCA" name="CRCA" value="Yes">
+                <label for="CRCA">CRCA</label><br>
+
+            </td>
+            <td>
+                <input type="checkbox" id="rowCheckedYes" name="rowCheckedYes" value="Yes">
+                <label for="rowCheckedYes">Yes</label>
+                <input type="checkbox" id="rowCheckedNo" name="rowCheckedNo" value="No">
+                <label for="rowCheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+
+        <!-- Row 2 for Ensure that the dimensions of the processed parts are within the acceptable tolerance limit -->
+        <tr>
+            <td>2</td>
+            <td>
+                No warping, sharp edges, excess powder, and burrs on the processed parts.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>
+                Ensure that the correct powder has been opted for the painting process.<br>
+                <input type="checkbox" id="Sheet steel" name="Sheet steel" value="Yes">
+                <label for="Sheet steel">RAL 1023  </label>
+
+                <br>
+
+                <input type="checkbox" id="Perforatedsheet" name="Perforatedsheet" value="Yes">
+                <label for="Perforatedsheet">RAL 3003 </label><br>
+
+                <input type="checkbox" id="StainlessSteel" name="StainlessSteel" value="Yes">
+                <label for="StainlessSteel">RAL 5007 </label><br>
+                <input type="checkbox" id="Mildsteewiremesh" name="Mildsteewiremesh" value="Yes">
+                <label for="Mildsteewiremesh"> RAL 7032 </label><br>
+                <input type="checkbox" id="GradeD" name="GradeD" value="Yes">
+                <label for="GradeD">RAL 7035  </label><br>
+                <input type="checkbox" id="GradeHR4" name="GradeHR4" value="Yes">
+                <label for="GradeHR4">RAL 9003 </label><br>
+                <input type="checkbox" id="SPHC" name="SPHC" value="Yes">
+                <label for="SPHC">RAL 9005 </label><br>
+                <input type="checkbox" id="CRCA" name="CRCA" value="Yes">
+                <label for="CRCA">SMOOTH </label><br>
+                <input type="checkbox" id="SPHC" name="SPHC" value="Yes">
+                <label for="SPHC">MATT  </label><br>
+
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>
+                Ensure that the powder, chemicals etc. used for the painting process are valid and within the shelf-life period.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>
+                Ensure the coating thickness values are measured across all the processed parts.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>
+                Ensure that the crosshatch test is performed to ensure the paint adhesion on the processed part.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>
+                Ensure that the salt spray test, lab tests for degreasing solution, zinc phosphating solution etc. are tested periodically
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>8</td>
+            <td>
+                Ensure that the conveyor speed, oven temperatures etc. are adjusted and calibrated regularly to control the flow of the powder guns precisely.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>
+                Ensure that the coating thickness values are within the acceptable limits as per the approved drawings and local regulations.
+                Individual areas coating thickness shall not fall under the minimum acceptable value, which is 100 microns. (Keep the QF 6A checklist for paint coating thickness record)
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>
+                Ensure to store the processed parts in such a way as to avoid all risks of deformation or deterioration
+                of the paintwork.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>
+                Ensure to mark each processed parts for identification or traceability.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>
+                Processed parts are as per the approved drawings Semi-finished product part number:
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+
+    @*--table8--*@
+    <table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66 ">
+        <th colspan="9">Quality Control</th>
+        <tr>
+            <th>SL No.</th>
+            <th>Quality Control Check Points</th>
+            <th>
+                Approved
+
+                Yes | No
+
+            </th>
+            <th>QC Signature</th>
+        </tr>
+
+        <!-- Row 1 for Select the correct raw material for the bus bar as per approved drawing -->
+        <!-- Row 2 for Ensure that the dimensions of the processed parts are within the acceptable tolerance limit -->
+        <tr>
+            <td>1</td>
+            <td>
+                Verify and validate the semi-finished product conformity as per approved project specifications and drawings.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>
+                If not complied , issue nonconformity report (NCR) and corrective and preventive action (CAPA) requests.
+            </td>
+            <td>
+                <label for="row2CheckedYes">
+                    NCR Ref: -
+
+
+                </label>
+                <label for="row2CheckedNo">CAPA Ref: -</label>
+            </td>
+            <td></td>
+        </tr>
+
+    </table>
+    <button type="button" class="btn btn-primary" style="background-color:#191c3696;">Submit</button>
+
+</body>

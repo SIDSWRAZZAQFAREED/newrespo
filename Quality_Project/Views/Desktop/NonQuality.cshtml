@@ -1,0 +1,328 @@
+﻿
+@{
+    ViewBag.Title = "NonQuality";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>NonQuality</h2>
+
+
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    .main_input {
+        height: 100%;
+    }
+
+    .table-bordered {
+        border-bottom: 1px solid black;
+    }
+
+    body {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+</style>
+
+
+<div id="tableContainer">
+    <table id="nonquality" class="table table-bordered" style="margin-top: 20px; width: 100%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="23"><center style="font-size:larger;color:white">Non Quality Index Board (Snag Analysis)</center></th>
+        </tr>
+        <thead>
+            <tr>
+                <th rowspan="2">Sr.No.</th>
+                <th rowspan="2">QR code/Barcode</th>
+                <th rowspan="2">Number (Tiers/Panel)</th>
+                <th colspan="2">Non Conforming</th>
+                <th colspan="4">Faults</th>
+                <th colspan="4">Responsibilities</th>
+            </tr>
+            <tr>
+                <!-- Additional Non Conforming Columns -->
+                <th>QTY</th>
+                <th>%</th>
+                <!-- Additional Faults Columns -->
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>Weight, Total</th>
+                <!-- Additional Responsibilities Columns -->
+                <th>Production</th>
+                <th>Purchase</th>
+                <th>Product Design dept.</th>
+            </tr>
+        </thead>
+        <tbody id="nonquality123">
+        </tbody>
+    </table>
+
+</div>
+
+
+
+
+<div class="form-group  col-md-2">
+    <br />
+    <button type="button" class="btn btn-success form-control" onclick="AddRowButton()"> Add Row</button>
+</div>
+
+<script>
+    var rowCount = 1; // Initialize the row count
+
+    function AddRowButton() {
+        var markup = "<tr><td>" + rowCount + "</td>"
+            + "<td><input type='text' size='6' class='form-control' id='Barcode' >"
+            + "</td><td><input type='text' size='6' class='form-control' id='Tiers' >"
+            + "</td><td><input type='text' size='6' class='form-control' id='QTY' />"
+            + "</td><td><input type='text' size='6' class='form-control' id='%' />"
+            + "</td><td><input type='text' size='6' class='form-control' id='A' />"
+            + "</td><td><input type='text' size='6' class='form-control' id='B' />"
+            + "</td><td><input type='text' size='6' class='form-control' id='C' />"
+            + "</td><td><input type='text' size='6' class='form-control' id='Weight,Total' />"
+            + "</td><td><input type='text' size='6' class='form-control' id='Production' />"
+            + "</td><td><input type='text' size='6' class='form-control' id='Purchase' />"
+            + "</td><td><input type='text' size='6' class='form-control' id='ProductDesigndept' />"
+            + "</td><td><div class='input-group'><button type='button' class='btnDelete btn-danger btn-sm text-dark' style='font-size: 18px' onclick='DeleteRow(this)'><i class='fa fa-trash-o' style='color:white'></i></button> "
+            + "</td></tr>";
+
+        tableBody = $("#nonquality123");
+        tableBody.append(markup);
+
+        // Update the total row and move it to the bottom
+        UpdateTotalRow();
+
+        rowCount++; // Increment the row count for the next row
+    }
+
+    function UpdateTotalRow() {
+        var totalRow = $("#totalRow");
+
+        // Remove totalRow from the current position
+        totalRow.remove();
+
+        // If total row doesn't exist, create it
+        if (totalRow.length === 0) {
+            totalRow = $("<tr id='totalRow'><td>Total</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>");
+        }
+
+        // Iterate through each column (starting from the 2nd column, as the 1st column is for row numbers)
+        for (var col = 1; col <= 12; col++) {
+            var total = 0;
+            // Iterate through each row (excluding the last row, which is the total row)
+            $("#nonquality123 tr:not(:last)").each(function () {
+                var cellValue = parseFloat($(this).find('td:eq(' + col + ') input').val()) || 0;
+                total += cellValue;
+            });
+
+            // Update the total row cell with the calculated sum
+            totalRow.find('td:eq(' + col + ')').text(total);
+        }
+
+        // Append totalRow to the bottom of the table
+        tableBody.append(totalRow);
+    }
+
+    function DeleteRow(btn) {
+        // Get the closest row and remove it
+        $(btn).closest('tr').remove();
+
+        // Update the total row after deleting a row
+        UpdateTotalRow();
+    }
+</script>
+
+
+<hr />
+<br>
+
+
+
+<table id="Schedule" class="table table-bordered" style="margin-top: 20px; width: 100%; background-color: #f1f3ec66;">
+    <tr style="background-color: #5f98ab;">
+        <th colspan="23"><center style="font-size:larger;color:white">Non Quality Index Board (Snag Analysis)</center></th>
+    </tr>
+    <thead>
+        <tr>
+            <th rowspan="2">Sr.No.</th>
+            <th rowspan="2">Employee Code</th>
+            <th rowspan="2">Activity</th>
+            <th colspan="4">Schedule</th>
+            <th rowspan="2">Equipment</th>
+            <th rowspan="2">Calibration Date</th>
+            <th rowspan="2"> Calibration Expiry Date</th>
+        </tr>
+        <tr>
+            <!-- Additional Non Conforming Columns -->
+            <th>MONDAY </th>
+            <th>TUESDAY</th>
+            <!-- Additional Faults Columns -->
+            <th>WEDNESDAY</th>
+            <th>THURSDAY</th>
+        </tr>
+    </thead>
+    <tbody id="Schedule">
+        <!-- Dummy Data Row 1 -->
+        <tr>
+            <td>1</td>
+            <td>EMP001</td>
+            <td>Task A</td>
+            <td>8:00 AM - 10:00 AM</td>
+            <td>11:00 AM - 1:00 PM</td>
+            <td>9:00 AM - 12:00 PM</td>
+            <td>2:00 PM - 4:00 PM</td>
+            <td>Equipment A</td>
+            <td>2023-01-01</td>
+            <td>2023-01-10</td>
+        </tr>
+        <!-- Dummy Data Row 2 -->
+        <tr>
+            <td>2</td>
+            <td>EMP002</td>
+            <td>Task B</td>
+            <td>10:00 AM - 12:00 PM</td>
+            <td>2:00 PM - 4:00 PM</td>
+            <td>8:00 AM - 11:00 AM</td>
+            <td>1:00 PM - 3:00 PM</td>
+            <td>Equipment B</td>
+            <td>2023-01-05</td>
+            <td>2023-01-15</td>
+        </tr>
+        <!-- Dummy Data Row 3 -->
+        <tr>
+            <td>3</td>
+            <td>EMP003</td>
+            <td>Task C</td>
+            <td>9:00 AM - 11:00 AM</td>
+            <td>1:00 PM - 3:00 PM</td>
+            <td>10:00 AM - 12:00 PM</td>
+            <td>2:00 PM - 4:00 PM</td>
+            <td>Equipment C</td>
+            <td>2023-01-10</td>
+            <td>2023-01-20</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+<div class="d-flex justify-content-end">
+    <button type="button" class="btn btn-primary ml-auto" style="background-color:#191c3696; margin-bottom:15px; ">Submit</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*<script>
+        var rowCount = 1; // Initialize the row count
+
+        function AddRowButton() {
+            var markup = "<tr><td>" + rowCount + "</td>"
+                + "<td><input type='text' size='6' class='form-control' id='Barcode' >"
+                + "</td><td><input type='text' size='6' class='form-control' id='Tiers' >"
+                + "</td><td><input type='text' size='6' class='form-control' id='QTY' />"
+                + "</td><td><input type='text' size='6' class='form-control' id='%' readonly />"
+                + "</td><td><input type='text' size='6' class='form-control' id='A' />"
+                + "</td><td><input type='text' size='6' class='form-control' id='B' />"
+                + "</td><td><input type='text' size='6' class='form-control' id='C' />"
+                + "</td><td><input type='text' size='6' class='form-control' id='Weight,Total' />"
+                + "</td><td><input type='text' size='6' class='form-control' id='Production' />"
+                + "</td><td><input type='text' size='6' class='form-control' id='Purchase' />"
+                + "</td><td><input type='text' size='6' class='form-control' id='ProductDesigndept' />"
+                + "</td><td><div class='input-group'><button type='button' class='btnDelete btn-danger btn-sm text-dark' style='font-size: 18px' onclick='DeleteRow(this)'><i class='fa fa-trash-o' style='color:white'></i></button> "
+                + "</td></tr>";
+
+            tableBody = $("#nonquality123");
+            tableBody.append(markup);
+
+            // Update the total row and move it to the bottom
+            UpdateTotalRow();
+
+            rowCount++; // Increment the row count for the next row
+        }
+
+        function UpdateTotalRow() {
+            var totalRow = $("#totalRow");
+
+            // Remove totalRow from the current position
+            totalRow.remove();
+
+            // If total row doesn't exist, create it
+            if (totalRow.length === 0) {
+                totalRow = $("<tr id='totalRow'><td>Total</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>");
+            }
+
+            // Initialize variables for sum and percentage calculation
+            var sumTiers = 0;
+            var sumQTY = 0;
+
+            // Iterate through each column (starting from the 2nd column, as the 1st column is for row numbers)
+            for (var col = 1; col <= 12; col++) {
+                var total = 0;
+                // Iterate through each row (excluding the last row, which is the total row)
+                $("#nonquality123 tr:not(:last)").each(function () {
+                    var cellValue = parseFloat($(this).find('td:eq(' + col + ') input').val()) || 0;
+                    total += cellValue;
+
+                    // Update sumTiers and sumQTY based on the columns
+                    if (col === 2) { // Tiers column
+                        sumTiers += cellValue;
+                    } else if (col === 3) { // QTY column
+                        sumQTY += cellValue;
+                    }
+                });
+
+                // Update the total row cell with the calculated sum
+                totalRow.find('td:eq(' + col + ')').text(total);
+            }
+
+            // Calculate and update the percentage in the total row
+            var percentage = (sumTiers / sumQTY) * 100;
+            totalRow.find('td:eq(4)').text(percentage.toFixed(2)); // Update the % column
+
+            // Append totalRow to the bottom of the table
+            tableBody.append(totalRow);
+        }
+
+        function DeleteRow(btn) {
+            // Get the closest row and remove it
+            $(btn).closest('tr').remove();
+
+            // Update the total row after deleting a row
+            UpdateTotalRow();
+        }
+    </script>*@

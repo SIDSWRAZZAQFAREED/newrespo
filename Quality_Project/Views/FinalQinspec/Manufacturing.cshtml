@@ -1,0 +1,1411 @@
+﻿
+@{
+    ViewBag.Title = "Manufacturing";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    .main_input {
+        height: 100%;
+    }
+
+    .table-bordered {
+        border-bottom: 1px solid black;
+    }
+
+    body {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+</style>
+
+
+<div class="main_heading" style="background-color: #018bd3;height: 70px;">
+    <h3 style="text-align: center; padding-top:18px;color: white;"><b>MANUFACTURING PROCESS MEASUREMENT</b> </h3>
+</div>
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white">SHEET METAL FABRICATION</center></th>
+
+    </tr>
+    <tr>
+        <th>
+            PROCESS
+
+        </th>
+        <th>
+            Total No.of parts Manufactured
+        </th>
+        <th>
+            Total No.of faults recorded
+
+        </th>
+        <th>
+            Percentage of faults
+        </th>
+
+        <th>
+            Remarks
+
+
+        </th>
+
+
+
+
+    </tr>
+
+
+
+
+    <tr>
+        <th>
+
+        </th>
+        <th>
+        </th>
+        <th colspan="2">
+            (from Routing Form/Drawing/Work Instruction)
+
+
+        </th>
+        <th>
+        </th>
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+    <tr>
+        <th>
+            Material
+
+
+        </th>
+        <th>
+            6512
+
+        </th>
+        <th>
+            5
+
+
+        </th>
+        <th>
+            0.076781327
+
+        </th>
+
+        <th>
+            *
+
+
+        </th>
+
+
+
+
+    </tr>
+
+
+
+
+
+
+    <tr>
+        <th>
+            Dimension
+
+
+
+        </th>
+        <th>
+            100
+
+
+        </th>
+        <th>
+            1
+
+
+        </th>
+        <th>
+            1
+
+        </th>
+
+        <th>
+            ^
+
+
+        </th>
+
+
+
+
+    </tr>
+
+
+    <tr>
+        <th> Shearing    </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+
+
+    <tr>
+        <th>
+            Punching
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>
+            Bending
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>
+            Welding
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>
+            Drilling
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>
+            Colour
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>
+            Paint Quality
+
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+</table>
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white"> BUS BAR FABRICATION& ASSEMBLY</center></th>
+
+    </tr>
+    <tr>
+        <th>
+            Material
+
+
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>
+            Dimension
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>
+            Grinding
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>
+            Punching
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>
+            Bending
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+
+    <tr>
+        <th>
+            Sharp Edges
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th>
+            Sequence of phases
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>
+            Sleeving/Epoxy Coating
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>
+            Clearance and Creapage
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>
+            Supports/Insulator
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th>
+            Fixing of Busbars
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>
+            Torque tightness
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>
+            Neutral Links/Terminals/Connecting Links
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th>
+            Earthing links/Terminals
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+</table>
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white"> ELECTRICAL ASSEMBLY & WIRING</center></th>
+
+    </tr>
+    
+    <tr>
+        <th>
+            Material
+
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>
+            Dimension
+
+
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th>
+            Material
+
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>
+            Colour & size of wire
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th>
+            Control wiring as per drawing
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>
+            Ferruling/Wire Marking
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th>
+            Wire Stripping & crimping
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>
+            Wire dressing & termination
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>
+            Terminal fixing & numbering
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th>
+            Space Heater
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>
+            Component,Auxiliary Protection/Name Plate ratings
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th>
+            Component fixings
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th>
+            Accsessibility of equipments
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th>
+            Door&Device earthings
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th>
+            Electrical Interlocking
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th>
+            Wire Cuts/Damage
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+</table>
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white">MECHANICAL ASSEMBLY</center></th>
+
+    </tr>
+    <tr>
+        <th>
+            Material
+
+
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+
+
+
+    <tr>
+        <th>
+            Dimension
+
+
+
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+
+    <tr>
+        <th>
+            Frame Sizes
+
+
+
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th>
+            Assembly Plates &Covers
+
+
+
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th>
+            Apparatus Fastening
+
+
+
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th>
+            Door & Cover fixing
+
+
+
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th>
+            Door and cover alignment
+
+
+
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th>
+            Drawer/Compartment/Chamber Alignment
+
+
+
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th>
+            Gasket fixing
+
+
+
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th>
+            Door lock & lock alignment
+
+
+
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th>
+            Component/ Name Plate ratings
+
+
+
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th>
+            Component fixing
+
+
+
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th>
+            Accsessibility of equipments
+
+
+
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th>
+            Rotary handles/TNC/VSS/LR Switches
+
+
+
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th>
+            Mechanical interlocking
+
+
+
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th>
+            Space For Customer Connection (Glanding & Termination)
+
+
+
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th>
+            Labelling
+
+
+
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th>
+            Lifting hooks
+
+
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+</table>
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white">FINAL ASSEMBLY</center></th>
+
+    </tr>
+    <tr>
+        <th>
+            Form of separation
+
+
+
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>
+            IP Degree
+
+
+
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+
+
+    <tr>
+        <th>
+            Shrouding Material
+
+
+
+
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+
+
+    <tr>
+        <th>
+            Interconnection busbars
+
+
+
+
+
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>
+            Inter Panel wiring
+
+
+
+
+
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+
+    <tr>
+        <th>
+            Mimic layout
+
+
+
+
+
+
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+
+
+    <tr>
+        <th>
+            Warning Labels
+
+
+
+
+
+
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>
+            Space for shortage materials
+
+
+
+
+
+
+
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th>
+            Space for deliverables
+
+
+
+
+
+
+
+
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th>
+            Panel cleaning inside & outside
+
+
+
+
+
+
+
+
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+    <tr>
+        <th>
+            Finishing
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+</table>
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white">LEGEND</center></th>
+
+    </tr>
+
+    <tr>
+        <th>   EXCELLENT (0-2%)   </th>
+        <th>   +   NEED  FURTHER IMPROVEMENT(5-7%) </th>
+
+    </tr>
+    <tr>
+        <th>   ^  GOOD ( 2-5%)   </th>
+        <th>   X  NEED IMMEDIATE ACTION(7 %&above) </th>
+
+    </tr>
+    <tr>
+        <th>Criteria's to be finalized collectiveley </th>
+
+    </tr>
+
+</table>
+
+<div class="d-flex justify-content-end">
+    <button type="button" class="btn btn-primary" style="background-color:#191c3696;margin-bottom:10px;">Submit</button>
+</div>
+
+
+

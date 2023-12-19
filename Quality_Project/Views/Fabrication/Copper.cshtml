@@ -1,0 +1,666 @@
+﻿
+@{
+    ViewBag.Title = "Copper";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Copper</h2>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copper</title>
+</head>
+
+<body>
+
+
+    @*--table1--*@
+    <table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66 ">
+        <th colspan="9">COPPER PUNCHING AND CUTTING</th>
+        <tr>
+            <th>SL No.</th>
+            <th>Manufacturing Check Points</th>
+            <th>
+                Checked
+
+                Yes | No
+
+            </th>
+            <th>Operator Signature</th>
+        </tr>
+
+        <!-- Row 1 for Select the correct raw material for the bus bar as per approved drawing -->
+        <tr>
+            <td>1</td>
+            <td>
+                Select the correct raw material for the bus bar as per approved drawing.
+                <br>
+                <input type="checkbox" id="copperFullyRoundEdge" name="copperFullyRoundEdge" value="Yes">
+                <label for="copperFullyRoundEdge">Fully round edge</label>
+                <br>
+                <input type="checkbox" id="copperSlightlyRoundEdge" name="copperSlightlyRoundEdge" value="Yes">
+                <label for="copperSlightlyRoundEdge">Slightly round edge</label>
+                <br>
+                <input type="checkbox" id="copperHDHC" name="copperHDHC" value="Yes">
+                <label for="copperHDHC">HDHC</label>
+                <br>
+                <input type="checkbox" id="copperFullHard" name="copperFullHard" value="Yes">
+                <label for="copperFullHard">Full Hard</label>
+                <br>
+                <input type="checkbox" id="copperHalfHard" name="copperHalfHard" value="Yes">
+                <label for="copperHalfHard">Half Hard</label>
+            </td>
+            <td>
+                <input type="checkbox" id="rowCheckedYes" name="rowCheckedYes" value="Yes">
+                <label for="rowCheckedYes">Yes</label>
+                <input type="checkbox" id="rowCheckedNo" name="rowCheckedNo" value="No">
+                <label for="rowCheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+
+        <!-- Row 2 for Ensure that the dimensions of the processed parts are within the acceptable tolerance limit -->
+        <tr>
+            <td>2</td>
+            <td>
+                Ensure that the dimensions of the processed parts are within the acceptable tolerance limit provided in the drawing.
+                Tolerance Limit ±0.5mm & ±0.5°
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>
+                Ensure to store the processed parts in such a way as to avoid all risks of deformation.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>
+                Ensure to mark each processed parts for identification or traceability.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>
+                No warping, scratches, sharp edges, and burrs on the processed parts or on the cut edges.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>
+                Ensure that all the holes are deburred and buffed properly.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>
+                Processed parts are as per the approved drawings Semi-finished product part number:
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+
+    @*--table2--*@
+    <table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66 ">
+        <th colspan="9">Quality Control</th>
+        <tr>
+            <th>SL No.</th>
+            <th>Quality Control Check Points</th>
+            <th>
+                Approved
+
+                Yes | No
+
+            </th>
+            <th>QC Signature</th>
+        </tr>
+
+        <!-- Row 1 for Select the correct raw material for the bus bar as per approved drawing -->
+        <!-- Row 2 for Ensure that the dimensions of the processed parts are within the acceptable tolerance limit -->
+        <tr>
+            <td>1</td>
+            <td>
+                Verify and validate the semi-finished product conformity as per approved project specifications and drawings.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>
+                If not complied, issue nonconformity report (NCR) and corrective and preventive action (CAPA) requests.
+            </td>
+            <td>
+                <label for="row2CheckedYes">
+                    NCR Ref: -
+
+
+                </label>
+                <label for="row2CheckedNo">CAPA Ref: -</label>
+            </td>
+            <td></td>
+        </tr>
+
+    </table>
+
+
+    @*--table3--*@
+
+    <table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66 ">
+        <th colspan="9">COPPER BENDING</th>
+        <tr>
+            <th>SL No.</th>
+            <th>Manufacturing Check Points</th>
+            <th>
+                Checked
+
+                Yes | No
+
+            </th>
+            <th>Operator Signature</th>
+        </tr>
+
+        <!-- Row 1 for Select the correct raw material for the bus bar as per approved drawing -->
+        <tr>
+            <td>1</td>
+            <td>
+                Select the correct processed/semi-finished parts for bending as per approved drawing.
+                <br>
+                <input type="checkbox" id="Copper" name="Copper" value="Yes">
+                <label for="copperHDHC">Copper</label>
+                <input type="checkbox" id="Copper" name="Copper" value="Yes">
+                <label for="Copper">Fully round edge</label>
+                <br>
+                <input type="checkbox" id="copperSlightlyRoundEdge" name="copperSlightlyRoundEdge" value="Yes">
+                <label for="copperSlightlyRoundEdge">Slightly round edge</label>
+                <br>
+                <input type="checkbox" id="copperHDHC" name="copperHDHC" value="Yes">
+                <label for="copperHDHC">HDHC</label>
+                <br>
+                <input type="checkbox" id="copperFullHard" name="copperFullHard" value="Yes">
+                <label for="copperFullHard">Full Hard</label>
+                <br>
+                <input type="checkbox" id="copperHalfHard" name="copperHalfHard" value="Yes">
+                <label for="copperHalfHard">Half Hard</label>
+            </td>
+            <td>
+                <input type="checkbox" id="rowCheckedYes" name="rowCheckedYes" value="Yes">
+                <label for="rowCheckedYes">Yes</label>
+                <input type="checkbox" id="rowCheckedNo" name="rowCheckedNo" value="No">
+                <label for="rowCheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+
+        <!-- Row 2 for Ensure that the dimensions of the processed parts are within the acceptable tolerance limit -->
+        <tr>
+            <td>2</td>
+            <td>
+                No bending cracks, warping, sharp edges, and burrs on the processed parts.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>
+                Ensure that the dimensions of the processed parts are within the acceptable tolerance limit provided in the drawing. Tolerance Limit   ±0.5mm & ±0.5°
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>
+                Ensure to store the processed parts in such a way as to avoid all risks of deformation.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>
+                Ensure to mark each processed parts for identification or traceability.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>
+                Make sure that proper bending angle is selected and obtained to maintain the maximum surface area for joints/connections.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>
+                Processed parts are as per the approved drawings Semi-finished product part number:
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+
+
+    @*--table4--*@
+    <table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66 ">
+        <th colspan="9">Quality Control</th>
+        <tr>
+            <th>SL No.</th>
+            <th>Quality Control Check Points</th>
+            <th>
+                Approved
+
+                Yes | No
+
+            </th>
+            <th>QC Signature</th>
+        </tr>
+
+        <!-- Row 1 for Select the correct raw material for the bus bar as per approved drawing -->
+        <!-- Row 2 for Ensure that the dimensions of the processed parts are within the acceptable tolerance limit -->
+        <tr>
+            <td>1</td>
+            <td>
+                Verify and validate the semi-finished product conformity as per approved project specifications and drawings.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>
+                If not complied, issue nonconformity report (NCR) and corrective and preventive action (CAPA) requests.
+            </td>
+            <td>
+                <label for="row2CheckedYes">
+                    NCR Ref: -
+
+
+                </label>
+                <label for="row2CheckedNo">CAPA Ref: -</label>
+            </td>
+            <td></td>
+        </tr>
+
+    </table>
+
+
+
+    @*--table5--*@
+
+    <table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66 ">
+        <th colspan="9">COPPER COATINGS</th>
+        <tr>
+            <th>SL No.</th>
+            <th>Manufacturing Check Points</th>
+            <th>
+                Checked
+
+                Yes | No
+
+            </th>
+            <th>Operator Signature</th>
+        </tr>
+
+        <!-- Row 1 for Select the correct raw material for the bus bar as per approved drawing -->
+        <tr>
+            <td>1</td>
+            <td>
+                Select the correct processed/semi-finished parts for coating as per approved drawing.
+                <br>
+                <input type="checkbox" id="Copper" name="Copper" value="Yes">
+                <label for="copperHDHC">Copper</label><br>
+                <input type="checkbox" id="Copper" name="Copper" value="Yes">
+                <label for="Copper">Fully round edge</label>
+                <br>
+                <input type="checkbox" id="copperSlightlyRoundEdge" name="copperSlightlyRoundEdge" value="Yes">
+                <label for="copperSlightlyRoundEdge">Slightly round edge</label>
+                <br>
+                <input type="checkbox" id="copperHDHC" name="copperHDHC" value="Yes">
+                <label for="copperHDHC">HDHC</label>
+                <br>
+                <input type="checkbox" id="copperFullHard" name="copperFullHard" value="Yes">
+                <label for="copperFullHard">Full Hard</label>
+                <br>
+                <input type="checkbox" id="copperHalfHard" name="copperHalfHard" value="Yes">
+                <label for="copperHalfHard">Half Hard</label><br>
+            </td>
+            <td>
+                <input type="checkbox" id="rowCheckedYes" name="rowCheckedYes" value="Yes">
+                <label for="rowCheckedYes">Yes</label>
+                <input type="checkbox" id="rowCheckedNo" name="rowCheckedNo" value="No">
+                <label for="rowCheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+
+        <!-- Row 2 for Ensure that the dimensions of the processed parts are within the acceptable tolerance limit -->
+        <tr>
+            <td>2</td>
+            <td>
+                No folds, air bubbles, scratches, damages, sharp edges, and burrs on the coatings.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>
+                Ensure that the correct powder has been opted for the painting process.
+                <br><input type="checkbox" id="Copper" name="Copper" value="Yes">
+                <label for="copperHDHC">Epoxy </label><br>
+                <input type="checkbox" id="Copper" name="Copper" value="Yes">
+                <label for="Copper">Heat Shrinkable Tube  </label>
+                <br>
+                <input type="checkbox" id="copperSlightlyRoundEdge" name="copperSlightlyRoundEdge" value="Yes">
+                <label for="copperSlightlyRoundEdge">Tin </label>
+                <br>
+                <input type="checkbox" id="copperHDHC" name="copperHDHC" value="Yes">
+                <label for="copperHDHC">Silver</label>
+                <br>
+                <input type="checkbox" id="copperFullHard" name="copperFullHard" value="Yes">
+                <label for="copperFullHard">Color RED  </label>
+                <br>
+                <input type="checkbox" id="copperHalfHard" name="copperHalfHard" value="Yes">
+                <label for="copperHalfHard">ColorRED </label><br>
+            </td>
+            <td>
+                <input type="checkbox" id="row2Checked Yes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>
+                Ensure that the dimensions of the coating are within the acceptable tolerance limit provided in the drawing. Tolerance Limit   ±0.5mm & ±0.5°
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>
+                Ensure that the powder used for the epoxy coating process is valid and within the shelf-life period.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>
+                Ensure that the BPTM tube used for the sleeving is good and within the shelf-life period.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>7</td>
+
+            <td>
+                Ensure the coating thickness values are measured across all the epoxy/tin/silver treated parts.  <br>
+                <input type="checkbox" id="Copper" name="Copper" value="Yes">
+                <label for="copperHDHC">Tin (5-8) µm   </label><br />
+                <input type="checkbox" id="Copper" name="Copper" value="Yes">
+                <label for="Copper">Silver 5µm</label>
+                <br>
+                <input type="checkbox" id="copperSlightlyRoundEdge" name="copperSlightlyRoundEdge" value="Yes">
+                <label for="copperSlightlyRoundEdge">Epoxy 1.2mm </label>
+                <br>
+
+            </td>
+
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>
+                Ensure that the coating thickness values are within the acceptable limits as per the approved drawings and local regulations.
+
+                Individual areas coating thickness shall not fall under the minimum acceptable value.
+                <h5>(Keep the QF 5E checklist for epoxy coating thickness record)</h5>
+                <h5>(Keep the QF 5F checklist for tin coating thickness record)</h5>
+                <h5>(Keep the QF 5G checklist for silver coating thickness record)</h5>
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>9</td>
+            <td>
+                Ensure that all the holes are deburred and buffed properly to get proper electrical contact.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>
+                Ensure to store the processed parts in such a way as to avoid all risks of deterioration of the coating.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>
+                Ensure to mark each processed parts for identification or traceability.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>
+                Processed parts are as per the approved drawings Semi-finished product part number:
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+
+
+
+    @*--table6--*@
+    <table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66 ">
+        <th colspan="9">Quality Control</th>
+        <tr>
+            <th>SL No.</th>
+            <th>Quality Control Check Points</th>
+            <th>
+                Approved
+
+                Yes | No
+
+            </th>
+            <th>QC Signature</th>
+        </tr>
+
+        <!-- Row 1 for Select the correct raw material for the bus bar as per approved drawing -->
+        <!-- Row 2 for Ensure that the dimensions of the processed parts are within the acceptable tolerance limit -->
+        <tr>
+            <td>1</td>
+            <td>
+                Verify and validate the semi-finished product conformity as per approved project specifications and drawings.
+            </td>
+            <td>
+                <input type="checkbox" id="row2CheckedYes" name="row2CheckedYes" value="Yes">
+                <label for="row2CheckedYes">Yes</label>
+                <input type="checkbox" id="row2CheckedNo" name="row2CheckedNo" value="No">
+                <label for="row2CheckedNo">No</label>
+            </td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>
+                If not complied, issue nonconformity report (NCR) and corrective and preventive action (CAPA) requests.
+            </td>
+            <td>
+                <label for="row2CheckedYes">
+                    NCR Ref: -
+
+
+                </label>
+                <label for="row2CheckedNo">CAPA Ref: -</label>
+            </td>
+            <td></td>
+        </tr>
+
+    </table>
+    <button type="button" class="btn btn-primary" style="background-color:#191c3696;">Submit</button>
+
+</body>
+
+</html>
+

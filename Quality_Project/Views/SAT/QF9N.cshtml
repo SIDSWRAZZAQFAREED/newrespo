@@ -1,0 +1,373 @@
+﻿
+@{
+    ViewBag.Title = "QF9N";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    table, th {
+        text-align: center;
+    }
+
+    .table-bordered {
+        border-bottom: 1px solid black;
+    }
+</style>
+<style>
+    input[type=checkbox] {
+        accent-color: pink;
+        outline: 2px solid plum;
+</style>
+
+<div class="table-responsive-sm">
+    <div class="main_heading" style="background-color:#018bd3;height: 70px;">
+        <h3 style="text-align: center; padding-top:18px;color: white;"><b>Yearly Maintenance Check List</b> </h3>
+    </div>
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">General data & information:</center></th>
+
+        </tr>
+        <tr>
+            <th>Feeder Name</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th>Relay Function</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+            <th>Relay Make</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th>Relay Make Software used	</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+            <th>Relay Make		Software used	</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th>Nominal Current</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+            <th>Nominal Current</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th>Aux Supply</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+            <th>Feeder Name</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th>Relay Function</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+    </table>
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="6"><center style="font-size:larger;color:white">1.	Visual and mechanical check:</center></th>
+
+        </tr>
+        <tr>
+            <th>S.r</th>
+            <th>Description </th>
+            <th colspan="2">Remarks</th>
+
+
+        </tr>
+
+
+        <tr>
+            <th>1</th>
+
+            <td>
+                All connections checked according to the wiring diagram
+            </td>
+
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+
+        <tr>
+            <th>2</th>
+
+            <td>
+                Casing earthing checked
+
+            </td>
+            <th><input type="text" width="30px;" class="form-control"></th>
+
+        </tr>
+        <tr>
+            <th>3</th>
+
+            <td>
+                7	BI's  Binary Inputs checked
+
+            </td>
+            <th><input type="text" width="30px;" class="form-control"></th>
+
+        </tr>
+        <tr>
+            <th>4</th>
+            <td>
+                BO's Binary Outputs checked
+            </td>
+
+            <th><input type="text" width="30px;" class="form-control"></th>
+
+        </tr>
+
+
+    </table>
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="6"><center style="font-size:larger;color:white">2.	Electrical Checks:</center></th>
+
+        </tr>
+        <tr>
+            <th>S.r</th>
+            <th>Description </th>
+            <th colspan="2">Options</th>
+
+
+        </tr>
+        <tr>
+
+            <th></th>
+            <th> </th>
+            <th>Yes </th>
+            <th>No </th>
+
+
+        </tr>
+
+        <tr>
+            <th>1</th>
+
+            <td>
+                All connections checked according to the wiring diagram
+            </td>
+            <th style="color:plum;"><input type="radio" id="css" name="fav_language" value="CSS"></th>
+            <th style="color:plum;"><input type="radio" id="css" name="fav_language" value="CSS"></th>
+
+        </tr>
+
+        <tr>
+            <th>2</th>
+
+            <td>
+                Casing earthing checked
+
+            </td>
+            <th style="color:plum;"><input type="radio" id="css" name="fav_language" value="CSS"></th>
+            <th style="color:plum;"><input type="radio" id="css" name="fav_language" value="CSS"></th>
+
+        </tr>
+        <tr>
+            <th>3</th>
+
+            <td>
+                7	BI's  Binary Inputs checked
+
+            </td>
+            <th style="color:plum;"><input type="radio" id="css" name="fav_language" value="CSS"></th>
+            <th style="color:plum;"><input type="radio" id="css" name="fav_language" value="CSS"></th>
+
+        </tr>
+        <tr>
+            <th>4</th>
+            <td>
+                BO's Binary Outputs checked
+            </td>
+
+            <th style="color:plum;"><input type="radio" id="css" name="fav_language" value="CSS"></th>
+            <th style="color:plum;"><input type="radio" id="css" name="fav_language" value="CSS"></th>
+
+        </tr>
+        <tr>
+            <th>5</th>
+            <td>
+                9	Events Recorder checked
+            </td>
+
+            <th style="color:plum;"><input type="radio" id="css" name="fav_language" value="CSS"></th>
+            <th style="color:plum;"><input type="radio" id="css" name="fav_language" value="CSS"></th>
+
+        </tr>
+        <tr>
+            <th>6</th>
+            <td>
+                LED's operation checked
+            </td>
+
+            <th style="color:plum;"><input type="radio" id="css" name="fav_language" value="CSS"></th>
+            <th style="color:plum;"><input type="radio" id="css" name="fav_language" value="CSS"></th>
+
+        </tr>
+
+        <tr>
+            <th>7</th>
+
+            <td>
+                ERelay model no. Has been check in the display
+
+            </td>
+            <th style="color:plum;"><input type="radio" id="css" name="fav_language" value="CSS"></th>
+            <th style="color:plum;"><input type="radio" id="css" name="fav_language" value="CSS"></th>
+
+        </tr>
+        <tr>
+            <th>8</th>
+
+            <td>
+                LED's operation checked
+
+            </td>
+            <th style="color:plum;"><input type="radio" id="css" name="fav_language" value="CSS"></th>
+            <th style="color:plum;"><input type="radio" id="css" name="fav_language" value="CSS"></th>
+
+        </tr>
+        <tr>
+            <th>9</th>
+            <td>
+                Casing earthing checked
+
+            </td>
+            <th style="color:plum;"><input type="radio" id="css" name="fav_language" value="CSS"></th>
+            <th style="color:plum;"><input type="radio" id="css" name="fav_language" value="CSS"></th>
+
+        </tr>
+
+    </table>
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">Test  Equipment Used:</center></th>
+
+        </tr>
+        <tr>
+            <th></th>
+            <th>Equipment Name</th>
+            <th>Make/Model</th>
+            <th>Serial No</th>
+            <th>
+                Calibration Due Date
+            </th>
+        </tr>
+        <tr>
+            <th>Multi Meter</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+            <th>Insulation Resistance Tester</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+            <th>Voltage Injection Kit</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+    </table>
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">3.	Transformer  name plate details </center></th>
+
+        </tr>
+        <tr>
+            <th>Item</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <th>C.T Ratio</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+            <th>Frequency</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+
+    </table>
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">4.Measurement:</center></th>
+
+        </tr>
+        <tr>
+            <th>Measured values in primary (A)</th>
+            <th>Injected sec. Current (A)</th>
+            <th>Expected current in primary (A)</th>
+
+        </tr>
+        <tr>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+
+    </table>
+
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">4.Measurement:</center></th>
+
+        </tr>
+
+        <tr>
+            <th>Phase</th>
+            <th>87B</th>
+            <th>Pickup (A)</th>
+            <th>Drop off (A)</th>
+            <th>Time at 2 times</th>
+            <th>Setting time (Sec)</th>
+            <th>Meas. time (Sec)</th>
+        </tr>
+
+        <tr>
+            <td>A</td>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+            <td>B</td>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+            <td>C</td>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        </tbody>
+    </table>
+    <div class="d-flex justify-content-end">
+        <button type="button" class="btn btn-primary ml-auto" style="background-color:#191c3696;margin-bottom:10px">Submit</button>
+    </div>
+</div>
+
+
+
+

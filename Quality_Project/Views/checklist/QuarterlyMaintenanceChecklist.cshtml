@@ -1,0 +1,335 @@
+﻿
+@{
+    ViewBag.Title = "QuarterlyMaintenanceChecklist";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table, th {
+            text-align: center;
+        }
+
+        .table-bordered {
+            border-bottom: 1px solid black;
+        }
+    </style>
+    <style>
+        input[type=checkbox] {
+            accent-color: pink;
+            outline: 2px solid plum;
+    </style>
+
+
+    <div class="table-responsive-sm">
+        <div class="main_heading" style="background-color: #018bd3;height: 70px;">
+            <h3 style="text-align: center; padding-top:18px;color: white;"><b>DIELECTRIC WITHSTAND TEST</b> </h3>
+        </div>
+        <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+            <tr style="background-color: #5f98ab;">
+                <th colspan="12"><center style="font-size:larger;color:white">Insulation Resistance Test</center></th>
+
+            </tr>
+            <tr>
+                <th>Equipment</th>
+                <th>11kV Switchgear </th>
+                <th> <input type="text" width="30px;" class="form-control"> </th>
+                <th>Date: </th>
+                <th><input type="date" width="30px;" class="form-control"> </th>
+            </tr>
+
+            <tr>
+                <th>Description</th>
+
+                <th>Service Instruction Sheet </th>
+                <th> <input type="text" width="30px;" class="form-control"> </th>
+                <th>Project: </th>
+                <th><input type="text" width="30px;" class="form-control"> </th>
+            </tr>
+            <tr>
+                <th>Service </th>
+                <th>Added Quarterly </th>
+                <th> <input type="text" width="30px;" class="form-control"> </th>
+                <th>Switch board Ref: </th>
+                <th><input type="text" width="30px;" class="form-control"> </th>
+            </tr>
+
+        </table>
+       
+
+        <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+            <tr style="background-color: #5f98ab;">
+                <th colspan="12"><center style="font-size:larger;color:white">Added Quarterly Maintenance Check List</center></th>
+
+            </tr>
+            <tr>
+                <th>SL No</th>
+                <th>Maintenance Check Points </th>
+                <th colspan="2">Checked  </th>
+                <th>Remarks  </th>
+
+            </tr>
+            <tr>
+                <th></th>
+                <th> </th>
+                <th>Yes </th>
+                <th>No </th>
+
+
+            </tr>
+            <tr>
+                <td colspan="5" style="background-color: #788f87; padding-top: 10px; padding-bottom: 10px; color: white;">
+                    <h6 class="m-0"><b>(A)Visual Inspection & General Cleaning</b></h6>
+                </td>
+            </tr>
+
+
+            <tr>
+                <th>1</th>
+                <th>Cleaning of Metering Compartment </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th><input type="text" width="30px;" class="form-control"></th>
+            </tr>
+
+            <tr>
+                <th>2</th>
+                <th>Cleaning of Breaker (VCB & Floor Only)</th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th><input type="text" width="30px;" class="form-control"></th>
+            </tr>
+            <tr>
+                <th>3</th>
+                <th>Cleaning External of Top Covers & VT Compartment</th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th><input type="text" width="30px;" class="form-control"></th>
+            </tr>
+
+
+            <tr>
+                <td colspan="5" style="background-color: #788f87; padding-top: 10px; padding-bottom: 10px; color: white;">
+                    <h6 class="m-0"><b>(B) Metering Compartment</b></h6>
+                </td>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th>
+                    Tightening Connections on control wiring & confirming
+                    MCB/fuse links not open circuited
+                </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th><input type="text" width="30px;" class="form-control"></th>
+            </tr>
+
+            <tr>
+                <th>2</th>
+                <th>
+                    Functional check of Ammeter, Voltmeter & PQ Meter reading
+                    – Proper (Needle not stuck & Zero point correction)
+                </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th><input type="text" width="30px;" class="form-control"></th>
+            </tr>
+            <tr>
+                <th>3</th>
+                <th>
+                    Function checks & Interlock checks of Control Circuitry
+                    Zero
+                </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th><input type="text" width="30px;" class="form-control"></th>
+            </tr>
+            <tr>
+                <th>4</th>
+                <th>Function of L/R & Trip/Close SW</th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th><input type="text" width="30px;" class="form-control"></th>
+            </tr>
+            <tr>
+
+
+
+
+
+            <tr>
+                <td colspan="5" style="background-color: #788f87; padding-top: 10px; padding-bottom: 10px; color: white;">
+                    <h6 class="m-0"><b>(C) Breaker Compartment & Breaker</b></h6>
+                </td>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th>Functional Check of breaker manually (After racking out) </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th><input type="text" width="30px;" class="form-control"></th>
+            </tr>
+
+            <tr>
+                <th>2</th>
+                <th>Check for any cracks / tracking on housing of VCB  </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th><input type="text" width="30px;" class="form-control"></th>
+            </tr>
+            <tr>
+                <th>3</th>
+                <th>
+                    Check for any discoloration of contacts of VCB
+                    Zero
+                </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th><input type="text" width="30px;" class="form-control"></th>
+            </tr>
+            <tr>
+                <th>4</th>
+                <th>
+                    Check for Control Plug Sleeving not cut & operation of
+                    control plug is smooth.
+                </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th><input type="text" width="30px;" class="form-control"></th>
+            </tr>
+            <tr>
+                <th>5</th>
+                <th>Check for torque mark & play of moving contacts of VCB</th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th><input type="text" width="30px;" class="form-control"></th>
+            </tr>
+            <tr>
+                <th>6</th>
+                <th>Check for smooth operation of VCB Rack in/out mechanism. </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th><input type="text" width="30px;" class="form-control"></th>
+            </tr>
+
+            <tr>
+                <th>7</th>
+                <th>Check Whether Door Interlock Mechanism is OK  </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th><input type="text" width="30px;" class="form-control"></th>
+            </tr>
+            <tr>
+                <th>8</th>
+                <th>Remove old greases & Lubricate Surfaces</th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th><input type="text" width="30px;" class="form-control"></th>
+            </tr>
+
+
+            <tr>
+                <th>9</th>
+                <th>Check the Split pins, E-rings are in place</th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th><input type="text" width="30px;" class="form-control"></th>
+            </tr>
+
+
+            <tr>
+                <th>10</th>
+                <th>Check all the breaker interlocks are functional</th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th><input type="text" width="30px;" class="form-control"></th>
+            </tr>
+
+
+
+            <tr>
+                <th>11</th>
+                <th>Check spring charging (electrical & mechanical) is OK </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th><input type="text" width="30px;" class="form-control"></th>
+            </tr>
+
+
+
+
+            <tr>
+                <th>12</th>
+                <th>Check breaker mechanical & Electrical Operation is ok. </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th><input type="text" width="30px;" class="form-control"></th>
+            </tr>
+
+            <tr>
+                <th>13</th>
+                <th>
+                    Check the spring charging both electrically &
+                    mechanically is OK
+                </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th><input type="text" width="30px;" class="form-control"></th>
+            </tr>
+            <tr>
+
+            <tr>
+                <td colspan="5" style="background-color: #788f87; padding-top: 10px; padding-bottom: 10px; color: white;">
+                    <h6 class="m-0"><b>(F) PT Compartment</b></h6>
+                </td>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th>Metal paint work ok  </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th><input type="text" width="30px;" class="form-control"></th>
+            </tr>
+
+            <tr>
+                <th>2</th>
+                <th>Check for any discharge marks/tracking on PDS?  </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th><input type="text" width="30px;" class="form-control"></th>
+            </tr>
+            <tr>
+                <th>3</th>
+                <th>
+                    Check Alignment & smooth movement of VT assembly.
+                    Zero
+                </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th style="color:plum;"><input type="checkbox" value='' </th>
+                <th><input type="text" width="30px;" class="form-control"></th>
+            </tr>
+        </table>
+        @*<table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+            <tr>
+                <th>CHECKED BY </th>
+                <th>SIGN</th>
+                <th>VERIFIED BY</th>
+                <th>SIGN</th>
+            </tr>
+            <tr>
+                <th> <input type="text" width="30px;" class="form-control"></th>
+                <th></th>
+                <th><input type="text" width="30px;" class="form-control"></th>
+                <th></th>
+            </tr>
+
+        </table>*@
+        <button type="button" class="btn btn-primary" style="background-color: #191c3696;">Submit</button>
+
+    </div>
+
+

@@ -1,0 +1,180 @@
+﻿
+@{
+    ViewBag.Title = "SnagTarget";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>SnagTarget</h2>
+
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        table-layout: fixed; /* Fix table layout */
+        word-wrap: break-word; /* Break words when needed */
+    }
+
+    .main_input {
+        height: 100%;
+    }
+
+    .table-bordered {
+        border-bottom: 1px solid black;
+    }
+
+    body {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    th.vertical {
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        white-space: nowrap;
+    }
+</style>
+
+
+<div class="main_heading" style="background-color: #018bd3;height: 70px;">
+    <h3 style="text-align: center; padding-top:18px;color: white;"><b>Desktop</b> </h3>
+</div>
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr style="background-color: #5f98ab;">
+        <th colspan="4"><center style="font-size:larger;color:white">Snag Target Table1</center></th>
+    </tr>
+    <tr>
+        <th>Sr No</th>
+        <th>Project Ref</th>
+        <th>No of Snags observed</th>
+        <th>Snag Target</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>6128</td>
+        <td>5</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>6254</td>
+        <td>6</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>6321</td>
+        <td>8</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>6423</td>
+        <td>7</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>6458</td>
+        <td>3</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>6612</td>
+        <td>4</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>6920</td>
+        <td>9</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>7056</td>
+        <td>3</td>
+        <td>5</td>
+    </tr>
+</table>
+
+<div id="tableContainer">
+    <table id="snagTable" class="table table-bordered" style="margin-top: 20px; width: 100%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="19"><center style="font-size:larger;color:white">Snag Target Table2</center></th>
+        </tr>
+        <thead>
+            <tr>
+                <th>S.No.</th>
+                <th>PROJECT REF</th>
+                <th>PRODUCT REF: (Final Product + Individual Product)</th>
+                <th>QTY</th>
+                <th>DATE</th>
+                <th class="vertical">Material</th>
+                <th class="vertical">Dimension</th>
+                <th class="vertical">Shearing</th>
+                <th class="vertical">Bending</th>
+                <th class="vertical">Punching</th>
+                <th class="vertical">Welding</th>
+                <th class="vertical">Drilling</th>
+                <th class="vertical">Colour</th>
+                <th class="vertical">Paint Quality</th>
+                <th class="vertical">Material</th>
+                <th class="vertical">Dimension</th>
+                <th class="vertical">Grinding</th>
+                <th class="vertical">Punching</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="snagTable123">
+        </tbody>
+    </table>
+</div>
+
+
+
+<div class="form-group  col-md-2">
+    <br />
+    <button type="button" class="btn btn-success form-control" onclick="AddRowButton()"> Add Row</button>
+</div>
+
+
+<script>
+    var rowCount = 1; // Initialize the row count
+
+    function AddRowButton() {
+        var markup = "<tr><td>" + rowCount + "</td>"
+            + "<td><input type='text' size='6' class='form-control' id='PROJECTREF' >"
+            + "</td><td><input type='text' size='6' class='form-control' id='PRODUCTREF' >"
+            + "</td><td><input type='text' size='6' class='form-control' id='QTY1' />"
+            + "</td><td><input type='date' size='6' class='form-control' id='DATE' />"
+            + "</td><td><input type='text' size='6' class='form-control' id='MATERIAL1' />"
+            + "</td><td><input type='text' size='6' class='form-control' id='DIMENSION1' />"
+            + "</td><td><input type='text' size='6' class='form-control' id='SHEARING' />"
+            + "</td><td><input type='text' size='6' class='form-control' id='BENDING' />"
+            + "</td><td><input type='text' size='6' class='form-control' id='PUNCHING1' />"
+            + "</td><td><input type='text' size='6' class='form-control' id='WELDING' />"
+            + "</td><td><input type='text' size='6' class='form-control' id='DRILLING' />"
+            + "</td><td><input type='text' size='6' class='form-control' id='COLOUR' />"
+            + "</td><td><input type='text' size='6' class='form-control' id='PAINTQUALITY' />"
+            + "</td><td><input type='text' size='6' class='form-control' id='MATERIAL2' />"
+            + "</td><td><input type='text' size='6' class='form-control' id='DIMENSION2' />"
+            + "</td><td><input type='text' size='6' class='form-control' id='GRINDING' />"
+            + "</td><td><input type='text' size='6' class='form-control' id='PUNCHING2' />"
+            + "</td><td><div class='input-group'><button type='button' class='btnDelete btn-danger btn-sm text-dark' style='font-size: 18px' onclick='DeleteRow(this)'><i class='fa fa-trash-o' style='color:white'></i></button> "
+            + "</td></tr>";
+
+        tableBody = $("#snagTable123");
+        tableBody.append(markup);
+
+        rowCount++; // Increment the row count for the next row
+    }
+    function DeleteRow(btn) {
+        // Get the closest row and remove it
+        $(btn).closest('tr').remove();
+    }
+</script>
+
+
+

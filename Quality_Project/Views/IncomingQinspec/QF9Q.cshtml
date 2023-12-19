@@ -1,0 +1,373 @@
+﻿
+@{
+    ViewBag.Title = "QF9Q";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    .main_input {
+        height: 100%;
+    }
+
+    .table-bordered {
+        border-bottom: 1px solid black;
+    }
+
+    body {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+</style>
+
+
+<div class="main_heading" style="background-color: #018bd3;height: 70px;">
+    <h3 style="text-align: center; padding-top:18px;color: white;"><b>QF 9Q_Material Inward Inpection Form - REV1</b> </h3>
+</div>
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white">QF 9Q_Material Inward Inpection Form - REV1</center></th>
+
+    </tr>
+    <tr>
+        <th>
+            Material Inspection Report -(Incoming Goods)
+        </th>
+
+
+        <th>
+            Form Reference -                                                             Automatically assign the form number  (format would be MIR-XXX Rev-00)
+        </th>
+
+    </tr>
+
+</table>
+
+
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    
+    <tr>
+        <th class="colorchange">Project Reference Nr.</th>
+        <th>
+            Active Project numbers should be available for selection
+        </th>
+
+
+
+
+
+        <th class="colorchange">
+            Supplier Reference
+        </th>
+        <th>
+            Data to be filled automatically upon PO selection
+
+        </th>
+
+
+
+
+        <th class="colorchange">
+            Barcode/QR Code Reference
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+
+
+
+
+    <tr>
+        <th class="colorchange">
+            Material Type
+        </th>
+        <th>
+            Data to be filled automatically upon PO selection
+
+        </th>
+
+
+
+
+
+        <th class="colorchange">
+            Part Number
+
+        </th>
+        <th>
+            Data to be filled automatically upon material type selection
+
+
+        </th>
+
+
+
+
+        <th class="colorchange">
+            Shipment Reference
+
+        </th>
+        <th>
+            PO XXXX (PO numbers should be made available upon project reference number selection)
+        </th>
+    </tr>
+    <tr>
+        <th class="colorchange">
+            Description
+
+
+        </th>
+        <th colspan="3">
+            Data to be filled automatically upon Part number selection
+
+        </th>
+
+        <th class="colorchange">
+            Quantity
+
+
+
+        </th>
+        <th>
+            Data to be filled automatically upon Part number selection
+
+
+        </th>
+    </tr>
+
+</table>
+
+
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    
+    <tr>
+        <th class="colorchange" colspan="2">
+            Inspection Description
+
+        </th>
+        <th class="colorchange">
+            Inspection Date
+        </th>
+        <th><input type="date" width="30px;" class="form-control"></th>
+
+    </tr>
+
+    <tr>
+        <th class="colorchange">
+            A.Condition of Packaging
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th class="colorchange">
+            Inspection Location
+
+        </th>
+        <th>Store locations to be available</th>
+
+    </tr>
+
+
+    <tr>
+        <th class="colorchange">
+            B.Packing List Verification
+
+        </th>
+        <th colspan="3"><input type="text" width="30px;" class="form-control"></th>
+
+
+    </tr>
+
+
+
+
+
+
+
+
+
+
+    <tr>
+        <th class="colorchange">
+            C.Labelling and Identification markings
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th class="colorchange">
+            Attachments
+
+
+
+        </th>
+        <th>
+            Test reports shall be readily available to fill in .Photographs,deliverables to be uploaded for records
+
+        </th>
+
+    </tr>
+
+
+    <tr>
+        <th class="colorchange">
+            D.Sampling Check
+
+        </th>
+        <th colspan="3"><input type="text" width="30px;" class="form-control"></th>
+
+
+    </tr>
+
+    <tr>
+        <th class="colorchange">
+            E.Dimensional Check
+
+
+        </th>
+        <th colspan="3"><input type="text" width="30px;" class="form-control"></th>
+
+
+    </tr>
+    <tr>
+        <th class="colorchange">
+            F.Functional Tests
+
+
+
+        </th>
+        <th colspan="3"><input type="text" width="30px;" class="form-control"></th>
+
+
+    </tr>
+
+    <tr>
+        <th class="colorchange">
+            G.Deliverables                                        (Test Sheets,Manual,Drawings)
+
+
+
+        </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th class="colorchange">
+            Remarks
+
+
+        </th>
+        <th>Store locations to be available</th>
+
+    </tr>
+
+
+
+
+
+    <tr>
+        <th class="colorchange">
+            Approval Status
+
+
+
+
+        </th>
+        <th>
+            Approved/Rejected/on Hold
+
+        </th>
+        <th class="colorchange">
+            Hold/Rejected Goods Location
+
+
+
+        </th>
+        <th>
+            This tab shall be available only if the material is rejected
+        </th>
+
+    </tr>
+
+
+
+    <tr>
+        <th class="colorchange">
+            NCR & CAR References
+
+
+
+
+        </th>
+        <th>
+            This tab shall be available only if the material is rejected
+
+        </th>
+        <th class="colorchange">
+            Return to stores
+
+
+
+
+        </th>
+        <th>
+            Yes/No
+
+        </th>
+
+    </tr>
+
+
+    <tr>
+        <th class="colorchange">
+            QC Inspector
+
+
+
+
+
+        </th>
+        <th></th>
+        <th class="colorchange">
+            Quality Engineer
+
+
+
+
+
+        </th>
+        <th></th>
+
+    </tr>
+
+</table>
+
+
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+   
+    <tr>
+        <th>
+            1. All the manual selection tabs should have drop down lists (Example Ok/Not Ok,Names etc.
+        </th>
+    </tr>
+    <tr>
+        <th>
+            2. Individual MIR reports(Printable in A4 along with the attachments),summary  list of all the MIR's to be archieved for records.
+        </th>
+    </tr>
+
+</table>
+
+<div class="d-flex justify-content-end">
+    <button type="button" class="btn btn-primary" style="background-color:#191c3696;margin-bottom:10px;">Submit</button>
+</div>
+
+

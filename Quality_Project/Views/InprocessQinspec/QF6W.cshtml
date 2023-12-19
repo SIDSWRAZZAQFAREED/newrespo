@@ -1,0 +1,325 @@
+﻿
+@{
+    ViewBag.Title = "QF6W";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    .main_input {
+        height: 100%;
+    }
+
+    .table-bordered {
+        border-bottom: 1px solid black;
+    }
+
+    body {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+</style>
+
+
+
+
+
+<div class="main_heading" style="background-color: #018bd3;height: 70px;">
+    <h3 style="text-align: center; padding-top:18px;color: white;"><b>QF 6W Snag List and Snag Analysis</b> </h3>
+</div>
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white"> TAMCO Middle East</center></th>
+
+    </tr>
+
+    <tr>
+        <th colspan="4">
+            <center>
+                Quality Deficiency Report (Snag List)
+
+            </center>
+        </th>
+        <th colspan="2">
+            <center>
+                Form Reference - Automatically assign the form number  (format would be QDR-XXX Rev-00)
+
+            </center>
+        </th>
+
+    </tr>
+    <tr>
+        <th >
+            Project Reference Nr.
+
+        </th>
+
+        <td>
+            Active Project numbers should be available for selection
+        </td>
+        <td><input type="text" leght="100px" ;width="30px;" class="form-control"></th>
+        <td><input type="text" leght="100px" ;width="30px;" class="form-control"></th>
+        <th >
+            Barcode/QR Code Reference (Final Product)
+
+
+        </th>
+        <td><input type="text" leght="100px" ;width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th >
+            Material Type
+        </th>
+        <td><input type="text" leght="100px" ;width="30px;" class="form-control"></th>
+        <th >
+            Part Number/Barcode Ref
+
+        </th>
+        <th>
+            Data to be available automatically upon scanning ref on the defective material
+        </th>
+        <th >
+            Serial Number
+
+
+        </th>
+        <th>
+            Data to be filled automatically upon Barcode scanning
+
+        </th>
+    </tr>
+</table>
+
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white"> Non Quality</center></th>
+
+    </tr>
+
+    <tr>
+        <th >Non Quality</th>
+        <th style="background-color:Rosy Brown;">Column I,Table 1</th>
+        <th >
+            Inspection Location
+        </th>
+        <td>Manual Entry by QC</th>
+    </tr>
+    <tr>
+        <th >
+            Description
+        </th>
+        <th style="background-color:Rosy Brown;">
+            Column J ,Table 1
+        </th>
+        <th >
+            Quantity
+
+        </th>
+        <td>Manual Entry by QC</th>
+    </tr>
+
+    <tr>
+        <th >
+            Comments
+
+        </th>
+        <td>
+            <input type="text" leght="100px" ;width="30px;" class="form-control"></th>
+            </th>
+        <th >
+            Attachments
+
+
+        </th>
+        <td>Test reports,photographs to be uploaded for records</th>
+    </tr>
+
+
+</table>
+
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr>
+        <th class="bg-warning"> Minor <input type="checkbox" class="form-control"></th>
+        <th class="bg-warning"> Major<input type="checkbox" class="form-control"></th>
+        <th class="bg-danger"> Minor <input type="checkbox" class="form-control"></th>
+        <th>Inspection date</th>
+        <th>Document  date</th>
+        <td><input type="date" leght="100px" ;width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th >
+            Quality Inspector
+        </th>
+        <td><input type="text" leght="100px" ;width="30px;" class="form-control"></th>
+        <th>
+            Quality Engineer
+        </th>
+        <td><input type="text" leght="100px" ;width="30px;" class="form-control"></th>
+        <th>
+            NCR & CAR Issued
+
+        </th>
+        <th>
+            NCR and CAR will be issued for major and critical faults.
+        </th>
+
+
+
+    </tr>
+
+    <tr>
+        <th>
+            Employee Name(Cause the non quality)
+        </th>
+        <td><input type="text" leght="100px" ;width="30px;" class="form-control"></th>
+        <th>
+            Follow up by
+
+        </th>
+        <td><input type="text" leght="100px" ;width="30px;" class="form-control"></th>
+        <th>
+            Dept.
+
+
+        </th>
+        <td><input type="text" leght="100px" ;width="30px;" class="form-control"></th>
+
+
+
+    </tr>
+
+    <tr>
+        <th >
+            Non Quality Status
+            (Cause the non quality)
+        </th>
+        <td>
+            Open/Closed
+
+
+            </th>
+        <th>
+            Closed By
+
+        </th>
+        <td><input type="text" leght="100px" ;width="30px;" class="form-control"></th>
+        <th>
+            Closure Date
+
+
+
+        </th>
+        <td><input type="date" leght="100px" ;width="30px;" class="form-control"></th>
+
+
+
+    </tr>
+
+
+    <tr>
+        <th>
+            Quality Inspector
+        </th>
+        <td colspan="2"><input type="text" leght="100px" ;width="30px;" class="form-control"></th>
+        <th>
+            Quality Engineer
+
+        </th>
+        <td><input type="text" leght="100px" ;width="30px;" class="form-control"></th>
+
+    </tr>
+
+
+</table>
+
+
+
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr>
+        <th>
+            Note
+        </th>
+    </tr>
+    <tr>
+        <th>
+            1.Non quality points closure time frame can be collectiviely decided
+        </th>
+    </tr>
+    <tr>
+        <th>
+            2.Individual QDR reports(Printable & Editable in A4 along with the attachments),summary  list of all the QDR's to be archieved for records.
+
+        </th>
+    </tr>
+
+    <tr>
+        <th>
+            3.Snag analysis should be calculated from these inputs.(Reports to be archieved for records)
+        </th>
+    </tr>
+</table>
+
+
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr>
+        <th colspan="2">Weigtage</th>
+        <th>
+            Defenition
+        </th>
+    </tr>
+    <tr>
+        <th class="bg-warning">1</th>
+        <th class="bg-warning">
+            Minor
+        </th>
+        <th>a fault corresponding to a non-conformity,</th>
+    </tr>
+    <tr>
+        <th class="bg-warning">3</th>
+        <th class="bg-warning">
+            Major
+        </th>
+        <th>a fault risking a considerable reduction in the achievement of a function in the switchboard</th>
+    </tr>
+    <tr>
+        <th class="bg-danger">5</th>
+        <th class="bg-danger">
+            Critical
+
+
+
+
+        </th>
+        <th>
+            a fault which, based on judgement and experience, is likely to result in a lack of safety or risk of accidents for the user. It presents a real danger for persons and equipment.
+
+
+
+        </th>
+    </tr>
+</table>
+
+
+
+
+<div class="d-flex justify-content-end">
+    <button type="button" class="btn btn-primary" style="background-color:#191c3696;margin-bottom:10px;">Submit</button>
+</div>
+
+
+
+
+
+

@@ -1,0 +1,1065 @@
+﻿
+@{
+    ViewBag.Title = "QF9OTransformerDifferentialprotect";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    table, th {
+        text-align: center;
+    }
+
+    .table-bordered {
+        border-bottom: 1px solid black;
+    }
+</style>
+
+<div class="table-responsive-sm">
+    <div class="main_heading" style="background-color: #018bd3;height: 70px;">
+        <h3 style="text-align: center; padding-top:18px;color: white;"><b>DIELECTRIC WITHSTAND TEST</b> </h3>
+    </div>
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">TRANSFORMER DIFFERENTIAL PROTECTION RELAY TEST FORM</center></th>
+
+        </tr>
+
+        <tr>
+            <th>Customer/Client</th>
+            <td colspan="3"><input type="text" width="30px;" class="form-control"></th>
+            <th>ENQ/Job Number</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+            <td colspan="1">Project Title </th>
+            <td colspan="5"><input type="text" leght="100px" ;width="30px;" class="form-control"></th>
+
+        </tr>
+        <tr>
+            <th>Switchgear Board Ref:</th>
+            <td colspan="3"><input type="text" width="30px;" class="form-control"></th>
+            <th>Panel Ref:</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+    </table>
+
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">General data & information:</center></th>
+
+        </tr>
+        <tr>
+            <th>Feeder Name</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th>Relay Make</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+
+        </tr>
+        <tr>
+            <th>Relay Make</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th>Software used</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+            <th>Type / Style</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th>Nominal Current</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+
+        <tr>
+            <th>Serial no</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th>Aux Supply</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+
+        <tr>
+            <th>Frequency</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+    </table>
+
+
+
+
+
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">Visual and mechanical check:</center></th>
+
+        </tr>
+        <tr>
+            <th>No.</th>
+
+            <th>Description</th>
+            <th>Remarks</th>
+
+        </tr>
+        <tr>
+            <th>1</th>
+
+            <th>Inspects for any physical damage or defects.</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+            <th>2</th>
+
+            <th>Check name plate information for correctness</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+
+        <tr>
+            <th>3</th>
+
+            <th>Check the tightness of all connection.</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+
+        <tr>
+            <th>4</th>
+
+            <th>Check for proper installation and mounting</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+    </table>
+
+
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">Electrical Checks:</center></th>
+
+        </tr>
+        <tr>
+            <th>No.</th>
+
+            <th>Description</th>
+            <th>Checked</th>
+
+        </tr>
+        <tr>
+            <th>1</th>
+
+            <th>All connections checked according to the wiring diagram</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+            <th>2</th>
+
+            <th>Auxiliary power supply checked for rating and polarity</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+
+        <tr>
+            <th>3</th>
+
+            <th>Casing earthing checked </th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+
+        <tr>
+            <th>4</th>
+
+            <th>Frequency has been set to 50 Hz</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+            <th>5</th>
+
+            <th>Relay model no. Has been check in the display</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+            <th>6</th>
+
+            <th>LED's operation checked </th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+            <th>7</th>
+
+            <th>BI's  Binary Inputs checked</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+            <th>8</th>
+
+            <th>BO's Binary Outputs checkedz</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+            <th>9</th>
+
+            <th>Events Recorder checked</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+    </table>
+
+
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">Transformer  name plate details</center></th>
+
+        </tr>
+        <tr>
+            <th colspan="2">Item</th>
+
+            <th>Value</th>
+
+
+        </tr>
+        <tr>
+
+            <th rowspan="2">Voltage</th>
+            <th>H.V side</th>
+
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+
+
+            <th>L.V side</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+
+            <th rowspan="2">C.T Ratio</th>
+            <th>H.V side</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+
+            <th>L.V side</th>
+
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+            <th colspan="2">MVA</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+            <th colspan="2">Frequency</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+            <th colspan="2">Vector Group</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+
+
+    </table>
+
+
+
+
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">Functional Test</center></th>
+
+        </tr>
+        <tr>
+            <th></th>
+            <th>Tested By</th>
+            <th>Quality Control Engineer</th>
+            <th>Project Manager</th>
+
+        </tr>
+        <tr>
+            <th>Name</th>
+            <th><input type="text" class="form-control"></th>
+            <th><input type="text" class="form-control"></th>
+            <th><input type="text" class="form-control"></th>
+
+        </tr>
+        <tr>
+            <th>Sign</th>
+            <th><input type="text" class="form-control"></th>
+            <th><input type="text" class="form-control"></th>
+            <th><input type="text" class="form-control"></th>
+        <tr>
+            <th>Date</th>
+            <th><input type="text" class="form-control"></th>
+            <th><input type="text" class="form-control"></th>
+            <th><input type="text" class="form-control"></th>
+        </tr>
+
+    </table>
+
+
+    <table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">Measurement:•Phase current measurements: (HV Terminal W1)</center></th>
+
+        </tr>
+        <tr>
+            <th>Injected sec. Current (A)</th>
+
+            <th>Expected current in primary (A)</th>
+            <th colspan="3">Measured values in primary (A)</th>
+
+
+        </tr>
+        <tr>
+            <th></th>
+
+            <th></th>
+            <th>R</th>
+            <th>Y</th>
+            <th>B</th>
+
+
+        </tr>
+        <tr>
+
+
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+
+
+    </table>
+
+
+
+
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">Measurement:•Phase current measurements: (HV Terminal W1)</center></th>
+
+        </tr>
+        <tr>
+            <th>Injected sec. Current (A)</th>
+
+            <th>Expected current in primary (A)</th>
+            <th colspan="3">Measured values in primary (A)</th>
+
+
+        </tr>
+        <tr>
+            <th></th>
+
+            <th></th>
+            <th>R</th>
+            <th>Y</th>
+            <th>B</th>
+
+
+        </tr>
+        <tr>
+
+
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+
+
+    </table>
+
+
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">87T Differential Pickup:</center></th>
+
+        </tr>
+        <tr>
+            <th>Ph</th>
+            <th>Pickup setting (O87P)          (P.U)</th>
+            <th>Time settings(sec)</th>
+            <th>Calculated pickup (A)</th>
+            <th>Pick up(A)</th>
+            <th>Drop off(A)</th>
+            <th>Timings(sec)</th>
+
+        </tr>
+
+        <tr>
+
+
+
+            <th>A</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+
+
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+
+            <th>B</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+
+
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+
+            <th>C</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+
+
+    </table>
+
+
+
+
+
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">Calculated Pickup</center></th>
+
+        </tr>
+        <tr>
+            <th>Ph</th>
+            <th>Pickup setting (O87P)          (P.U)</th>
+            <th>Time settings(sec)</th>
+            <th>Calculated pickup (A)</th>
+            <th>Pick up(A)</th>
+            <th>Drop off(A)</th>
+            <th>Timings(sec)</th>
+
+        </tr>
+
+        <tr>
+
+
+
+            <th>A</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+
+
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+
+            <th>B</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+
+
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+
+            <th>C</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+
+
+    </table>
+
+
+
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">Stability Test :</center></th>
+
+        </tr>
+        <tr>
+            <th>Ref</th>
+            <th>
+                Injected current
+                (HV) A
+            </th>
+            <th>
+                Injected Current
+                (LV1) A
+            </th>
+            <th>IOPA</th>
+            <th>IRTA</th>
+            <th>Relay status</th>
+
+
+        </tr>
+
+        <tr>
+
+
+
+            <th rowspan="3">HV-LV</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+
+
+
+        </tr>
+        <tr>
+
+
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+
+        </tr>
+
+
+    </table>
+    @*<table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">Measurement:•Phase current measurements: (HV Terminal W1)</center></th>
+
+        </tr>
+        <tr>
+            <th></th>
+            <th>Tested By</th>
+            <th>Quality Control Engineer</th>
+            <th>Project Manager</th>
+
+        </tr>
+        <tr>
+            <th>Name</th>
+            <th><input type="text" class="form-control"></th>
+            <th><input type="text" class="form-control"></th>
+            <th><input type="text" class="form-control"></th>
+
+        </tr>
+        <tr>
+            <th>Sign</th>
+            <th><input type="text" class="form-control"></th>
+            <th><input type="text" class="form-control"></th>
+            <th><input type="text" class="form-control"></th>
+        <tr>
+            <th>Date</th>
+            <th><input type="date" class="form-control"></th>
+            <th><input type="date" class="form-control"></th>
+            <th><input type="date" class="form-control"></th>
+        </tr>
+
+    </table>*@
+
+
+
+
+
+
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">Differential Slope Test</center></th>
+
+        </tr>
+        <tr>
+            <th>Phase</th>
+            <th colspan="2">Setting</th>
+            <th colspan="2">Current  Injected (A)</th>
+
+            <th>
+                Winding W1
+                Pick up current (A)
+            </th>
+            <th>IOPA</th>
+            <th>IRTA</th>
+            <th>Slope 1 (%)</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th>O87P</th>
+            <th>Slope1%</th>
+
+            <th>Winding W1 (Variable)</th>
+            <th>Winding 2 (Fixed)</th>
+
+        </tr>
+        <tr>
+
+
+            <th>A</th>
+            <th></th>
+            <th></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+            <th>B</th>
+            <th></th>
+            <th></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+
+        </tr>
+        <tr>
+            <th>C</th>
+            <th></th>
+            <th></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+
+        </tr>
+
+
+    </table>
+
+
+
+
+
+
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">Differential Slope Test</center></th>
+
+        </tr>
+        <tr>
+            <th>Phase</th>
+            <th colspan="2">Setting</th>
+            <th colspan="2">Current  Injected (A)</th>
+
+            <th>
+                Winding W2
+                Pick up current (A)
+            </th>
+            <th>IOPA</th>
+            <th>IRTA</th>
+            <th>Slope 1 (%)</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th>O87P</th>
+            <th>Slope1%</th>
+
+            <th>Winding W1 (Variable)</th>
+            <th>Winding 2 (Fixed)</th>
+
+        </tr>
+        <tr>
+
+
+            <th>A</th>
+            <th></th>
+            <th></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+            <th>B</th>
+            <th></th>
+            <th></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+
+        </tr>
+        <tr>
+            <th>C</th>
+            <th></th>
+            <th></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+
+        </tr>
+
+
+    </table>
+
+
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">Differential Slope Test</center></th>
+
+        </tr>
+        <tr>
+            <th>Phase</th>
+            <th>87 HS </th>
+            <th colspan="2">Time </th>
+
+
+        </tr>
+        <tr>
+            <th></th>
+            <th></th>
+            <th>Exp.(Sec)</th>
+            <th>Meas. (Sec)</th>
+        </tr>
+        <tr>
+
+
+            <th>A</th>
+
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+            <th>B</th>
+
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+
+        </tr>
+        <tr>
+            <th>C</th>
+
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+
+        </tr>
+
+
+    </table>
+
+
+    <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="12"><center style="font-size:larger;color:white">Funcational test</center></th>
+
+        </tr>
+        <tr>
+            <th>BI NO</th>
+
+            <th>SLOT</th>
+            <th>FUNCTION</th>
+            <th>Checked</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>BI1</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+            <th>2</th>
+            <th>BI2</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        <tr>
+            <th>3</th>
+            <th>BI3</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        </tr>
+        <tr>
+            <th>4</th>
+            <th>BI4</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        </tr>
+        <tr>
+            <th>5</th>
+            <th>BI5</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        </tr>
+        <tr>
+            <th>6</th>
+            <th>BI6</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        </tr>
+        <tr>
+
+            <th>7</th>
+            <th>BI7</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        </tr>
+        <tr>
+
+            <th>8</th>
+            <th>BI8</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        </tr>
+
+        <tr>
+
+            <th>9</th>
+            <th>BI9</th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+            <th><input type="text" width="30px;" class="form-control"></th>
+        </tr>
+        </tr>
+    </table>
+
+
+
+
+
+<table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr style="background-color: #5f98ab;">
+        <th colspan="12"><center style="font-size:larger;color:white">BINARY OUTPUTS</center></th>
+
+    </tr>
+    <tr>
+        <th>BO NO</th>
+
+        <th>SLOT</th>
+        <th>FUNCTION</th>
+        <th>CHECKED</th>
+    </tr>
+    <tr>
+        <th>1</th>
+        <th>BO1</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th>2</th>
+        <th>BO2</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th>3</th>
+        <th>BO3</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th>4</th>
+        <th>BO4</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th>5</th>
+        <th>BO5</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th>6</th>
+        <th>BO6</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+</table>
+
+
+<table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr style="background-color: #5f98ab;">
+        <th colspan="12"><center style="font-size:larger;color:white">LED Indication:</center></th>
+
+    </tr>
+    <tr>
+
+
+        <th>LED NO</th>
+        <th>FUNCTION</th>
+        <th>CHECKED</th>
+    </tr>
+    <tr>
+        <th>LED-1</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th>LED-2</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th>LED-3</th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th>LED-4</th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th>LED-5</th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th>LED-6</th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+
+        <th>LED-7</th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+
+        <th>LED-8</th>
+
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+
+</table>
+
+
+
+
+
+
+<table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr style="background-color: #5f98ab;">
+        <th colspan="12"><center style="font-size:larger;color:white">Test  Equipment Used</center></th>
+
+    </tr>
+
+    <tr>
+        <th>Equipment Name</th>
+        <th>Make/Model</th>
+        <th>Serial No</th>
+        <th>Calibration Due Date</th>
+    </tr>
+
+
+    <tr>
+        <th>Secondary Injection Kit</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="date" width="30px;" class="form-control"></th>
+
+    </tr>
+
+
+    <tr>
+        <th>Multi Meter</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+        <th><input type="date" width="30px;" class="form-control"></th>
+
+    </tr>
+</table>
+
+
+
+
+
+@*<table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+
+    <tr>
+        <th></th>
+        <th>Tested By</th>
+        <th>Quality Control Engineer</th>
+        <th>Project Manager</th>
+
+    </tr>
+    <tr>
+        <th>Name</th>
+        <th><input type="text" class="form-control"></th>
+        <th><input type="text" class="form-control"></th>
+        <th><input type="text" class="form-control"></th>
+
+    </tr>
+    <tr>
+        <th>Sign</th>
+        <th><input type="text" class="form-control"></th>
+        <th><input type="text" class="form-control"></th>
+        <th><input type="text" class="form-control"></th>
+    <tr>
+        <th>Date</th>
+        <th><input type="date" class="form-control"></th>
+        <th><input type="date" class="form-control"></th>
+        <th><input type="date" class="form-control"></th>
+    </tr>
+
+</table>*@
+
+
+<button type="button" class="btn btn-primary" style="background-color: #191c3696;">Submit</button>
+</div>
+

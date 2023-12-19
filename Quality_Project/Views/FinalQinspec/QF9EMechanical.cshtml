@@ -1,0 +1,448 @@
+﻿
+@{
+    ViewBag.Title = "QF9EMechanical";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    .main_input {
+        height: 100%;
+    }
+
+    .table-bordered {
+        border-bottom: 1px solid black;
+    }
+
+    body {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+</style>
+<div class="main_heading" style="background-color: #018bd3;height: 70px;">
+    <h3 style="text-align: center; padding-top:18px;color: white;"><b>MECHANICAL INTERLOCK TEST</b> </h3>
+</div>
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white">MECHANICAL INTERLOCK TEST</center></th>
+
+    </tr>
+
+    <tr>
+        <th>Customer/Client</th>
+        <td colspan="3"><input type="text" width="30px;" class="form-control"></th>
+        <th>ENQ/Job Number</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+        <th colspan="1">Project Title </th>
+        <td colspan="5"><input type="text" leght="100px" ;width="30px;" class="form-control"></th>
+
+    </tr>
+    <tr>
+        <th>Switchgear Board Ref:</th>
+        <td colspan="3"><input type="text" width="30px;" class="form-control"></th>
+        <th>Panel Ref:</th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+</table>
+
+
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+    <tr style="background-color: #5f98ab;">
+        <th colspan="6"><center style="font-size:larger;color:white">MECHANICAL INTERLOCK TEST</center></th>
+
+    </tr>
+    <tr>
+        <th>SL No</th>
+        <th>OPERATION /STATUS</th>
+        <th>CONDITIONS TO BE SATISFIED / OPERATIONAL INTERLOCKS</th>
+        <th colspan="2">Checked  </th>
+        <th>Remarks  </th>
+
+    </tr>
+    <tr>
+        <th></th>
+        <th> </th>
+        <th> </th>
+        <th>Yes </th>
+        <th>No </th>
+
+
+    </tr>
+
+    <tr>
+        <th rowspan="6">1</th>
+        <tH rowspan="6">CIRCUIT BREAKER RACKIN / RACKOUT  INTERLOCK </tH>
+        <th>a) DOOR MUST BE IN CLOSED CONDITION</th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+
+
+        <th>b) EARTH SWITCH SHOULD BE IN OPEN CONDITION.</th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+
+        <th>c) CASTLE KEY SHOULD BE IN  </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+
+        <th>d)CONTROL PLUG SHOULD BE IN CONNECTED POSITION.</th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+    </tr>
+    <tr>
+
+        <th>e) CIRCUIT BREAKER SHOULD BE IN OPEN CONDITION</th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+    </tr>
+    <tr>
+
+        <th>d) LEVER-A FUNCTION SHOULD BE PROPER.</th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+    </tr>
+
+    <tr>
+        <th rowspan="13">2.A)</th>
+        <th rowspan="13">CIRCUIT BREAKER IN SERVICE CONDITION AND DOOR IN CLOSED CONDITION</th>
+
+        <th>
+            <h6>*VCB IN OPEN CONDITION</h6>
+            a)) EARTH SWITCH CANNOT BE CLOSED
+        </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+
+
+        <th>b) CONTROL PLUG CANNOT BE REMOVED</th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+
+        <th>c) DOOR CANNOT BE OPENED</th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+
+        <th>d)CONTROL PLUG SHOULD BE IN CONNECTED POSITION.</th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+    </tr>
+    <tr>
+
+        <th>e) CIRCUIT BREAKER SHOULD BE IN OPEN CONDITION</th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+    </tr>
+    <tr>
+
+        <th>d) LEVER-A FUNCTION SHOULD BE PROPER.</th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+    </tr>
+
+    <tr>
+
+
+        <th><h6><b>*VCB IN OPEN CONDITION</b></h6> a) EARTH SWITCH CANNOT BE CLOSED </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+
+        <th>b) CONTROL PLUG CANNOT BE REMOVED</th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+
+        <th>c) BREAKER CANNOT BE RACKED OUT</th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+    </tr>
+    <tr>
+
+        <th>d) DOOR CANNOT BE OPENED</th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+    </tr>
+
+
+</table>
+
+
+
+
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+
+    <tr>
+        <th rowspan="6">2.B)</th>
+        <th rowspan="6">CIRCUIT BREAKER IN INTERMEDIATE POSITION</th>
+        <th>a) VCB CANNOT BE CLOSED</th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+
+
+        <th>b) CONTROL PLUG CANNOT BE REMOVED </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+
+        <th>c) CIRCUIT BREAKER CAN BE RACKED IN </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+
+        <th>d) CIRCUIT BREAKER CAN BE RACKED OUT </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+    </tr>
+    <tr>
+
+        <th>e) DOOR CANNOT BE OPENED</th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+    </tr>
+
+
+</table>
+
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+
+    <tr>
+        <th rowspan="6">2.C)</th>
+        <th rowspan="6">CIRCUIT BREAKER IN TEST POSITION</th>
+        <th>a) VCB CANNOT BE CLOSED</th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+
+
+        <th>b) CONTROL PLUG CANNOT BE REMOVED </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+
+        <th>c) CIRCUIT BREAKER CAN BE RACKED IN </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+
+        <th>d) CIRCUIT BREAKER CAN BE RACKED OUT </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+    </tr>
+    <tr>
+
+        <th>e) DOOR CANNOT BE OPENED</th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+    </tr>
+</table>
+
+
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+
+    <tr>
+        <th rowspan="6">3</th>
+        <th rowspan="6">PADLOCK FACILITY</th>
+        <th>a) PROVIDED FOR EARTH SWITCH </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+
+
+        <th>b) PROVIDED FOR SAFETY SHUTTER </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+
+        <th>c) PROVIDED FOR VT  SHUTTERd)PROVIDED FOR VCB ON/OFF PUSHBUTTON </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+</table>
+
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+
+    <tr>
+        <th rowspan="6">4</th>
+        <th rowspan="6">FRICTIONLESS OPERATION</th>
+        <th>a) ENSURE SMOOTH  CIRCUIT BREAKER RACKIN/ RACKOUT OPERATION  </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+
+
+        <th>b) ENSURE SMOOTH EARTH SWITCH ON/ OFF OPERATION</th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+    <tr>
+
+        <th>c) ENSURE SMOOTH SAFETY SHUTTER  OPENING/ CLOSING OPERATION  </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+
+    </tr>
+    <tr>
+        <th>d)ENSURE SMOOTH VT SHUTTER  OPENING/ CLOSING OPERATION </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+        <th>e) ENSURE SMOOTH MANUAL SPRING CHARGING OPERATION</th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+</table>
+
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+
+    <tr>
+        <th rowspan="6">5</th>
+        <th rowspan="6">LATCHING FACILITY</th>
+        <th>a) PROVIDED FOR SAFETY SHUTTER </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+
+    <tr>
+
+
+        <th>b)LATCHING SELF -CANCELLING FACILITY  ALSO PROVIDED FOR SAFETY SHUTTER </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th style="color:plum;"><input type="checkbox" value='' </th>
+        <th><input type="text" width="30px;" class="form-control"></th>
+    </tr>
+</table>
+
+
+
+
+
+<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66">
+
+    <tr>
+        <th></th>
+        <th>Tested By</th>
+        <th>Quality Control Engineer</th>
+        <th>Project Manager</th>
+
+    </tr>
+    <tr>
+        <th>Name</th>
+        <th><input type="text" class="form-control"></th>
+        <th><input type="text" class="form-control"></th>
+        <th><input type="text" class="form-control"></th>
+
+    </tr>
+    <tr>
+        <th>Sign</th>
+        <th></th>
+        <th></th>
+
+    <tr>
+        <th>Date</th>
+        <th><input type="date" class="form-control"></th>
+        <th><input type="date" class="form-control"></th>
+        <th><input type="date" class="form-control"></th>
+    </tr>
+
+</table>
+
+<div class="d-flex justify-content-end">
+    <button type="button" class="btn btn-primary" style="background-color:#191c3696;margin-bottom:10px;">Submit</button>
+</div>
+
+

@@ -1,0 +1,272 @@
+﻿
+@{
+    ViewBag.Title = "Material";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+    <style>
+        table, th, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        table, th {
+            text-align: center;
+        }
+
+        .table-bordered {
+            border-bottom: 1px solid black;
+        }
+    </style>
+    <div class="table-responsive-sm">
+        <div class="main_heading" style="background-color: #018bd3;height: 70px;">
+            <h3 style="text-align: center; padding-top:18px;color: white;"><b>DIELECTRIC WITHSTAND TEST</b> </h3>
+        </div>
+
+        <table class="table table-bordered"  style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+            <tr style="background-color: #5f98ab;">
+                <th colspan="12"><center style="font-size:larger;color:white">Material Traceability Report-</center></th>
+
+            </tr>
+
+            <tr>
+                <th colspan="3">
+                    Material Traceability Report-
+                </th>
+                <th colspan="3">
+                    Form Reference -                                                             Automatically assign the form number  (format would be MTR-XXX Rev-00)
+
+                </th>
+
+            </tr>
+            <tr>
+                <th class="p-3 mb-2">
+                    Project Reference Nr.
+                </th>
+                <th>
+                    Active Project numbers should be available for selection
+                </th>
+                <th class="p-3 mb-2">
+                    Supplier Reference
+
+                </th>
+                <th>
+                    Data to be filled automatically upon PO selection
+
+
+                </th>
+                <th class="p-3 mb-2">
+                    Shipment Reference
+
+
+                </th>
+                <th>
+                    PO XXXX (PO numbers should be made available upon project reference number selection)
+                </th>
+
+
+
+
+            </tr>
+
+
+
+
+            <tr>
+                <th class="p-3 mb-2">
+                    Material Type
+
+                </th>
+                <th>
+                    Data to be filled automatically upon PO selection
+
+                </th>
+                <th class="p-3 mb-2">
+                    Part Number
+
+
+                </th>
+                <th>
+                    Data to be filled automatically upon material type selection
+
+
+
+                </th>
+                <th class="p-3 mb-2">
+                    Barcode/QR Code Reference
+
+
+
+                </th>
+                <th>
+                    Applicable/Not Applicable
+
+                </th>
+
+
+
+
+            </tr>
+
+
+
+
+
+
+            <tr>
+                <th class="p-3 mb-2">
+                    Description
+
+
+                </th>
+                <th colspan="3">
+                    Data to be filled automatically upon Part number selection
+
+
+
+
+
+
+                </th>
+                <th class="p-3 mb-2">
+                    Quantity
+
+
+
+
+                </th>
+                <th>
+                    Data to be filled automatically upon Part number selection
+
+
+                </th>
+
+
+
+            </tr>
+
+            <tr>
+                <th class="p-3 mb-2">
+                    Inspection Date
+
+                </th>
+                <th>
+                    <input type="text" width="30px;" class="form-control">
+                </th>
+                <th class="p-3 mb-2">
+                    Inspection Location
+                </th>
+                <th>
+                    <input type="text" width="30px;" class="form-control">
+
+                </th>
+
+                <th class="p-3 mb-2">
+                    Approval Status
+                </th>
+                <th>
+                    <input type="text" width="30px;" class="form-control">
+
+
+                </th>
+            </tr>
+
+
+
+
+
+            <tr>
+                <th class="p-3 mb-2">
+                    QC Inspector
+
+
+                </th>
+                <th>
+                    <input type="text" width="30px;" class="form-control">
+                </th>
+                <th class="p-3 mb-2">
+                    Quality Engineer
+
+                </th>
+                <th>
+                    <input type="text" width="30px;" class="form-control">
+
+                </th>
+
+                <th class="p-3 mb-2">
+                    Attachments
+
+                </th>
+                <th>Test reports,photographs,deliverables to be uploaded for records</th>
+            </tr>
+
+
+
+
+
+
+            <tr>
+                <th class="p-3 mb-2">
+                    QDR Reference
+
+
+
+                </th>
+                <th>
+                    <input type="text" width="30px;" class="form-control">
+                </th>
+                <th class="p-3 mb-2">
+                    CAR Reference
+
+
+                </th>
+                <th>
+                    <input type="text" width="30px;" class="form-control">
+
+                </th>
+
+                <th class="p-3 mb-2">
+                    NCR Reference
+
+
+                </th>
+                <th><input type="text" width="30px;" class="form-control"></th>
+            </tr>
+
+            <tr>
+                <th class="p-3 mb-2">
+                    Warranty
+
+
+
+                </th>
+                <th>
+                    <input type="text" width="30px;" class="form-control">
+                </th>
+                <th class="p-3 mb-2">
+                    Dispatch Status
+
+
+
+                </th>
+                <th>
+                    <input type="text" width="30px;" class="form-control">
+
+                </th>
+
+                <th class="p-3 mb-2">
+                    Stored,Hold/Rejected Goods Location
+
+
+
+                </th>
+                <th><input type="text" width="30px;" class="form-control"></th>
+            </tr>
+
+
+        </table>
+        <button type="button" class="btn btn-primary" style="background-color: #191c3696">Submit</button>
+
+    </div>
+

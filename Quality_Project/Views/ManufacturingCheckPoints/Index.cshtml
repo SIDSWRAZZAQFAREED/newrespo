@@ -1,0 +1,117 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Bar Raw Material Selection Form</title>
+</head>
+
+<body>
+
+    <form action="submit_action.php" method="post">
+        <h2>Bus Bar Raw Material Selection Form</h2>
+
+        <label>Select the correct raw material for the bus bar based on the approved drawing:</label>
+        <div>
+            <input type="checkbox" id="copper" name="rawMaterial" value="Copper">
+            <label for="copper">Copper</label>
+
+            <input type="checkbox" id="HDHC" name="rawMaterial" value="HDHC">
+            <label for="aluminum">HDHC</label>
+
+            <input type="checkbox" id="Fullyroundedge" name="rawMaterial" value="Fullyroundedge">
+            <label for="brass">Fully round edge</label>
+
+            <input type="checkbox" id="FullHard" name="rawMaterial" value="FullHard">
+            <label for="silverPlatedCopper">Full Hard</label>
+
+            <input type="checkbox" id="Slightlyroundedge" name="rawMaterial" value="Slightlyroundedge">
+            <label for="nickelPlatedBrass">Slightly round edge</label>
+
+            <input type="checkbox" id="HalfHard" name="rawMaterial" value="HalfHard">
+            <label for="other">Half Hard</label>
+        </div>
+
+        <br>
+
+        <label>Ensure that the dimensions of the processed parts are within the acceptable tolerance limit provided in the drawing:</label>
+        <div>
+            <input type="checkbox" id="toleranceYes" name="tolerance" value="Yes">
+            <label for="toleranceYes">Yes</label>
+
+            <input type="checkbox" id="toleranceNo" name="tolerance" value="No">
+            <label for="toleranceNo">No</label>
+        </div>
+
+        <br>
+        <label>Ensure to store the processed parts in such a way as to avoid all risks of deformation.</label>
+        <div>
+            <input type="checkbox" id="deformationYes" name="deformation" value="Yes">
+            <label for="deformationYes">Yes</label>
+
+            <input type="checkbox" id="deformationNo" name="deformation" value="No">
+            <label for="deformationNo">No</label>
+        </div>
+
+        <br>
+        <label>Ensure to mark each processed parts for identification or traceability.</label>
+        <div>
+            <input type="checkbox" id="identificationortraceabilityYes" name="deformation" value="Yes">
+            <label for="identificationortraceabilityYes">Yes</label>
+
+            <input type="checkbox" id="identificationortraceabilityNo" name="deformation" value="No">
+            <label for="identificationortraceabilityNo">No</label>
+        </div>
+
+        <br>
+
+        <label>No warping, scratches, sharp edges, and burrs on the processed parts or on the cut edges.</label>
+        <div>
+            <input type="checkbox" id="cutedgesYes" name="cutedges" value="Yes">
+            <label for="cutedgesYes">Yes</label>
+
+            <input type="checkbox" id="cutedgesNo" name="deformation" value="No">
+            <label for="cutedgesNo">No</label>
+        </div>
+
+        <br>
+
+        <label>Ensure that all the holes are deburred and buffed properly.</label>
+        <div>
+            <input type="checkbox" id="deburredandbuffedYes" name="deburredandbuffed" value="Yes">
+            <label for="deburredandbuffedYes">Yes</label>
+
+            <input type="checkbox" id="deburredandbuffedNo" name="deburredandbuffed" value="No">
+            <label for="deburredandbuffedNo">No</label>
+        </div>
+
+        <br>
+        <label>
+            Processed parts are as per the approved drawings Semi-finished product part number
+        </label>
+        <div>
+            <input type="checkbox" id="Semi-finishedYes" name="Semi-finished" value="Yes">
+            <label for="Semi-finishedYes">Yes</label>
+
+            <input type="checkbox" id="Semi-finishedNo" name="Semi-finished" value="No">
+            <label for="deburredandbuffedNo">No</label>
+        </div>
+
+        <br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>
+

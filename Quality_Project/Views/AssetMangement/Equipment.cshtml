@@ -1,0 +1,271 @@
+﻿
+@{
+    ViewBag.Title = "Equipment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+    <style>
+        .form-group {
+            padding-top: 20px;
+            margin-left: 15%;
+        }
+        table, th {
+            text-align: center;
+        }
+        .table-bordered {
+            border-bottom: 1px solid black;
+        }
+    </style>
+
+
+        
+
+        <!-- <form>
+          <div class="form-group">
+            <label for="usr">Tamco ID #</label>
+            <input type="text" class="form-control" id="usr">
+          </div>
+          <div class="form-group">
+            <label for="pwd">Tool MAke/Year/Model</label>
+            <input type="password" class="form-control" id="pwd">
+          </div>
+          <div class="form-group">
+              <label for="pwd">Tool Serial Number</label>
+              <input type="password" class="form-control" id="pwd">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Tool Description</label>
+              <input type="password" class="form-control" id="pwd">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Location</label>
+              <input type="password" class="form-control" id="pwd">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Calibartion Certificate #:</label>
+              <input type="password" class="form-control" id="pwd">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Calibartion Certificate #:</label>
+              <input type="password" class="form-control" id="pwd">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Calibartion Company:</label>
+              <input type="password" class="form-control" id="pwd">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Calibartion Date:</label>
+              <input type="date" class="form-control" id="pwd">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Calibartion Expiry  Date:</label>
+              <input type="date" class="form-control" id="pwd">
+            </div>
+
+            <div class="form-group">
+              <label for="pwd">Remarks:</label>
+              <input type="date" class="form-control" id="pwd">
+            </div>
+        </form> -->
+
+
+        
+
+
+<div class="table-responsive-sm">
+        <div class="main_heading" style="background-color: #018bd3;height: 70px;">
+            <h3 style="text-align: center; padding-top:18px;color: white;"><b>Equipment Calibration Registert</b> </h3>
+        </div>
+        <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+            <!-- <center><h4 class="form-control" style="background-color: rgb(9, 9, 95);width:70%;height:70%;color: white;margin-top: 20px;margin-left:100px;">Calibartion</h4></center> -->
+            <tr style="background-color: #5f98ab;">
+                <th colspan="12"><center style="font-size:larger;color:white">Insulation Resistance Test</center></th>
+
+            </tr>
+            <tr>
+                <th>Tamco Id #</th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+            </tr>
+
+
+
+            <tr>
+                <th>Tool Make/Year/Model</th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+            </tr>
+
+
+
+            <tr>
+                <th>Tool Serail Number</th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+            </tr>
+
+
+
+            <tr>
+                <th>Tool desciption</th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+            </tr>
+
+
+
+            <tr>
+                <th>Location</th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+            </tr>
+
+
+
+
+            <tr>
+                <th>Calibration Certificate #</th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+            </tr>
+
+
+
+
+            <tr>
+                <th>Calibration Company</th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+            </tr>
+
+
+
+            <tr>
+                <th>Calibration Date</th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+            </tr>
+
+
+            <tr>
+                <th>Calibartion Expiry Date</th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+            </tr>
+
+            <tr>
+                <th>Remarks</th>
+                <th><input type="text" width="40px;" class="form-control"></th>
+
+            </tr>
+
+
+
+        </table>
+
+
+        <table class="table table-bordered" style="margin-top: 10px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+            <tr style="background-color: #5f98ab;">
+                <th colspan="12"><center style="font-size:larger;color:white">Insulation Resistance Test</center></th>
+
+            </tr>
+            <tr>
+
+
+                <th>Tamco ID #</th>
+                <th>Tool Make/Year/Model</th>
+                <th>Tool Serail Number</th>
+                <th>Tool desciption</th>
+                <th>Location</th>
+                <th>Calibration Certificate #</th>
+                <th>Calibration Company</th>
+                <th>Calibration Date</th>
+                <th>Calibartion Expiry Date</th>
+                <th>Remarks</th>
+
+
+
+            </tr>
+
+            <tr>
+
+
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+
+
+
+            </tr>
+
+
+
+            <tr>
+
+
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+
+
+
+            </tr>
+
+
+            <tr>
+
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+
+
+            </tr>
+
+
+            <tr>
+
+
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+                <th><input type="text" width="10px;" class="form-control"></th>
+
+
+
+            </tr>
+
+
+
+
+
+
+
+        </table>
+
+    <button type="button" class="btn btn-primary" style="background-color: #191c3696 ">Submit</button>
+</div>
+
+
+
+

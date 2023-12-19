@@ -1,0 +1,89 @@
+﻿@{
+    ViewBag.Title = "About";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>About Us Page</h1>
+
+    @*<style>
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+            .form-group label {
+                font-weight: bold;
+            }
+
+        .btn-login {
+            background-color: #007bff;
+            color: #fff;
+            width: 100%;
+        }
+
+            .btn-login:hover {
+                background-color: #0056b3;
+            }
+
+        .error-message {
+            color: #dc3545;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    </style>
+
+
+    <div class="login-container">
+        <h2 class="text-center mb-4">Login</h2>
+        <form id="loginForm" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" class="form-control" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-login">Login</button>
+            <p class="error-message" id="error-message"></p>
+        </form>
+    </div>
+
+    <script>
+    function validateForm() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        var errorMessage = document.getElementById("error-message");
+
+        // Simple validation for demonstration purposes
+        if (username === "admin" && password === "admin") {
+            const abc = (errorMessage.innerHTML = "user login successfully");
+            console.log(abc);
+            
+            alert("Login successful!");
+            window.location.href = 'https://www.freecodecamp.org/news/how-to-get-the-current-url-with-javascript/#:~:text=You%20can%20do%20this%20by,web%20page%20to%20the%20console.';
+            return true;
+            
+        } else {
+            errorMessage.innerHTML = "Invalid username or password. Please try again.";
+            return false;
+        }
+    }
+    </script>*@
+

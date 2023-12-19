@@ -1,0 +1,644 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Adminpage - Responsive Bootstrap Admin Template Dashboard</title>
+
+    <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href="~/assets/dist/img/ico/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="~/assets/dist/img/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="~/assets/dist/img/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="~/assets/dist/img/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="~/assets/dist/img/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5VZHd1Qz7OEGYSbIAsjFuCt8NE4sDIdM0YZKStY7iRS7ZS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  
+    <!-- Start Global Mandatory Style
+    =====================================================================-->
+    <link href="~/assets/dist/css/base.css" rel="stylesheet" type="text/css" />
+    <!-- End Global Mandatory Style
+    =====================================================================-->
+    <!-- Start page Label Plugins
+    =====================================================================-->
+    <!-- End page Label Plugins
+    =====================================================================-->
+    <!-- Start Theme Layout Style
+    =====================================================================-->
+    <!-- Theme style -->
+    <link href="~/assets/dist/css/component_ui.min.css" rel="stylesheet" type="text/css" />
+    <!-- Theme style rtl -->
+    <!--<link href="assets/dist/css/component_ui_rtl.css" rel="stylesheet" type="text/css"/>-->
+    <!-- Custom css -->
+    <link href="~/assets/dist/css/custom.css" rel="stylesheet" type="text/css" />
+    <!-- End Theme Layout Style
+    =====================================================================-->
+    @*media query for dropdown*@
+    <link href="~/assets/Mediaqueryfordropdown.css" rel="stylesheet" />
+
+    <!-- Font Awesome
+    =====================================================================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body style="padding-bottom: 0px;">
+    <div class="wrapper animsition">
+        <!-- main header -->
+        <header class="main-header">
+            <!-- top navigation -->
+            <nav class="navbar top-nav">
+                <div class="container">
+                    <div class="navbar-header hidden-xs">
+                        <a class="navbar-brand" href="~/Home/checklist"> <img src="~/assets/dist/img/Tamco.jpg" alt=""></a>
+                    </div>
+                    <!--</ul>--> <!-- /.navbar-top-links -->
+                </div> <!-- /. container -->
+            </nav> <!-- /. top navigation -->
+            <!--  main navigation -->
+            <nav class="navbar navbar-default navbar-mobile navbar-sticky bootsnav">
+                <!-- Start Top Search -->
+                <div class="top-search">
+                    <div class="container">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="ti-search"></i></span>
+                            <input type="text" class="form-control" placeholder="Search">
+                            <span class="input-group-addon close-search"><i class="ti-close"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Top Search -->
+                <div class="container">
+                    <!-- Start Header Navigation -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand hidden-md hidden-lg" href="#brand"><img src="~/assets/dist/img/Tamco.jpg" class="logo" alt=""></a>
+                    </div>
+                    <!-- End Header Navigation -->
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="navbar-menu">
+                        <ul class="nav navbar-nav navbar-left" data-in="" data-out="">
+                            <li><a href="~/Dashboard/Dashboard"><i class="ti-home"></i> Dasboard</a></li>
+                            @*<li class="dropdown">
+            <a href="404.html" class="dropdown-toggle" data-toggle="dropdown"><i class="ti-angle-down"></i>Dropdowns</a>
+            <ul class="dropdown-menu">
+                <li><a href="404.html">Custom Menu</a></li>
+                <li><a href="404.html">Custom Menu</a></li>
+                <li class="dropdown">
+                    <a href="404.html" class="dropdown-toggle" data-toggle="dropdown">Sub Menu</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="404.html">Custom Menu</a></li>
+                        <li><a href="404.html">Custom Menu</a></li>
+                        <li class="dropdown">
+                            <a href="404.html" class="dropdown-toggle" data-toggle="dropdown">Sub Menu</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="404.html">Custom Menu</a></li>
+                                <li><a href="404.html">Custom Menu</a></li>
+                                <li><a href="404.html">Custom Menu</a></li>
+                                <li><a href="404.html">Custom Menu</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="404.html">Custom Menu</a></li>
+                    </ul>
+                </li>
+                <li><a href="404.html">Custom Menu</a></li>
+                <li><a href="404.html">Custom Menu</a></li>
+                <li><a href="404.html">Custom Menu</a></li>
+                <li><a href="404.html">Custom Menu</a></li>
+            </ul>
+        </li>*@
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="ti-reload"></i> AMC</a>
+
+
+
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">CheckLists</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="~/Home/checklist">Annual Maintenance Checklist</a></li>
+                                            <li><a href="~/checklist/QF3J">QF 3J - MV Switchgear Dielectric Withstand Test Form</a></li>
+                                            <li><a href="~/checklist/QF6Z">QF 6Z - Busbar Milli Volt Drop Test Form</a></li>
+                                            <li><a href="~/checklist/QF6J">QF 6J -(OC,EF,UNDER-OVER VOLTAGE) Relay Test Form</a></li>
+                                            <li><a href="~/checklist/QF9AAmmeterTestForm">Ammeter Test Form</a></li>
+                                            <li><a href="~/checklist/QF9AAmmeterTestForm">Volmeter Test Form</a></li>
+                                            <li><a href="~/checklist/QF9CVacuumCircuitBreakerTestForm">Vacuum Circuit Breaker Test Form</a></li>
+                                            <li><a href="~/checklist/QF9DEnergyMeterTestform">QF 9D - Energy Meter Test form</a></li>
+                                            <li><a href="~/checklist/QF9EMechanicalInterlockTestForm">QF 9E - Mechanical Interlock Test Form</a></li>
+                                            <li><a href="~/checklist/QF9FEarthSwitchMillivotDropTestForm">QF 9F-Earth Switch Milli vot Drop Test Form</a></li>
+                                            <li><a href="~/checklist/QF9HSchemeCheckTestForm">QF 9G-Point to Point Check Test Form.</a></li>
+                                            <li><a href="~/checklist/QF9ICurrentTransformerTestForm">QF 9H - Scheme  Check Test Form.</a></li>
+                                            <li><a href="~/checklist/QF9JVoltageTransformerTestForm">QF 9I - Current Transformer Test Form</a></li>
+                                            <li><a href="~/checklist/QF9KDimensionalCheckForm">QF 9J  - Voltage  Transformer Test Form</a></li>
+                                            <li><a href="~/checklist/QF9LTorqueCheckForm">QF 9K - Dimensional Check Form</a></li>
+                                            <li><a href="~/checklist/QF9OTransformerDifferentialprotect">QF 9L - Torque Check Form</a></li>
+                                            <li><a href="~/checklist/QuarterlyMaintenanceChecklist">QF 9N - Busbar differential protection Relay Test Form</a></li>
+                                            <li><a href="~/checklist/QF9NBusbardifferentialForm">QF 9O - Transformer Differential protect</a></li>
+                                            <li>
+                                                <a href="~/checklist/checklist">Quarterly Maintenance Checklist</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">MS</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="~/MS/QF9S">QF 9S - AMC Method Statement Quarterly</a></li>
+                                            <li><a href="~/MS/TamcoProtection">Tamco-Protection MV Switchgear Method St</a></li>
+                                            <li><a href="~/MS/TProtectionMV">Tamco-Protection MV Switchgear Method St</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">RA</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="~/RA/RA18173">18173 - RA </a>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            @*sat layout setting*@
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="ti-check"></i>SAT</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">LV</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">LV Panel</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="~/SAT/NATATEST">NATA Risk Assesment</a></li>
+                                                <li><a href="~/SAT/RA">RA</a></li>
+                                                <li><a href="~/SAT/Stamp">Stamp</a></li>
+                                                <li><a href="~/SAT/TestMatrix">Test Matrix</a></li>
+                                                <li class="dropdown">
+                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">More Test</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="~/SAT/CR_001">AC-001</a></li>
+                                                        <li><a href="~/SAT/ET_001">AL-001</a></li>
+                                                        <li><a href="~/SAT/ET_Stamp">CR-001</a></li>
+                                                        <li><a href="~/SAT/FT_001">ET-001</a></li>
+                                                        <li><a href="~/SAT/IR_001">FT-001</a></li>
+                                                        <li><a href="~/SAT/LR_001">IR-001</a></li>
+                                                        <li><a href="~/SAT/lVSwitchgearMS">MT-001</a></li>
+                                                        <li><a href="~/SAT/MT_001">PR-001</a></li>
+                                                        <li><a href="~/SAT/MT_Stamp">UV-001</a></li>
+                                                        <li><a href="~/SAT/VL_001">VI-001</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">PFC Panel</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="~/SAT/NATAtestcomparison">NATA Risk Assesment</a></li>
+                                                <li><a href="~/SAT/PFCRA">RA</a></li>
+                                                <li><a href="~/SAT/Stamp1">Stamp</a></li>
+                                                <li><a href="~/SAT/PFC_FrontPage">PFC front</a></li>
+                                                <li><a href="~/SAT/TestMatrix">Test Matrix</a></li>
+                                                <li class="dropdown">
+                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">More     Test</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="~/SAT/FT_001">ET-001</a></li>
+                                                        <li><a href="~/SAT/IR_001">FT-001</a></li>
+                                                        <li><a href="~/SAT/LR_001">IR-001</a></li>
+                                                        <li><a href="~/SAT/lVSwitchgearMS">MT-001</a></li>
+                                                        <li><a href="~/SAT/MT_001">PR-001</a></li>
+                                                        <li><a href="~/SAT/VL_001">VI-001</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">MV</a>
+                                    <ul class="dropdown-menu">
+                                        @*if use for mv branch in the page of the ms rv*@
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Instalization More</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="~/SAT/Installation_test">Installation Testing</a></li>
+                                                <li><a href="~/SAT/QF3J">QF-3J</a></li>
+                                                <li><a href="~/SAT/QF6J">QF-6J</a></li>
+                                                <li><a href="~/SAT/QF9Z">QF-6Z</a></li>
+                                                <li><a href="~/SAT/QF9A">QF-9A</a></li>
+                                                <li><a href="~/SAT/QF9B">QF-9B</a></li>
+                                                <li><a href="~/SAT/QF9C">QF-9C</a></li>
+                                                <li><a href="~/SAT/QF9D">QF-9D</a></li>
+                                                <li><a href="~/SAT/QF9E">QF-9E</a></li>
+                                                <li><a href="~/SAT/QF9F">QF-9F</a></li>
+                                                <li><a href="~/SAT/QF9G">QF-9G</a></li>
+                                                <li><a href="~/SAT/QF9H">QF-9H</a></li>
+                                                <li><a href="~/SAT/QF9I">QF-9I</a></li>
+                                                <li><a href="~/SAT/QF9J">QF-9J</a></li>
+                                                <li><a href="~/SAT/QF9K">QF-9K</a></li>
+                                                <li><a href="~/SAT/QF9L">QF-9L</a></li>
+                                                <li><a href="~/SAT/QF9N">QF-9N</a></li>
+                                                <li><a href="~/SAT/QF90">QF-9O</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            
+                        </li>
+
+                            @*sat layout setting*@
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="ti-check"></i>FAT</a>
+
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Annexure and Test Sheets</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="~/Asset/Annexure">Annexure 10 - FAT QC Check List</a></li>
+                                            <li><a href="~/Asset/QF3J">QF 3J - MV Switchgear Dielectric Withstand Test Form</a></li>
+                                            <li><a href="~/Asset/QF6J">QF 6J -(OC,EF,UNDER-OVER VOLTAGE) Relay Test Form.</a></li>
+                                            <li><a href="~/Asset/QF6Z">QF 6Z - Busbar Milli Volt Drop Test Form </a></li>
+                                            <li><a href="~/Asset/QF8BDOL">QF 8B -FAT- PFC</a></li>
+                                            <li><a href="~/Asset/QF8BFATKWHMETER">QF 8B DOL-STATER FAT</a></li>
+                                            <li><a href="~/Asset/QF8BFATPFC">QF 8B FAT KWH METER</a></li>
+                                            <li><a href="~/Asset/QF8BPRIMARY">QF 8B PRIMARY INJECTION REPORT FAT</a></li>
+
+                                            <li><a href="~/Asset/QF8BStarDelta">QF 8B Star-Delta Module FAT</a></li>
+                                            <li><a href="~/Asset/QF8BVFDFATTest">QF 8B VFD FAT Test Report</a></li>
+                                            <li><a href="~/Asset/QF8BCircuitBreakerTest">QF 8B-FAT-DB</a></li>
+                                            <li><a href="~/Asset/QF8BFATDB">QF 8B-FAT-FDB</a></li>
+                                            <li><a href="~/Asset/QF8BFATFDB">QF 8B-FAT-FDB</a></li>
+                                            <li><a href="~/Asset/QF8BFATMCC">QF 8B-FAT-MCC</a></li>
+                                            <li><a href="~/Asset/QF8BFATMDP">QF 8B-FAT-MDP</a></li>
+                                            <li><a href="~/Asset/QF8BFATSMDB_ESBLDP">QF 8B-FAT-SMDB_ESB_LDP</a></li>
+                                            <li><a href="~/Asset/QF8BFATStarterpanel">FAT-Starter panel</a></li>
+                                            <li><a href="~/Asset/QF8HFATCERTIFICATE">Circuit Breaker Test Form</a></li>
+                                            <li><a href="~/Asset/QF9AAmmeterTestForm">FAT CERTIFICATE</a></li>
+                                            <li><a href="~/Asset/QF9BVoltmeterTestForm">Ammeter Test Form</a></li>
+
+                                            <li><a href="~/Asset/QF9C">Voltmeter Test Form</a></li>
+                                            <li><a href="~/Asset/QF9B">Vacuum Circuit Breaker Test Form</a></li>
+                                            <li><a href="~/Asset/QF9E">Energy Meter Test form.</a></li>
+                                            <li><a href="~/Asset/QF9F">Mechanical Interlock Test Form</a></li>
+                                            <li><a href="~/Asset/QF9G">Earth Switch Milli vot Drop Test Form</a></li>
+
+                                            <li><a href="~/Asset/QF9H">Point to Point Check Test Form</a></li>
+                                            <li><a href="~/Asset/QF9J">Scheme  Check Test Form</a></li>
+                                            <li><a href="~/Asset/QF9K">Current Transformer Test Form</a></li>
+                                            <li><a href="~/Asset/QF9L">Voltage Transformer Test Form</a></li>
+                                            <li><a href="~/Asset/QF9N">Dimensional Check Form</a></li>
+                                            <li><a href="~/Asset/QF9O">Torque Check Form</a></li>
+                                            <li><a href="~/FAT/Annexure and Test Sheets/QF 9N - Busbar differential protection Relay Test Form.html">Busbar differential protection Relay Test Form</a></li>
+                                            <li><a href="~/FAT/Annexure and Test Sheets/QF 9O - Transformer Differential protection Relay Test Form.html">Transformer Differential protection Relay Test Form</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">ITP</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="~/Asset/ITP01MV">ITP 01 MV </a></li>
+                                            <li><a href="~/Asset/ITP02LV">ITP 02 LV  </a></li>
+                                            <li><a href="#">Sample Header and Footer for FAT</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="ti-flag"></i>Final</a>
+
+                                <ul class="dropdown-menu">
+
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">More</a>
+                                        <ul class="dropdown-menu">
+
+
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">More</a>
+                                                <ul class="dropdown-menu">
+
+                                                    <li><a href="~/FinalQinspec/QF9AAmmeter">Ammeter Test Form.</a></li>
+                                                    <li><a href="~/FinalQinspec/QF9BVoltmeter"> Voltmeter Test Form</a></li>
+                                                    <li><a href="~/FinalQinspec/QF9CVacuum">Vacuum Circuit Breaker Test Form</a></li>
+                                                    <li><a href="~/FinalQinspec/QF9HScheme">QF 9H - Scheme  Check Test Form</a></li>
+                                                    <li><a href="~/FinalQinspec/QF9ICurrent">Current Transformer Test Form</a></li>
+
+                                                    <li><a href="~/FinalQinspec/QF9JVoltage">Voltage Transformer Test Form</a></li>
+                                                    <li><a href="~/FinalQinspec/QF9KDimensional"> Dimensional Check Form</a></li>
+
+                                                    <li><a href="~/FinalQinspec/QF9LTorque">Torque Check Form</a></li>
+
+                                                    <li><a href="~/FinalQinspec/QF9NBusbar">Busbar differential protection Relay Test Form</a></li>
+
+
+                                                    <li><a href="~/FinalQinspec/QF9OTransformer">Transformer Differential protection Relay Test Form</a></li>
+
+
+                                                    <li><a href="~/FinalQinspec/QF9PObservation">Observation Checklist_MV</a></li>
+
+                                                    <li><a href="~/FinalQinspec/QualityControlProcess">Quality Control Process Measurement</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="~/FinalQinspec/QF9DEnergy">Energy Meter Test form</a></li>
+
+                                            <li><a href="~/FinalQinspec/QF9EMechanical">Mechanical Interlock Test Form</a></li>
+
+                                            <li><a href="~/FinalQinspec/QF9FEarth">Earth Switch Milli vot Drop Test Form</a></li>
+
+                                            <li><a href="~/FinalQinspec/QF9GPoint">Point to Point Check Test Form</a></li>
+                                            <li><a href="~/FinalQinspec/QF6UPFC"> PFC-Routine Test Report</a></li>
+                                            <li><a href="~/FinalQinspec/QF6UPRIMARY">PRIMARY INJECTION ROUTINE REPORT</a></li>
+
+                                            <li><a href="~/FinalQinspec/QF6USMDB">SMDB_ESB_LDP-Routine Test Report</a></li>
+
+                                            <li><a href="~/FinalQinspec/QF6UStar">Star-Delta Module</a></li>
+
+                                            <li><a href="~/FinalQinspec/QF6UVFD"> VFD-Routine Test Report</a></li>
+                                            <li><a href="~/FinalQinspec/QF6UCircuit">QF 6U_Circuit Breaker Test Form_Rev</a></li>
+                                            <li><a href="~/FinalQinspec/QF6ZBusbar">Busbar Milli Volt Drop Test Form</a></li>
+
+
+                                        </ul>
+                                    </li>
+                                    <li><a href="~/FinalQinspec/Annexure9">Finished Goods QC Check List</a></li>
+                                    <li><a href="~/FinalQinspec/Manufacturing">Manufacturing Process Measurement</a></li>
+                                    <li><a href="~/FinalQinspec/QF1C">Non Conformance Report</a></li>
+                                    <li><a href="~/FinalQinspec/QF3J">MV Switchgear Dielectric Withsta</a></li>
+                                    <li><a href="~/FinalQinspec/QFQF6J">Relay Test Form</a></li>
+                                    <li><a href="~/FinalQinspec/QF6U">QF 6U DB-Routine Test Report</a></li>
+                                    <li><a href="~/FinalQinspec/QF6UDOL">DOL-STATER Routine Test Report</a></li>
+                                    <li><a href="~/FinalQinspec/QF6UFDB">FDB-Routine Test Report</a></li>
+                                    <li><a href="~/FinalQinspec/QF6UKWH">KWH METER Routine Test Report</a></li>
+                                    <li><a href="~/FinalQinspec/QF6UMCC">MCC-Routine Test Report</a></li>
+                                    <li><a href="~/FinalQinspec/QF6UMDP">MDP -Routine Test Report</a></li>
+                                    <li><a href="~/FinalQinspec/QF6UMODULE">MODULE-Routine Test Report</a></li>
+
+
+
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="ti-settings"></i>Inprocess</a>
+
+                                <ul class="dropdown-menu">
+                                    <li><a href="~/InprocessQinspec/Annexure8">Annexure 8 - In Process QC Check List</a></li>
+                                    <li><a href="~/InprocessQinspec/Manufacturing">Manufacturing Process Measurement</a></li>
+                                    <li><a href="~/InprocessQinspec/QF1C">QF 1C Non Conformance Report</a></li>
+                                    <li><a href="~/InprocessQinspec/QF5A">Sheet Metal Fabrication In Process</a></li>
+                                    <li><a href="~/InprocessQinspec/QF5B">Panel Assembly & Wiring In Process</a></li>
+                                    <li><a href="~/InprocessQinspec/QF5D">Bus Bar Fabrication In Process</a></li>
+                                    <li><a href="~/InprocessQinspec/QF6A"> Paint Shop In Process</a></li>
+                                    <li><a href="~/InprocessQinspec/QF6W">QF 6W Snag List and Snag Analysis</a></li>
+                                    <li><a href="~/InprocessQinspec/QF9M">Inprocess Checklist_MV_Rev 1</a></li>
+                                    <li><a href="~/InprocessQinspec/QualityControl">Quality Control Process Measurement</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="ti-arrow-down"></i>Incoming</a>
+
+                                <ul class="dropdown-menu">
+
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">More</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="~/IncomingQinspec/QF9F">Earth Switch Milli vot Drop</a></li>
+                                            <li><a href="~/IncomingQinspec/QF9I">Current Transformer</a></li>
+                                            <li><a href="~/IncomingQinspec/QF9J"> Voltage Transformer Test Form</a></li>
+                                            <li><a href="~/IncomingQinspec/QF9N">Busbar differential protection Relay Test Form</a></li>
+                                            <li><a href="~/IncomingQinspec/QF9O">Transformer Differential protection Relay Test</a></li>
+                                            <li><a href="~/IncomingQinspec/QF9Q">QF 9Q_Material Inward Inpection Form</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="~/IncomingQinspec/Annexure7"> Goods QC Test</a></li>
+                                    <li><a href="~/IncomingQinspec/QF1C">Non Conformance Report</a></li>
+                                    <li><a href="~/IncomingQinspec/QF6J">(OC,EF,UNDER-OVER VOLTAGE) Relay </a></li>
+                                    <li><a href="~/IncomingQinspec/QF6U">Circuit Breaker </a></li>
+                                    <li><a href="~/IncomingQinspec/QF9A">Ammeter </a></li>
+                                    <li><a href="~/IncomingQinspec/QF9B">Voltmeter </a></li>
+                                    <li><a href="~/IncomingQinspec/QF9C">Vacuum Circuit Breaker </a></li>
+                                    <li><a href="~/IncomingQinspec/QF9D">Energy Meter </a></li>
+                                    <li><a href="~/IncomingQinspec/QF9E"> Mechanical Interlock </a></li>
+
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <!-- Replace ti-angle-down with Font Awesome desktop icon -->
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa-solid fa-desktop"></i> Desktop</a>
+
+                                <ul class="dropdown-menu">
+
+                                    <li><a href="~/Desktop/snag_analysis">snag_analysis</a></li>
+                                    <li><a href="~/Desktop/SnagTarget">Snag Target</a></li>
+                                    <li><a href="~/Desktop/NonQuality">Non Quality</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="ti-briefcase"></i> Asset</a>
+
+
+                                <ul class="dropdown-menu">
+                                    <li><a href="~/AssetMangement/Equipment">Equipment Calibration Register</a></li>
+                                    <li><a href="~/AssetMangement/Material">Material Traceability Report</a></li>
+                                    <li><a href="~/AssetMangement/QF9ZE">QF 9Z_Equipment Fault Report</a></li>
+                                    <li><a href="~/AssetMangement/SiteInstrument">Site Instrument Register-1</a></li>
+                                </ul>
+
+                            </li>
+
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="ti-panel"></i>Fabrication</a>
+
+
+                                <ul class="dropdown-menu">
+
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cooper</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="~/Fabrication/QF11G">QF 11G_Punching and Cutting</a></li>
+                                            <li><a href="~/Fabrication/QF11H">QF 11H_Bending</a></li>
+                                            <li><a href="~/Fabrication/QF11I">QF 11I_Coating</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sheet</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="~/Fabrication/QF11C">QF 11C_Nibbling and Punching</a></li>
+                                            <li><a href="~/Fabrication/QF11D">QF 11D_Bending</a></li>
+                                            <li><a href="~/Fabrication/QF11E">QF 11E_Welding and Grinding</a></li>
+                                            <li><a href="~/Fabrication/QF11F">QF 11F_Painting</a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="ti-crown"></i>Management</a>
+
+                                <ul class="dropdown-menu">
+                                    <li><a href="~/Management/User">USER</a></li>
+                                    <li><a href="~/Management/Security">SECURITY</a></li>
+
+                                </ul>
+
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="ti-alert"></i> NONQuality</a>
+
+                                <ul class="dropdown-menu">
+
+                                    <li><a href="~/Desktop/NonQuality">NON Quality</a></li>
+                                </ul>
+
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="ti-agenda"></i>Fab-Snag</a>
+
+                                <ul class="dropdown-menu">
+
+                                    <li><a href="~/Desktop/QMS_Display">Fab-Snag</a></li>
+
+                                </ul>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- Start Side Menu -->
+                <div class="side">
+                    <a href="#" class="close-side"><i class="ti-close"></i></a>
+                    <h3 class="sidebar-heading">Activity</h3>
+                    <div class="rad-activity-body">
+                        <div class="rad-list-group group">
+                            <a href="#" class="rad-list-group-item">
+                                <div class="rad-list-icon icon-shadow bg-red pull-left"><i class="fa fa-phone"></i></div>
+                                <div class="rad-list-content">
+                                    <strong>Client meeting</strong>
+                                    <div class="md-text">Meeting at 10:00 AM</div>
+                                </div>
+                            </a>
+                            <a href="#" class="rad-list-group-item">
+                                <div class="rad-list-icon icon-shadow bg-yellow pull-left"><i class="fa fa-refresh"></i></div>
+                                <div class="rad-list-content">
+                                    <strong>Created ticket</strong>
+                                    <div class="md-text">Ticket assigned to Dev team</div>
+                                </div>
+                            </a>
+                            <a href="#" class="rad-list-group-item">
+                                <div class="rad-list-icon icon-shadow bg-primary pull-left"><i class="fa fa-check"></i></div>
+                                <div class="rad-list-content">
+                                    <strong>Activity completed</strong>
+                                    <div class="md-text">Completed the dashboard html</div>
+                                </div>
+                            </a>
+                            <a href="#" class="rad-list-group-item">
+                                <div class="rad-list-icon icon-shadow bg-green pull-left"><i class="fa fa-envelope"></i></div>
+                                <div class="rad-list-content">
+                                    <strong>New Invitation</strong>
+                                    <div class="md-text">Max has invited you to join Inbox</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /.sidebar-menu -->
+                    <h3 class="sidebar-heading">Tasks Progress</h3>
+                    <ul class="sidebar-menu">
+                        <li>
+                            <a href="#">
+                                <h4 class="subheading">
+                                    Task one
+                                    <span class="label label-danger pull-right">40%</span>
+                                </h4>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 40%"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4 class="subheading">
+                                    Task two
+                                    <span class="label label-success pull-right">20%</span>
+                                </h4>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success progress-bar-striped active" style="width: 20%"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4 class="subheading">
+                                    Task Three
+                                    <span class="label label-warning pull-right">60%</span>
+                                </h4>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 60%"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4 class="subheading">
+                                    Task four
+                                    <span class="label label-primary pull-right">80%</span>
+                                </h4>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-primary progress-bar-striped active" style="width: 80%"></div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.sidebar-menu -->
+                </div>
+                <!-- End Side Menu -->
+            </nav> <!-- /. main navigation -->
+            <div class="clearfix"></div>
+        </header> <!-- /. main header -->
+
+        <div class="container body-content">
+            @RenderBody()
+        </div>
+        <!-- start footer -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="pull-right hidden-xs"> <b>Version</b> 1.0</div>
+                <strong>Copyright &copy; 2022-2023 <a href="#">SID</a>.</strong> Software House.
+            </div>
+        </footer> <!-- /. footer -->
+    </div> <!-- ./wrapper -->
+    <!-- jQuery -->
+    <script src="~/assets/plugins/jQuery/jquery-1.12.4.min.js"></script>
+    <!-- jquery-ui -->
+    <script src="~/assets/plugins/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="~/assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- lobipanel js -->
+    <script src="~/assets/plugins/lobipanel/lobipanel.min.js"></script>
+    <!-- animsition js -->
+    <script src="~/assets/plugins/animsition/js/animsition.min.js"></script>
+    <!-- bootsnav js -->
+    <script src="~/assets/plugins/bootsnav/js/bootsnav.js"></script>
+    <!-- SlimScroll js -->
+    <script src="~/assets/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+    <!-- FastClick js-->
+    <script src="~/assets/plugins/fastclick/fastclick.min.js"></script>
+    <!-- End Core Plugins
+    =====================================================================-->
+    <!-- Start Page Lavel Plugins
+    =====================================================================-->
+    <!-- Start Theme label Script
+    =====================================================================-->
+    <!-- Dashboard js -->
+    <script src="~/assets/dist/js/dashboard.js"></script>
+    <!-- End Theme label Script
+    =====================================================================-->
+</body>
+</html>

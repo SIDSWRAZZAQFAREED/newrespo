@@ -1,0 +1,429 @@
+﻿
+@{
+    ViewBag.Title = "QMS_Display";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        table-layout: fixed; /* Fix table layout */
+        word-wrap: break-word; /* Break words when needed */
+    }
+
+    .main_input {
+        height: 100%;
+    }
+
+    .table-bordered {
+        border-bottom: 1px solid black;
+    }
+
+    body {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    th.vertical {
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        white-space: nowrap;
+    }
+</style>
+
+
+
+<div class="main_heading" style="background-color: #018bd3;height: 70px;">
+    <h3 style="text-align: center; padding-top:18px;color: white;"><b>Desktop</b> </h3>
+</div>
+
+<div id="tableContainer">
+    <table id="snagTable" class="table table-bordered" style="margin-top: 20px; width: 100%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="19"><center style="font-size:larger;color:white">Snag Target Table2</center></th>
+        </tr>
+        <thead>
+
+            <tr>
+                <th rowspan="4" style="width: 60px;">S.No.</th>
+                <th rowspan="4" style="width: 80px;">PROJECT REF</th>
+                <th rowspan="4" style="width: 130px;">PRODUCT REF: (Final Product + Individual Product)</th>
+                <th rowspan="4" style="width: 50px;">QTY</th>
+
+                <th colspan="10">SHEET METAL FABRICATION</th>
+                <th colspan="15">BUS BAR FABRICATION & ASSEMBLY</th>
+                <th colspan="20">MECHANICAL ASSEMBLY</th>
+                <th colspan="17">ELECTRICAL ASSEMBLY & WIRING</th>
+                <th colspan="13">FINAL ASSEMBLY</th>
+                <th style="width: 70px;">Action</th>
+            </tr>
+
+            <tr>
+
+                <!-- Existing headers for SHEET METAL FABRICATION -->
+                <th class="vertical" style="width: 10px;">Material</th>
+                <th class="vertical">Dimension</th>
+                <th class="vertical">Shearing</th>
+                <th class="vertical">Bending</th>
+                <th class="vertical">Punching</th>
+                <th class="vertical">Welding</th>
+                <th class="vertical">Drilling</th>
+                <th class="vertical">Colour</th>
+                <th class="vertical">Paint Quality</th>
+                <th class="vertical" style="background-color: yellow; width: 30px; ">TOTAL</th>
+
+                <!-- Existing headers for BUS BAR FABRICATION & ASSEMBLY -->
+                <th class="vertical">Material</th>
+                <th class="vertical">Dimension</th>
+                <th class="vertical">Grinding</th>
+                <th class="vertical">Punching</th>
+                <th class="vertical">Bending</th>
+                <th class="vertical">Sharp Edges</th>
+                <th class="vertical">Sequance of phases</th>
+                <th class="vertical">Sleeving/Epoxy Coating</th>
+                <th class="vertical">Clearance and Creapage</th>
+                <th class="vertical">Supports/Insulator</th>
+                <th class="vertical">Fixing of Busbars</th>
+                <th class="vertical">Torque tightness</th>
+                <th class="vertical">Neutral Links/Terminals/Connecting Links</th>
+                <th class="vertical">Earthing links/Terminals</th>
+                <th class="vertical" style="background-color: yellow;">TOTAL</th>
+
+                <!-- Existing headers for MECHANICAL ASSEMBLY -->
+                <th class="vertical">Material</th>
+                <th class="vertical">Dimension</th>
+                <th class="vertical">Frame Sizes</th>
+                <th class="vertical">Assembly Plates &Covers</th>
+                <th class="vertical">Apparatus Fastening</th>
+                <th class="vertical">Door & Cover fixing</th>
+                <th class="vertical">Door and cover alignment</th>
+                <th class="vertical">Drawer/Compartment/Chamber Alignment</th>
+                <th class="vertical">Gasket fixing</th>
+                <th class="vertical">Door lock & lock alignment</th>
+                <th class="vertical">Component/Name Plate rating</th>
+                <th class="vertical">Component fixing</th>
+                <th class="vertical">Accsessibility of equipments</th>
+                <th class="vertical">Rotary handles/TNC/VSS/LR Switches</th>
+                <th class="vertical">Mechanical interlocking</th>
+                <th class="vertical">Space For Customer Connection (Glanding & Termination)</th>
+                <th class="vertical">Labelling</th>
+                <th class="vertical">Lifting hooks</th>
+                <th class="vertical" style="background-color: palegreen;"> TARGET</th>
+                <th class="vertical" style="background-color: yellow;">TOTAL</th>
+
+                <!-- Existing headers for ELECTRICAL ASSEMBLY & WIRING-->
+                <th class="vertical">Material</th>
+                <th class="vertical">Dimension</th>
+                <th class="vertical">Colour & size of wire</th>
+                <th class="vertical">Control wiring as per drawing</th>
+                <th class="vertical">Ferruling/Wire Marking</th>
+                <th class="vertical">Wire Stripping & crimping</th>
+                <th class="vertical">Wire dressing & termination</th>
+                <th class="vertical">Terminal fixing & numbering</th>
+                <th class="vertical">Space Heater</th>
+                <th class="vertical">Component,Auxiliary Protection/Name Plate ratings</th>
+                <th class="vertical">Component fixings</th>
+                <th class="vertical">Accsessibility of equipments</th>
+                <th class="vertical">Door&Device earthings</th>
+                <th class="vertical">Electrical Interlocking</th>
+                <th class="vertical">Wire Damage</th>
+                <th class="vertical" style="background-color: palegreen;"> TARGET</th>
+                <th class="vertical" style="background-color: yellow;">TOTAL</th>
+
+
+                <!-- Existing headers for FINAL ASSEMBLY-->
+                <th class="vertical">Form of separation</th>
+                <th class="vertical">IP Degree</th>
+                <th class="vertical">Shrouding Material</th>
+                <th class="vertical">Interconnection busbars</th>
+                <th class="vertical">Inter Panel wiring</th>
+                <th class="vertical">Mimic layout</th>
+                <th class="vertical">Warning Labels</th>
+                <th class="vertical">Space for shortage materials</th>
+                <th class="vertical">Space for deliverables</th>
+                <th class="vertical">Panel cleaning inside & outside</th>
+                <th class="vertical">Finishing</th>
+                <th class="vertical" style="background-color: palegreen;"> TARGET</th>
+                <th class="vertical" style="background-color: yellow;">TOTAL</th>
+
+
+            </tr>
+
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <div class="form-group  col-md-2">
+        <br />
+        <button type="button" class="btn btn-success form-control" onclick="AddRowButton()"> Add Row</button>
+    </div>
+</div>
+
+<div class="d-flex justify-content-end">
+    <button type="button" class="btn btn-primary ml-auto" style="background-color:#191c3696; margin-bottom:15px; ">Submit</button>
+</div>
+
+
+
+<script>
+    function AddRowButton() {
+        var markup = "<tr>" +
+            "<td></td>" +
+            "<td><input type='text' size='6' class='form-control' id='PROJECTREF' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='PRODUCTREF' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='QTY1' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='MATERIAL1' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='DIMENSION1' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='SHEARING' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='BENDING' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='PUNCHING1' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='WELDING' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='DRILLING' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='COLOUR' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='PAINTQUALITY' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='TOTAL_SHEET_METAL' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='MATERIAL2' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='DIMENSION2' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='GRINDING' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='PUNCHING2' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='TOTAL_BUS_BAR' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='MATERIAL3' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='DIMENSION3' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='TARGET_MECHANICAL' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='TOTAL_MECHANICAL' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='MATERIAL4' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='DIMENSION4' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='COLOUR_WIRE' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='CONTROL_WIRING' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='FERRULING' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='WIRE_STRIPPING' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='WIRE_DRESSING' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='TERMINAL_FIXING' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='SPACE_HEATER' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='COMPONENT_RATING' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='COMPONENT_FIXING' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='EQUIPMENT_ACCESS' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='DOOR_EARTHINGS' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='ELECTRICAL_INTERLOCKING' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='WIRE_DAMAGE' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='TARGET_ELECTRICAL' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='TOTAL_ELECTRICAL' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='FORM_OF_SEPARATION' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='IP_DEGREE' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='SHROUDING_MATERIAL' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='INTERCONNECTION_BUS_BARS' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='INTER_PANEL_WIRING' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='MIMIC_LAYOUT' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='WARNING_LABELS' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='SPACE_SHORTAGE_MATERIALS' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='SPACE_DELIVERABLES' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='PANEL_CLEANING' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='FINISHING' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='TARGET_FINAL' /></td>" +
+            "<td><input type='text' size='6' class='form-control' id='TOTAL_FINAL' /></td>" +
+            "<td><button type='button' class='btnDelete btn-danger btn-sm text-dark' style='font-size: 18px'><i class='fa fa-trash-o' style='color:white'></i></button></td>" +
+            "</tr>";
+
+        tableBody = $("#snagTable tbody");
+        tableBody.append(markup);
+    }
+
+    // Function to handle delete button click
+    $(document).on('click', '.btnDelete', function () {
+        $(this).closest('tr').remove();
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+@*<table class="table table-bordered" style="margin-top: 20px; width: 100%; height: 70%; background-color: #f1f3ec66;">
+        <tr style="background-color: #5f98ab;">
+            <th colspan="4"><center style="font-size:larger;color:white">Snag Target Table1</center></th>
+        </tr>
+        <tr>
+            <th>Sr No</th>
+            <th>Project Ref</th>
+            <th>No of Snags observed</th>
+            <th>Snag Target</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>6128</td>
+            <td>5</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>6254</td>
+            <td>6</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>6321</td>
+            <td>8</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>6423</td>
+            <td>7</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6458</td>
+            <td>3</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>6612</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>6920</td>
+            <td>9</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>7056</td>
+            <td>3</td>
+            <td>5</td>
+        </tr>
+    </table>*@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*<!DOCTYPE HTML>
+    <html>
+    <head>
+        <script>
+            window.onload = function () {
+
+                var chart = new CanvasJS.Chart("chartContainer", {
+                    animationEnabled: true,
+                    title: {
+                        text: "Sheet Steel FAB-SNAG Analysis"
+                    },
+                    axisX: {
+                        valueFormatString: "DD MMM,YY"
+                    },
+                    axisY: {
+                        title: "No Of Snags",
+
+                    },
+                    legend: {
+                        cursor: "pointer",
+                        fontSize: 16,
+                        itemclick: toggleDataSeries
+                    },
+                    toolTip: {
+                        shared: true
+                    },
+                    data: [{
+                        name: "Myrtle Beach",
+                        type: "spline",
+                        yValueFormatString: "#0.## °C",
+                        showInLegend: true,
+                        dataPoints: [
+                            { x: new Date(2017, 6, 24), y: 31 },
+                            { x: new Date(2017, 6, 25), y: 31 },
+                            { x: new Date(2017, 6, 26), y: 29 },
+                            { x: new Date(2017, 6, 27), y: 29 },
+                            { x: new Date(2017, 6, 28), y: 31 },
+                            { x: new Date(2017, 6, 29), y: 30 },
+                            { x: new Date(2017, 6, 30), y: 29 }
+                        ]
+                    },
+                    {
+                        name: "Martha Vineyard",
+                        type: "spline",
+                        yValueFormatString: "#0.## °C",
+                        showInLegend: true,
+                        dataPoints: [
+                            { x: new Date(2017, 6, 24), y: 20 },
+                            { x: new Date(2017, 6, 25), y: 20 },
+                            { x: new Date(2017, 6, 26), y: 25 },
+                            { x: new Date(2017, 6, 27), y: 25 },
+                            { x: new Date(2017, 6, 28), y: 25 },
+                            { x: new Date(2017, 6, 29), y: 25 },
+                            { x: new Date(2017, 6, 30), y: 25 }
+                        ]
+                    },
+                    {
+                        name: "Nantucket",
+                        type: "spline",
+                        yValueFormatString: "#0.## °C",
+                        showInLegend: true,
+                        dataPoints: [
+                            { x: new Date(2017, 6, 24), y: 22 },
+                            { x: new Date(2017, 6, 25), y: 19 },
+                            { x: new Date(2017, 6, 26), y: 23 },
+                            { x: new Date(2017, 6, 27), y: 24 },
+                            { x: new Date(2017, 6, 28), y: 24 },
+                            { x: new Date(2017, 6, 29), y: 23 },
+                            { x: new Date(2017, 6, 30), y: 23 }
+                        ]
+                    }]
+                });
+                chart.render();
+
+                function toggleDataSeries(e) {
+                    if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+                        e.dataSeries.visible = false;
+                    }
+                    else {
+                        e.dataSeries.visible = true;
+                    }
+                    chart.render();
+                }
+
+            }
+        </script>
+    </head>
+    <body>
+        <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+        <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+    </body>
+    </html>*@

@@ -1,0 +1,508 @@
+﻿
+@{
+    ViewBag.Title = "User";
+}
+<style>
+    #vv {
+        color: white;
+    }
+
+    card > hr {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .card {
+        border: 1px solid rgba(0, 0, 0, 0.125);
+    }
+
+        .card > .list-group:first-child .list-group-item:first-child {
+            border-top-left-radius: 0.25rem;
+            border-top-right-radius: 0.25rem;
+        }
+
+        .card > .list-group:last-child .list-group-item:last-child {
+            border-bottom-right-radius: 0.25rem;
+            border-bottom-left-radius: 0.25rem;
+        }
+
+    .card-body {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        padding: 1.25rem;
+    }
+
+    .card-title {
+        margin-bottom: 1rem;
+        margin-top: 0.75rem;
+        font-size: 23px;
+    }
+
+    .card-subtitle {
+        margin-top: -0.375rem;
+        margin-bottom: 0;
+    }
+
+    .card-text:last-child {
+        margin-bottom: 0;
+    }
+
+    .card-link:hover {
+        text-decoration: none;
+    }
+
+    .card-link + .card-link {
+        margin-left: 1.25rem;
+    }
+
+    .card-header {
+        padding: 0em;
+        margin-bottom: 0;
+        background-color: rgba(0, 0, 0, 0.03);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+        background-image: none;
+        margin: 0px;
+    }
+
+        .card-header:first-child {
+            border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+        }
+
+        .card-header + .list-group .list-group-item:first-child {
+            border-top: 0;
+        }
+
+    .card-footer {
+        padding: 0.75rem 1.25rem;
+        background-color: rgba(0, 0, 0, 0.03);
+        border-top: 1px solid rgba(0, 0, 0, 0.125);
+    }
+
+        .card-footer:last-child {
+            border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
+        }
+
+    .card-header-tabs {
+        margin-right: -0.625rem;
+        margin-bottom: -0.75rem;
+        margin-left: -0.625rem;
+        border-bottom: 0;
+    }
+
+    .card-header-pills {
+        margin-right: -0.625rem;
+        margin-left: -0.625rem;
+    }
+
+    .card-img-overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 1.25rem;
+    }
+
+    .card-img {
+        width: 100%;
+        border-radius: calc(0.25rem - 1px);
+    }
+
+    .card-img-top {
+        width: 100%;
+        border-top-left-radius: calc(0.25rem - 1px);
+        border-top-right-radius: calc(0.25rem - 1px);
+    }
+
+    .card-img-bottom {
+        width: 100%;
+        border-bottom-right-radius: calc(0.25rem - 1px);
+        border-bottom-left-radius: calc(0.25rem - 1px);
+    }
+
+    .card-deck {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+        .card-deck .card {
+            margin-bottom: 15px;
+        }
+
+
+    .card-deck {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+        .card-deck .card {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-flex: 1;
+            -ms-flex: 1 0 0%;
+            flex: 1 0 0%;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            margin-right: 15px;
+            margin-bottom: 0;
+            margin-left: 15px;
+        }
+
+    .card-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+        .card-group > .card {
+            margin-bottom: 15px;
+        }
+
+
+    .card-group {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    }
+
+        .card-group > .card {
+            -webkit-box-flex: 1;
+            -ms-flex: 1 0 0%;
+            flex: 1 0 0%;
+            margin-bottom: 0;
+        }
+
+            .card-group > .card + .card {
+                margin-left: 0;
+                border-left: 0;
+            }
+
+            .card-group > .card:not(:last-child) {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+
+                .card-group > .card:not(:last-child) .card-img-top,
+                .card-group > .card:not(:last-child) .card-header {
+                    border-top-right-radius: 0;
+                }
+
+                .card-group > .card:not(:last-child) .card-img-bottom,
+                .card-group > .card:not(:last-child) .card-footer {
+                    border-bottom-right-radius: 0;
+                }
+
+            .card-group > .card:not(:first-child) {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+
+                .card-group > .card:not(:first-child) .card-img-top,
+                .card-group > .card:not(:first-child) .card-header {
+                    border-top-left-radius: 0;
+                }
+
+                .card-group > .card:not(:first-child) .card-img-bottom,
+                .card-group > .card:not(:first-child) .card-footer {
+                    border-bottom-left-radius: 0;
+                }
+
+    .card-columns .card {
+        margin-bottom: 0.75rem;
+    }
+
+
+    .card-columns {
+        -webkit-column-count: 3;
+        column-count: 3;
+        -webkit-column-gap: 1.25rem;
+        column-gap: 1.25rem;
+        orphans: 1;
+        widows: 1;
+    }
+
+        .card-columns .card {
+            display: inline-block;
+            width: 100%;
+        }
+
+
+    .accordion > .card {
+        overflow: hidden;
+    }
+
+        .accordion > .card:not(:first-of-type) .card-header:first-child {
+            border-radius: 0;
+        }
+
+        .accordion > .card:not(:first-of-type):not(:last-of-type) {
+            border-bottom: 0;
+            border-radius: 0;
+        }
+
+        .accordion > .card:first-of-type {
+            border-bottom: 0;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        .accordion > .card:last-of-type {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+        .accordion > .card .card-header {
+            margin-bottom: -1px;
+        }
+
+    .modal-title {
+        margin-bottom: 1rem;
+        margin-top: 0.75rem;
+        font-size: 23px;
+    }
+
+    .modal-header {
+        padding: 0px;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+
+    .nav-container {
+        height: 71px;
+    }
+
+    .back-top {
+        background-color: black;
+    }
+</style>
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class="card">
+                <div class="card-header" style="background-color: #73747a; color: white;">
+                    <h2 class="card-title" style="padding-top: 8px">USER</h2>
+                </div>
+
+                <div class="card-body">
+                    <div class="row">
+                        <div class="form-group  col-md-3">
+                            <label for="UserID">User ID <spna style="color:red;">*</spna></label>
+                            <div class="input-group">
+                                <input type="text" id="UserID" placeholder="Enter User ID" class="form-control Field">
+                                <span id="btnSearchVendor" class="input-group-btn" data-toggle="modal" data-target="#VendorSearchModal">
+                                    <button class="btn btn-primary" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-success" onclick="checkValue()"> <i class="fa fa-refresh"></i></button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group  col-md-3">
+                            <label for="UserPwd">Password <spna style="color:red;">*</spna></label>
+                            <input id="UserPwd" type="password" class="form-control Field" placeholder=" Enter Password" />
+                        </div>
+                        <div class="form-group  col-md-3">
+                            <label for="Fname">First Name <spna style="color:red;">*</spna></label>
+                            <input id="Fname" type="text" class="form-control Field" placeholder=" Enter First Name" />
+                        </div>
+                        <div class="form-group  col-md-3">
+                            <label for="Lname">Last Name <spna style="color:red;">*</spna></label>
+                            <input id="Lname" type="text" class="form-control Field" placeholder=" Enter Last Name" />
+                        </div>
+
+
+
+                    </div>
+                    <div class="row">
+                        <div class="form-group  col-md-4">
+                            <label for="ContactNo">Contact No <spna style="color:red;">*</spna></label>
+                            <input id="ContactNo" type="tel" class="form-control" placeholder="Enter your Number" />
+                        </div>
+
+                        <div class="col-md-4 form-group">
+
+                            <label>Department </label>
+                            <div class="input-group">
+                                <input id="DEPTNAME" class="form-control" placeholder="Enter Department" type="text" />
+                                <span class="input-group-btn" id="btnguaranteesearch" data-toggle="modal" data-target="#GuaranteeSearchModal" placeholder="Department">
+                                    <button class="btn btn-primary" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+
+
+                        </div>
+                        <div class="form-group  col-md-3" hidden>
+                            <label for="DEPTID">Despartment id</label>
+                            <input id="DEPTID" type="text" class="form-control" placeholder="Designation" />
+                        </div>
+                        <div class="form-group  col-md-3" hidden>
+                            <label for="DESID">Designation id</label>
+                            <input id="DESID" type="text" class="form-control" placeholder="Designation" />
+                        </div>
+
+
+
+                        <div class="form-group  col-md-4">
+                            <label for="DESNAME">Designation</label>
+                            <input id="DESNAME" type="text" class="form-control" placeholder="Enter Designation" />
+                        </div>
+                        @*<div class="form-group  col-md-3">
+                                <label for="Picture">Picture</label>
+                                <input id="Picture" type="file" class="form-control" placeholder="Upload Picture" />
+                            </div>*@
+                    </div>
+                    <div class="row">
+
+                        <div class="form-group  col-md-6">
+                            <label for="Email">Email <spna style="color:red;">*</spna></label>
+                            <input id="Email" type="text" class="form-control Field" placeholder="Enter your Email" />
+                        </div>
+
+
+                        
+                        <div class="form-group  col-md-6">
+
+
+                            <label for="Gender" class="form-label"> Gender <spna style="color:red;">*</spna></label>
+                            <select class="form-select form-control" id="Gender" name="Gender">
+                                <option>Select</option>
+                                <option value="M">Male</option>
+                                <option value="F">Female</option>
+
+
+                            </select>
+                            <br>
+
+                        </div>
+                        @*<div class="col-md-2">
+
+                                <br />
+                                <button type="button" id="123btnSearchVendor" class="btn btn-primary form-control  " data-toggle="modal" data-target="#SAGELOCATIONSearchModal" style="color: white; "> Location</button>
+
+                            </div>
+
+                            <br />
+
+
+
+                            <div class="col-md-2">
+                                <button type="button" id="AREASAEARCH" class="btn btn-primary form-control " data-toggle="modal" data-target="#199LOCSearchModal123" style="color: white;  ">Area</button>
+
+                            </div>
+
+                            <div class="col-md-2">
+
+                                <button type="button" id="RPPPbtnSearchVendor" class="btn btn-primary form-control " data-toggle="modal" data-target="#RPPPSearchModal" style="color: white; ">Request Group</button>
+
+
+
+                            </div>*@
+
+
+                    </div>
+
+
+                    <div class="row">
+
+                        <div class="form-group  col-md-4">
+
+                            <label for="sel1" class="form-label"> City <spna style="color:red;">*</spna></label>
+                            <select class="form-select form-control" id="City" name="sellist1">
+                                <option value="Dubai">Dubai</option>
+                                @*<option value="Abu Dhabi">Abu Dhabi</option>
+
+                                    <option value="Sharjah">Sharjah</option>
+                                    <option value="Ajman">Ajman</option>
+                                    <option value="UMM Al Quwain">Umm Al Quwain</option>
+                                    <option value="Ras Al Khaimah">Ras Al Khaimah</option>
+                                    <option value="Fujairha">Fujairah</option>*@
+
+                            </select>
+                            <br>
+
+                        </div>
+                        <div class="form-group  col-md-3">
+
+
+                            <label for="sel1" class="form-label "> Country <spna style="color:red;">*</spna></label>
+                            <select class="form-select form-control" id="Country" name="sellist1">
+
+                                <option value="UAE">UAE</option>
+
+
+                            </select>
+                            <br>
+
+                        </div>
+                        <div class="form-group  col-md-3">
+
+
+
+                            <label for="sel1" class="form-label "> Security Group <spna style="color:red;">*</spna></label>
+                            <select class="form-select form-control" id="SecurityGroup" name="sellist1">
+                                <option>Select</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+
+
+                            </select>
+                            <br>
+
+                        </div>
+
+
+                        <div class="form-group  col-md-2">
+                            <br />
+
+                            <div class="form-check form-check-inline" style="padding-left:10px;">
+                                <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
+                                <label class="form-check-label" for="inlineRadio1">Active</label>
+                            </div>
+                            <div class="form-check form-check-inline" style="padding-left:10px;">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                <label class="form-check-label" for="inlineRadio2">Inactive</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group  col-md-6 ">
+                            <button id="SubmitBGType" type="button" class="btn btn-primary form-control  btn-lg" "> Add</button>
+                            @*<button id="btnSaveCompanyName" type="button" class="btn btn-success btn-lg form-control" style="margin-bottom:5px;">Update</button>*@
+                        </div>
+                        <div class="form-group  col-md-6 ">
+
+                            <button type="button" id="DeleteBGType" class="btn btn-danger btn-lg form-control" style="float:right;">Delete</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
